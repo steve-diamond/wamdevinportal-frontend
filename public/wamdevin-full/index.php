@@ -1,0 +1,2798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- META ============================================= -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="robots" content="" />
+	
+	<!-- DESCRIPTION -->
+	<meta name="description" content="WAMDEVIN: Official Site" />
+	
+	<!-- OG -->
+	<meta property="og:title" content="WAMDEVIN: Official Site" />
+	<meta property="og:description" content="WAMDEVIN: Official Site" />
+	<meta property="og:image" content="" />
+	<meta name="format-detection" content="telephone=no">
+	
+	<!-- FAVICONS ICON ============================================= -->
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+	
+	<!-- PAGE TITLE HERE ============================================= -->
+	<title>WAMDEVIN </title>
+	
+	<!-- MOBILE SPECIFIC ============================================= -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1B6CA8">
+	<meta property="og:type" content="website" />
+	
+	<!--[if lt IE 9]>
+	<script src="assets/js/php5shiv.min.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+	
+	<!-- All PLUGINS CSS ============================================= -->
+	<!-- TYPOGRAPHY ============================================= -->
+	<!-- SHORTCODES ============================================= -->
+	<!-- STYLESHEETS ============================================= -->
+	<!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Jost:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="assets/css/typography.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/assets.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+	<!-- REVOLUTION SLIDER CSS ============================================= -->
+	<link rel="stylesheet" type="text/css" href="assets/vendors/revolution/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendors/revolution/css/settings.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendors/revolution/css/navigation.css">
+	<!-- REVOLUTION SLIDER END -->	
+</head>
+<body id="bg">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div class="page-wraper">
+<div id="loading-icon-bx"></div>
+	<!-- Header Top ==== -->
+    <header class="header rs-nav header-transparent">
+		<div class="top-bar">
+			<div class="container">
+				<div class="row d-flex justify-content-between">
+					<div class="topbar-left">
+						<ul>
+							<li><a href="membership.php#accordion1"><i class="fa fa-question-circle"></i><span data-translate="common.askQuestion">Ask a Question</span></a></li>
+						</ul>
+					</div>
+					<div class="topbar-right">
+						<ul>
+							<!-- Language Switcher -->
+							<li>
+								<div class="custom-dropdown" role="navigation" aria-label="Language Selector">
+									<button class="dropbtn" aria-haspopup="true" aria-expanded="false" style="background: transparent; border: none; color: white; cursor: pointer; font-size: 13px; padding: 0 10px; display: flex; align-items: center; gap: 5px;">
+										<img src="https://flagcdn.com/gb.svg" alt="English (UK)" class="flag-icon" width="20" height="15" style="border-radius: 3px;"> 
+										<span class="dropdown-text">English UK</span>
+										<span class="arrow" aria-hidden="true" style="margin-left: 5px;">▼</span>
+									</button>
+									<ul class="dropdown-content" role="menu" style="display: none; position: absolute; background: white; min-width: 180px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); z-index: 1000; border: 1px solid #ddd; border-radius: 5px; list-style: none; padding: 8px 0; margin: 5px 0 0 0; top: 100%; right: 0;">
+										<li role="menuitem" data-value="en-uk" style="padding: 10px 15px; cursor: pointer; display: flex; align-items: center; gap: 10px; transition: background 0.2s;" onmouseover="this.style.background='rgba(23, 102, 162, 0.1)'" onmouseout="this.style.background='transparent'">
+											<img src="https://flagcdn.com/gb.svg" alt="English (UK)" class="flag-icon" width="20" height="15" style="border-radius: 3px;"> <span style="color: #333;">English UK</span>
+										</li>
+										<li role="menuitem" data-value="en-us" style="padding: 10px 15px; cursor: pointer; display: flex; align-items: center; gap: 10px; transition: background 0.2s;" onmouseover="this.style.background='rgba(23, 102, 162, 0.1)'" onmouseout="this.style.background='transparent'">
+											<img src="https://flagcdn.com/us.svg" alt="English (US)" class="flag-icon" width="20" height="15" style="border-radius: 3px;"> <span style="color: #333;">English US</span>
+										</li>
+										<li role="menuitem" data-value="fr" style="padding: 10px 15px; cursor: pointer; display: flex; align-items: center; gap: 10px; transition: background 0.2s;" onmouseover="this.style.background='rgba(23, 102, 162, 0.1)'" onmouseout="this.style.background='transparent'">
+											<img src="https://flagcdn.com/fr.svg" alt="Français" class="flag-icon" width="20" height="15" style="border-radius: 3px;"> <span style="color: #333;">Français</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<!-- Portal Access Menu -->
+							<li class="portal-menu-item">
+								<a href="#" class="portal-menu-toggle" style="color: #f39c12; font-weight: 700;">
+									<i class="fa fa-sign-in-alt"></i> Portal Access <i class="fa fa-chevron-down"></i>
+								</a>
+								<ul class="portal-submenu">
+									<li class="submenu-title" style="padding: 10px 15px; background: #f39c12; color: white; font-weight: 700; border-radius: 5px 5px 0 0; margin-bottom: 5px;">
+										Institution Portal
+									</li>
+									<li><a href="login.php" style="color: #1766a2;"><i class="fa fa-lock"></i> <span data-translate="portal.institutionLogin">Institution Login</span></a></li>
+									<li><a href="register.php" style="color: #f39c12;"><i class="fa fa-user-plus"></i> <span data-translate="portal.registerInstitution">Register Institution</span></a></li>
+									<li style="border-top: 1px solid #e0e0e0; padding-top: 5px; margin-top: 5px; padding-bottom: 5px;">
+										<a href="admin/login.php" style="color: #1766a2;"><i class="fa fa-shield"></i> <span data-translate="portal.adminAccess">Admin Access</span></a>
+									</li>
+									<li><a href="membership.php" style="color: #2c3e50;"><i class="fa fa-graduation-cap"></i> <span data-translate="portal.alumniPortal">Alumni Portal</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Portal Menu Styling -->
+		<style>
+		.portal-menu-item {
+			position: relative;
+		}
+		
+		.portal-menu-toggle {
+			text-decoration: none;
+			cursor: pointer;
+			display: inline-block;
+			padding: 0 10px;
+			transition: all 0.3s ease;
+		}
+		
+		.portal-menu-toggle:hover {
+			color: #e67e22 !important;
+		}
+		
+		.portal-submenu {
+			list-style: none;
+			position: absolute;
+			top: 100%;
+			right: 0;
+			background: white;
+			border-radius: 8px;
+			min-width: 220px;
+			padding: 10px 0;
+			margin: 5px 0 0 0;
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+			display: none;
+			z-index: 1000;
+		}
+		
+		.portal-menu-item:hover .portal-submenu {
+			display: block;
+		}
+		
+		.portal-submenu li {
+			padding: 0;
+		}
+		
+		.portal-submenu li a {
+			display: block;
+			padding: 12px 15px;
+			text-decoration: none;
+			transition: all 0.3s ease;
+			color: #2c3e50;
+		}
+		
+		.portal-submenu li a:hover {
+			background: rgba(243, 156, 18, 0.1);
+			padding-left: 20px;
+		}
+		
+		.portal-submenu li.submenu-title {
+			text-decoration: none;
+		}
+		
+		@media (max-width: 768px) {
+			.portal-submenu {
+				position: static;
+				display: none;
+				min-width: 100%;
+				box-shadow: none;
+				border-radius: 0;
+				margin: 10px 0 0 0;
+			}
+			
+			.portal-menu-item:hover .portal-submenu {
+				display: none;
+			}
+			
+			.portal-submenu.show {
+				display: block;
+			}
+		}
+		</style>
+		
+		<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const portalToggle = document.querySelector('.portal-menu-toggle');
+			const portalSubmenu = document.querySelector('.portal-submenu');
+			
+			if (window.innerWidth <= 768) {
+				portalToggle.addEventListener('click', function(e) {
+					e.preventDefault();
+					portalSubmenu.classList.toggle('show');
+				});
+			}
+		});
+		</script>
+		<div class="sticky-header navbar-expand-lg">
+            <div class="menu-bar clearfix">
+                <div class="container clearfix">
+					<!-- Header Logo ==== -->
+					<div class="menu-logo">
+						<a href="index.php"><img src="assets/images/logo-white.png" alt="WAMDEVIN logo"></a>
+					</div>
+					<!-- Mobile Nav Button ==== -->
+                    <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<!-- Author Nav ==== -->
+                    <div class="secondary-menu">
+                        <div class="secondary-inner">
+                            <ul>
+								<li><a href="javascript:;" class="btn-link"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="javascript:;" class="btn-link"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="javascript:;" class="btn-link"><i class="fa fa-linkedin"></i></a></li>
+								<!-- Search Button ==== -->
+								<li class="search-btn"><button id="quik-search-btn" type="button" class="btn-link"><i class="fa fa-search"></i></button></li>
+							</ul>
+						</div>
+                    </div>
+					<!-- Search Box ==== -->
+                    <div class="nav-search-bar">
+                        <form action="#">
+							<input name="search" value="" type="text" class="form-control" placeholder="Type to search" aria-label="Search the site">
+                            <span><i class="ti-search"></i></span>
+                        </form>
+						<span id="search-remove"><i class="ti-close"></i></span>
+                    </div>
+					  <!-- Navigation Menu ==== -->
+                        <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
+                            <div class="menu-logo">
+                                <a href="index.php"><img src="assets/images/logo.png" alt="WAMDEVIN Logo"></a>
+                            </div>
+							<ul class="nav navbar-nav">    
+								<li><a href="index.php" data-translate="nav.home">Home</a></li>
+								<li class="active"><a href="about.php" data-translate="nav.about">About <i class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="membership.php" data-translate="nav.membership">Membership</a></li>
+                                        <li><a href="partners.php" data-translate="nav.partners">Partners</a></li>
+                                        <li><a href="projects.php" data-translate="nav.projects">Projects</a></li>
+                                    </ul>
+                                </li>
+                                <li class="add-mega-menu">
+                                    <a href="leadership.php" data-translate="nav.leadership">Leadership</a>
+                                </li>
+                                <li><a href="service.php" data-translate="nav.services">Services</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="trainners.php" data-translate="nav.training">Training</a></li>
+                                        <li><a href="research.php" data-translate="nav.research">Research</a></li>
+                                        <li><a href="publication.php" data-translate="nav.publication">Publication</a></li>
+                                        <li><a href="consultancy.php" data-translate="nav.consultancy">Consultancy</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="blog.php" data-translate="nav.blogs">Blogs</a></li>
+                                <li><a href="gallery.php" data-translate="nav.gallery">Gallery</a></li>
+                                <li class="nav-dashboard"><a href="javascript:;" data-translate="nav.portal">Portal</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="login.php" data-translate="nav.login">Login</a></li>
+                                        <li><a href="register.php" data-translate="nav.register">Register</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.php" data-translate="nav.contact">Contact</a></li>
+                            </ul>
+                            <div class="nav-social-link">
+                                <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                <a href="javascript:;" class="btn-link"><i class="fa fa-google-plus"></i></a>
+                                <a href="javascript:;" class="btn-link"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <!-- Navigation Menu END ==== -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Top END ==== -->
+    <!-- Content -->
+	<main id="main-content">
+	<div class="page-content bg-white">
+        <!-- Main Slider -->
+        <div class="rev-slider">
+			<div id="rev_slider_486_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="news-gallery36" data-source="gallery" style="margin:0px auto;background-color:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
+				<!-- START REVOLUTION SLIDER 5.3.0.2 fullwidth mode -->
+				<div id="rev_slider_486_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.3.0.2">
+					<ul>	<!-- SLIDE  -->
+						<li data-index="rs-100" 
+						data-transition="parallaxvertical" 
+						data-slotamount="default" 
+						data-hideafterloop="0" 
+						data-hideslideonmobile="off" 
+						data-easein="default" 
+						data-easeout="default" 
+						data-masterspeed="default" 
+						data-thumb="error-404.php" 
+						data-rotate="0" 
+						data-fstransition="fade" 
+						data-fsmasterspeed="1500" 
+						data-fsslotamount="7" 
+						data-saveperformance="off" 
+						data-title="A STUDY ON HAPPINESS" 
+						data-param1="" data-param2="" 
+						data-param3="" data-param4="" 
+						data-param5="" data-param6="" 
+						data-param7="" data-param8="" 
+						data-param9="" data-param10="" 
+						data-description="Science says that Women are generally happier">
+							<!-- MAIN IMAGE -->
+						<img src="assets/images/slider/slide1.jpg" alt="WAMDEVIN - Transforming public sector leadership across West Africa" 
+								data-bgfit="cover" 
+								data-bgrepeat="no-repeat" 
+								data-bgparallax="10" 
+								class="rev-slidebg" 
+								data-no-retina />
+								
+							<!-- LAYER NR. 1 -->
+							<div class="tp-caption tp-shape tp-shapewrapper " 
+								id="slide-100-layer-1" 
+								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+								data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+								data-width="full"
+								data-height="full"
+								data-whitespace="nowrap"
+								data-type="shape" 
+								data-basealign="slide" 
+								data-responsive_offset="off" 
+								data-responsive="off"
+								data-frames='[{"from":"opacity:0;","speed":1,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1,"to":"opacity:0;","ease":"Power4.easeOut"}]'
+								data-textAlign="['left','left','left','left']"
+								data-paddingtop="[0,0,0,0]"
+								data-paddingright="[0,0,0,0]"
+								data-paddingbottom="[0,0,0,0]"
+								data-paddingleft="[0,0,0,0]"
+								style="z-index: 5;background-color:rgba(80, 100, 94, 0.8);border-color:rgba(61, 8, 8, 0);border-width:0px;"> </div>	
+							<!-- LAYER NR. 2 -->
+							<div class="tp-caption Newspaper-Title   tp-resizeme" 
+								id="slide-100-layer-2" 
+								data-x="['center','center','center','center']" 
+								data-hoffset="['0','0','0','0']" 
+								data-y="['top','top','top','top']" 
+								data-voffset="['250','250','250','240']" 
+								data-fontsize="['50','50','50','30']"
+								data-lineheight="['55','55','55','35']"
+								data-width="full"
+								data-height="none"
+								data-whitespace="normal"
+								data-type="text" 
+								data-responsive_offset="on" 
+								data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+								data-textAlign="['center','center','center','center']"
+								data-paddingtop="[0,0,0,0]"
+								data-paddingright="[0,0,0,0]"
+								data-paddingbottom="[10,10,10,10]"
+								data-paddingleft="[0,0,0,0]"
+style="z-index: 6; font-family:rubik; font-weight:700; text-align:center; white-space: normal;" data-translate="hero.welcome">
+									Welcome To WAMDEVIN
+							</div>
+
+							<!-- LAYER NR. 3 -->
+							<div class="tp-caption Newspaper-Subtitle   tp-resizeme" 
+								id="slide-100-layer-3" 
+								data-x="['center','center','center','center']" 
+								data-hoffset="['0','0','0','0']" 
+								data-y="['top','top','top','top']" 
+								data-voffset="['210','210','210','210']" 
+								data-width="none"
+								data-height="none"
+								data-whitespace="nowrap"
+								data-type="text" 
+								data-responsive_offset="on"
+								data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+								data-textAlign="['left','left','left','left']"
+								data-paddingtop="[0,0,0,0]"
+								data-paddingright="[0,0,0,0]"
+								data-paddingbottom="[0,0,0,0]"
+								data-paddingleft="[0,0,0,0]"
+style="z-index: 7; white-space: nowrap; color:#fff; font-family:rubik; font-size:18px; font-weight:400;" data-translate="hero.motto">
+									"DONT JUST TRAIN. TRANSFORM. DONT JUST LEARN.LEAD" 
+							</div>
+							
+							<!-- LAYER NR. 3 -->
+							<div class="tp-caption Newspaper-Subtitle   tp-resizeme" 
+								id="slide-100-layer-4" 
+								data-x="['center','center','center','center']" 
+								data-hoffset="['0','0','0','0']" 
+								data-y="['top','top','top','top']" 
+								data-voffset="['320','320','320','290']" 
+								data-width="['800','800','700','420']"
+								data-height="['100','100','100','120']"
+								data-whitespace="unset"
+								data-type="text" 
+								data-responsive_offset="on"
+								data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+								data-textAlign="['center','center','center','center']"
+								data-paddingtop="[0,0,0,0]"
+								data-paddingright="[0,0,0,0]"
+								data-paddingbottom="[0,0,0,0]"
+								data-paddingleft="[0,0,0,0]"
+								style="z-index: 7; text-transform:capitalize; white-space: unset; color:#fff; font-family:rubik; font-size:18px; line-height:28px; font-weight:400;">
+										 Enhancing  public sector excellence through training, research, consultancy, and regional collaboration across West Africa.
+</div>
+							<!-- LAYER NR. 4 -->
+							<div class="tp-caption Newspaper-Button rev-btn " 
+								id="slide-100-layer-5" 
+								data-x="['center','center','center','center']" 
+								data-hoffset="['90','80','75','90']" 
+								data-y="['top','top','top','top']" 
+								data-voffset="['400','400','400','420']" 
+								data-width="none"
+								data-height="none"
+								data-whitespace="nowrap"
+								data-type="button" 
+								data-responsive_offset="on" 
+								data-responsive="off"
+								data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:1px 1px 1px 1px;"}]'
+								data-textAlign="['center','center','center','center']"
+								data-paddingtop="[12,12,12,12]"
+								data-paddingright="[30,35,35,15]"
+								data-paddingbottom="[12,12,12,12]"
+								data-paddingleft="[30,35,35,15]"
+									style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; background-color:var(--primary) !important; border:0; border-radius:30px; margin-right:5px;" data-translate="hero.readMore">READ MORE </div>
+							<div class="tp-caption Newspaper-Button rev-btn" 
+								id="slide-100-layer-6" 
+								data-x="['center','center','center','center']" 
+								data-hoffset="['-90','-80','-75','-90']" 
+								data-y="['top','top','top','top']" 
+								data-voffset="['400','400','400','420']" 
+								data-width="none"
+								data-height="none"
+								data-whitespace="nowrap"
+								data-type="button" 
+								data-responsive_offset="on" 
+								data-responsive="off"
+								data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:1px 1px 1px 1px;"}]'
+								data-textAlign="['center','center','center','center']"
+								data-paddingtop="[12,12,12,12]"
+								data-paddingright="[30,35,35,15]"
+								data-paddingbottom="[12,12,12,12]"
+								data-paddingleft="[30,35,35,15]"
+									style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; border-radius:30px;" data-translate="hero.contactUs">CONTACT US</div>
+						</li>
+						<li data-index="rs-200" 
+						data-transition="parallaxvertical" 
+						data-slotamount="default" 
+						data-hideafterloop="0" 
+						data-hideslideonmobile="off" 
+						data-easein="default" 
+						data-easeout="default" 
+						data-masterspeed="default" 
+						data-thumb="assets/images/slider/slide1.jpg" 
+						data-rotate="0" 
+						data-fstransition="fade" 
+						data-fsmasterspeed="1500" 
+						data-fsslotamount="7" 
+						data-saveperformance="off" 
+						data-title="A STUDY ON HAPPINESS" 
+						data-param1="" data-param2="" 
+						data-param3="" data-param4="" 
+						data-param5="" data-param6="" 
+						data-param7="" data-param8="" 
+						data-param9="" data-param10="" 
+						data-description="Science says that Women are generally happier">
+							<!-- MAIN IMAGE -->
+						<img src="assets/images/slider/slide2.jpg" alt="Empowering public sector excellence through training and collaboration" 
+								data-bgfit="cover" 
+								data-bgrepeat="no-repeat" 
+								data-bgparallax="10" 
+								class="rev-slidebg" 
+								data-no-retina />
+								
+							<!-- LAYER NR. 1 -->
+							<div class="tp-caption tp-shape tp-shapewrapper " 
+								id="slide-200-layer-1" 
+								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+								data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+								data-width="full"
+								data-height="full"
+								data-whitespace="nowrap"
+								data-type="shape" 
+								data-basealign="slide" 
+								data-responsive_offset="off" 
+								data-responsive="off"
+								data-frames='[{"from":"opacity:0;","speed":1,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"opacity:1;","ease":"Power4.easeOut"}]'
+								data-textAlign="['left','left','left','left']"
+								data-paddingtop="[0,0,0,0]"
+								data-paddingright="[0,0,0,0]"
+								data-paddingbottom="[0,0,0,0]"
+								data-paddingleft="[0,0,0,0]"
+								style="z-index: 5;background-color:rgba(71, 112, 74, 0.12);border-color:rgba(137, 148, 112, 0.2);border-width:0px;"> 
+							</div>
+
+							<!-- LAYER NR. 2 -->
+							<div class="tp-caption Newspaper-Title   tp-resizeme" 
+								id="slide-200-layer-2" 
+								data-x="['center','center','center','center']" 
+								data-hoffset="['0','0','0','0']" 
+								data-y="['top','top','top','top']" 
+								data-voffset="['250','250','250','240']" 
+								data-fontsize="['50','50','50','30']"
+								data-lineheight="['55','55','55','35']"
+								data-width="full"
+								data-height="none"
+								data-whitespace="normal"
+								data-type="text" 
+								data-responsive_offset="on" 
+								data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+								data-textAlign="['center','center','center','center']"
+								data-paddingtop="[0,0,0,0]"
+								data-paddingright="[0,0,0,0]"
+								data-paddingbottom="[10,10,10,10]"
+								data-paddingleft="[0,0,0,0]"
+								style="z-index: 6; font-family:rubik; font-weight:700; text-align:center; white-space: normal;text-transform:uppercase;">
+									Welcome To WAMDEVIN
+							</div>
+
+							<!-- LAYER NR. 3 -->
+							<div class="tp-caption Newspaper-Subtitle   tp-resizeme" 
+								id="slide-200-layer-3" 
+								data-x="['center','center','center','center']" 
+								data-hoffset="['0','0','0','0']" 
+								data-y="['top','top','top','top']" 
+								data-voffset="['210','210','210','210']" 
+								data-width="none"
+								data-height="none"
+								data-whitespace="nowrap"
+								data-type="text" 
+								data-responsive_offset="on"
+								data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+								data-textAlign="['left','left','left','left']"
+								data-paddingtop="[0,0,0,0]"
+								data-paddingright="[0,0,0,0]"
+								data-paddingbottom="[0,0,0,0]"
+								data-paddingleft="[0,0,0,0]"
+								style="z-index: 7; white-space: nowrap;text-transform:uppercase; color:#fff; font-family:rubik; font-size:18px; font-weight:400;">
+									EMPOWERING PUBLIC SECTOR FOR BETTER PERFORMANCE
+							</div>
+							
+							<!-- LAYER NR. 3 -->
+							<div class="tp-caption Newspaper-Subtitle   tp-resizeme" 
+								id="slide-200-layer-4" 
+								data-x="['center','center','center','center']" 
+								data-hoffset="['0','0','0','0']" 
+								data-y="['top','top','top','top']" 
+								data-voffset="['320','320','320','290']" 
+								data-width="['800','800','700','420']"
+								data-height="['100','100','100','120']"
+								data-whitespace="unset"
+								data-type="text" 
+								data-responsive_offset="on"
+								data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+								data-textAlign="['center','center','center','center']"
+								data-paddingtop="[0,0,0,0]"
+								data-paddingright="[0,0,0,0]"
+								data-paddingbottom="[0,0,0,0]"
+								data-paddingleft="[0,0,0,0]"
+								style="z-index: 7; text-transform:capitalize; white-space: unset; color:#fff; font-family:rubik; font-size:18px; line-height:28px; font-weight:400;">
+									Enhancing public sector excellence through training, research, consultancy, and regional collaboration across West Africa.
+	</div>
+							<!-- LAYER NR. 4 -->
+							<div class="tp-caption Newspaper-Button rev-btn " 
+								id="slide-200-layer-5" 
+								data-x="['center','center','center','center']" 
+								data-hoffset="['90','80','75','90']" 
+								data-y="['top','top','top','top']" 
+								data-voffset="['400','400','400','420']" 
+								data-width="none"
+								data-height="none"
+								data-whitespace="nowrap"
+								data-type="button" 
+								data-responsive_offset="on" 
+								data-responsive="off"
+								data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:1px 1px 1px 1px;"}]'
+								data-textAlign="['center','center','center','center']"
+								data-paddingtop="[12,12,12,12]"
+								data-paddingright="[30,35,35,15]"
+								data-paddingbottom="[12,12,12,12]"
+								data-paddingleft="[30,35,35,15]"
+								style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; background-color:var(--primary) !important; border:0; border-radius:30px; margin-right:5px;">READ MORE </div>
+							<div class="tp-caption Newspaper-Button rev-btn" 
+								id="slide-200-layer-6" 
+								data-x="['center','center','center','center']" 
+								data-hoffset="['-90','-80','-75','-90']" 
+								data-y="['top','top','top','top']" 
+								data-voffset="['400','400','400','420']" 
+								data-width="none"
+								data-height="none"
+								data-whitespace="nowrap"
+								data-type="button" 
+								data-responsive_offset="on" 
+								data-responsive="off"
+								data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:1px 1px 1px 1px;"}]'
+								data-textAlign="['center','center','center','center']"
+								data-paddingtop="[12,12,12,12]"
+								data-paddingright="[30,35,35,15]"
+								data-paddingbottom="[12,12,12,12]"
+								data-paddingleft="[30,35,35,15]"
+								style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; border-radius:30px;">CONTACT US</div>
+						</li>
+					</ul>
+				</div><!-- END REVOLUTION SLIDER -->  
+			</div>  
+		</div>  
+        <!-- Main Slider -->
+		<div class="content-block">
+            
+			<!-- ENHANCED SERVICES CAROUSEL SECTION -->
+			<div class="services-carousel-section" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 80px 0; position: relative; overflow: hidden;">
+				<!-- Decorative Background Elements -->
+				<div style="position: absolute; top: -50px; right: -50px; width: 300px; height: 300px; background: rgba(23, 102, 162, 0.05); border-radius: 50%; z-index: 0;"></div>
+				<div style="position: absolute; bottom: -80px; left: -80px; width: 400px; height: 400px; background: rgba(243, 156, 18, 0.05); border-radius: 50%; z-index: 0;"></div>
+				
+				<div class="container" style="position: relative; z-index: 1;">
+					<!-- Section Header -->
+					<div class="row mb-5">
+						<div class="col-12 text-center">
+							<h6 style="color: #1766a2; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px; display: inline-block; padding: 10px 20px; background: rgba(23, 102, 162, 0.1); border-radius: 50px;" data-translate="services.header">Our Core Services</h6>
+							<h2 style="font-size: 2.5rem; font-weight: 800; color: #1a1a1a; margin-bottom: 20px; line-height: 1.3;" data-translate="services.mainTitle">
+								Transforming West African Management Excellence
+							</h2>
+							<p style="font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto; line-height: 1.8;" data-translate="services.mainDesc">
+								Discover the comprehensive services WAMDEVIN offers to drive institutional excellence and regional development
+							</p>
+							<div style="width: 60px; height: 4px; background: linear-gradient(90deg, #1766a2, #f39c12); margin: 30px auto; border-radius: 2px;"></div>
+						</div>
+					</div>
+
+					<!-- Services Carousel -->
+					<div class="services-owl-carousel owl-carousel owl-theme" style="padding: 20px 0;">
+						<!-- Service 1: Training -->
+						<div class="item">
+							<div class="service-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); height: 100%; display: flex; flex-direction: column; border-left: 5px solid #1766a2;">
+								<!-- Image Container -->
+								<div style="position: relative; height: 250px; overflow: hidden; background: linear-gradient(135deg, #1766a2, #2980b9);">
+									<img src="assets/images/our-services/pic1.jpg" alt="Training Programs" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+									<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(23, 102, 162, 0.2); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.4s ease;">
+										<i class="fas fa-chalkboard-teacher" style="font-size: 3rem; color: white;"></i>
+									</div>
+								</div>
+								<!-- Content Container -->
+								<div style="padding: 30px; flex: 1; display: flex; flex-direction: column;">
+									<div style="margin-bottom: 15px;">
+										<div style="background: linear-gradient(135deg, #1766a2, #2980b9); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem;">
+											<i class="fas fa-graduation-cap"></i>
+										</div>
+									</div>
+									<h4 style="color: #1766a2; font-weight: 700; margin-bottom: 12px; font-size: 1.4rem;" data-translate="services.training.title">Training Excellence</h4>
+									<p style="color: #666; line-height: 1.7; margin-bottom: 20px; flex-grow: 1; font-size: 0.95rem;" data-translate="services.training.desc">Capacity-building workshops, leadership development, and institutional strengthening across West Africa.</p>
+									<a href="trainners.php" style="display: inline-block; padding: 12px 25px; background: linear-gradient(135deg, #1766a2, #2980b9); color: white; text-decoration: none; border-radius: 25px; font-weight: 600; transition: all 0.3s ease; text-align: center;" data-translate="services.training.cta">
+										Explore Training <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Service 2: Research -->
+						<div class="item">
+							<div class="service-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); height: 100%; display: flex; flex-direction: column; border-left: 5px solid #f39c12;">
+								<!-- Image Container -->
+								<div style="position: relative; height: 250px; overflow: hidden; background: linear-gradient(135deg, #f39c12, #e67e22);">
+									<img src="assets/images/our-services/pic2.jpg" alt="Research Initiatives" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+									<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(243, 156, 18, 0.2); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.4s ease;">
+										<i class="fas fa-flask" style="font-size: 3rem; color: white;"></i>
+									</div>
+								</div>
+								<!-- Content Container -->
+								<div style="padding: 30px; flex: 1; display: flex; flex-direction: column;">
+									<div style="margin-bottom: 15px;">
+										<div style="background: linear-gradient(135deg, #f39c12, #e67e22); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem;">
+											<i class="fas fa-flask"></i>
+										</div>
+									</div>
+									<h4 style="color: #f39c12; font-weight: 700; margin-bottom: 12px; font-size: 1.4rem;" data-translate="services.research.title">Research & Innovation</h4>
+									<p style="color: #666; line-height: 1.7; margin-bottom: 20px; flex-grow: 1; font-size: 0.95rem;" data-translate="services.research.desc">Regional research initiatives, policy studies, and management innovation projects driving evidence-based development.</p>
+									<a href="research.php" style="display: inline-block; padding: 12px 25px; background: linear-gradient(135deg, #f39c12, #e67e22); color: white; text-decoration: none; border-radius: 25px; font-weight: 600; transition: all 0.3s ease; text-align: center;" data-translate="services.research.cta">
+										View Research <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Service 3: Consultancy -->
+						<div class="item">
+							<div class="service-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); height: 100%; display: flex; flex-direction: column; border-left: 5px solid #27ae60;">
+								<!-- Image Container -->
+								<div style="position: relative; height: 250px; overflow: hidden; background: linear-gradient(135deg, #27ae60, #2ecc71);">
+									<img src="assets/images/our-services/pic3.jpg" alt="Consultancy Services" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+									<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(39, 174, 96, 0.2); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.4s ease;">
+										<i class="fas fa-handshake" style="font-size: 3rem; color: white;"></i>
+									</div>
+								</div>
+								<!-- Content Container -->
+								<div style="padding: 30px; flex: 1; display: flex; flex-direction: column;">
+									<div style="margin-bottom: 15px;">
+										<div style="background: linear-gradient(135deg, #27ae60, #2ecc71); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem;">
+											<i class="fas fa-handshake"></i>
+										</div>
+									</div>
+									<h4 style="color: #27ae60; font-weight: 700; margin-bottom: 12px; font-size: 1.4rem;" data-translate="services.consultancy.title">Consultancy Services</h4>
+									<p style="color: #666; line-height: 1.7; margin-bottom: 20px; flex-grow: 1; font-size: 0.95rem;" data-translate="services.consultancy.desc">Professional advisory services for institutional transformation, organizational excellence, and strategic development.</p>
+									<a href="consultancy.php" style="display: inline-block; padding: 12px 25px; background: linear-gradient(135deg, #27ae60, #2ecc71); color: white; text-decoration: none; border-radius: 25px; font-weight: 600; transition: all 0.3s ease; text-align: center;" data-translate="services.consultancy.cta">
+										Get Consultancy <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Service 4: Publications -->
+						<div class="item">
+							<div class="service-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); height: 100%; display: flex; flex-direction: column; border-left: 5px solid #9b59b6;">
+								<!-- Image Container -->
+								<div style="position: relative; height: 250px; overflow: hidden; background: linear-gradient(135deg, #9b59b6, #8e44ad);">
+									<img src="assets/images/courses/pic4.jpg" alt="Publications" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+									<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(155, 89, 182, 0.2); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.4s ease;">
+										<i class="fas fa-book" style="font-size: 3rem; color: white;"></i>
+									</div>
+								</div>
+								<!-- Content Container -->
+								<div style="padding: 30px; flex: 1; display: flex; flex-direction: column;">
+									<div style="margin-bottom: 15px;">
+										<div style="background: linear-gradient(135deg, #9b59b6, #8e44ad); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem;">
+											<i class="fas fa-book"></i>
+										</div>
+									</div>
+									<h4 style="color: #9b59b6; font-weight: 700; margin-bottom: 12px; font-size: 1.4rem;" data-translate="services.publications.title">Publications</h4>
+									<p style="color: #666; line-height: 1.7; margin-bottom: 20px; flex-grow: 1; font-size: 0.95rem;" data-translate="services.publications.desc">Journal articles, reports, newsletters, and knowledge-sharing resources across West African management development institutes.</p>
+									<a href="publication.php" style="display: inline-block; padding: 12px 25px; background: linear-gradient(135deg, #9b59b6, #8e44ad); color: white; text-decoration: none; border-radius: 25px; font-weight: 600; transition: all 0.3s ease; text-align: center;" data-translate="services.publications.cta">
+										Browse Publications <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Custom Styles for Services Carousel -->
+			<style>
+				.services-carousel-section .owl-carousel {
+					margin: 0 -15px;
+				}
+				
+				.services-carousel-section .owl-carousel .item {
+					padding: 0 15px;
+				}
+				
+				.service-card {
+					transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+				}
+				
+				.service-card:hover {
+					transform: translateY(-15px);
+					box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+				}
+				
+				.service-card:hover img {
+					transform: scale(1.1);
+				}
+				
+				.service-card:hover > div:first-child div:last-child {
+					opacity: 1;
+				}
+				
+				.service-card a:hover {
+					transform: scale(1.05);
+					box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+				}
+
+				/* Owl Carousel Responsive */
+				@media (max-width: 1199px) {
+					.services-owl-carousel.owl-carousel .owl-stage {
+						padding: 0;
+					}
+					
+					.service-card h4 {
+						font-size: 1.2rem !important;
+					}
+				}
+
+				@media (max-width: 768px) {
+					.services-carousel-section {
+						padding: 60px 0 !important;
+					}
+					
+					.services-carousel-section h2 {
+						font-size: 1.8rem !important;
+					}
+					
+					.service-card {
+						margin-bottom: 20px;
+					}
+					
+					.service-card h4 {
+						font-size: 1.1rem !important;
+					}
+					
+					.service-card p {
+						font-size: 0.9rem !important;
+					}
+				}
+
+				@media (max-width: 576px) {
+					.services-carousel-section {
+						padding: 40px 0 !important;
+					}
+					
+					.services-carousel-section h2 {
+						font-size: 1.5rem !important;
+					}
+					
+					.service-card {
+						border-radius: 10px !important;
+					}
+				}
+			</style>
+
+			<!-- Initialize Owl Carousel for Services -->
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					if (jQuery && jQuery.fn.owlCarousel) {
+						jQuery('.services-owl-carousel').owlCarousel({
+							loop: true,
+							margin: 20,
+							nav: true,
+							autoplay: true,
+							autoplayTimeout: 5000,
+							autoplayHoverPause: true,
+							responsive: {
+								0: {
+									items: 1
+								},
+								600: {
+									items: 2
+								},
+								1000: {
+									items: 4
+								},
+								1200: {
+									items: 4
+								}
+							},
+							navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>']
+						});
+					}
+				});
+			</script>
+            <!-- Our Services END -->
+			
+			<!-- HISTORICAL ANTECEDENTS SECTION -->
+			<div class="section-area section-sp2 historical-section" style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f8f9fa 100%); position: relative; overflow: hidden; padding: 80px 0;">
+				<!-- Decorative Background Elements -->
+				<div style="position: absolute; top: -150px; left: -150px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(23, 102, 162, 0.05) 0%, transparent 70%); z-index: 0;"></div>
+				<div style="position: absolute; bottom: -120px; right: -120px; width: 450px; height: 450px; background: radial-gradient(circle, rgba(243, 156, 18, 0.04) 0%, transparent 70%); z-index: 0;"></div>
+				<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; height: 80%; background: radial-gradient(ellipse, rgba(23, 102, 162, 0.02) 0%, transparent 50%); z-index: 0;"></div>
+
+				<div class="container" style="position: relative; z-index: 1;">
+					<!-- Section Header -->
+					<div class="row">
+						<div class="col-12 text-center" style="margin-bottom: 60px;">
+							<div style="display: inline-block; background: linear-gradient(135deg, rgba(23, 102, 162, 0.08), rgba(243, 156, 18, 0.08)); padding: 10px 30px; border-radius: 50px; margin-bottom: 20px; border: 2px solid rgba(23, 102, 162, 0.15);">
+								<h6 style="color: #1766a2; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; margin: 0; font-size: 0.85rem;">
+									<i class="fas fa-landmark" style="margin-right: 10px;"></i>Our Heritage
+								</h6>
+							</div>
+							<h2 style="font-size: 3rem; font-weight: 900; color: #1a1a1a; margin-bottom: 25px; line-height: 1.2; letter-spacing: -1px;">
+								Historical Antecedents
+							</h2>
+							<div style="width: 80px; height: 4px; background: linear-gradient(90deg, #1766a2, #f39c12); margin: 0 auto 25px; border-radius: 2px;"></div>
+							<p style="font-size: 1.2rem; color: #555; max-width: 800px; margin: 0 auto; line-height: 1.9; font-weight: 400;">
+								From our establishment in 1987 under the Commonwealth Secretariat to becoming West Africa's premier management development network, our journey reflects nearly four decades of excellence and regional impact.
+							</p>
+						</div>
+					</div>
+
+					<!-- Main Content Grid -->
+					<div class="row align-items-stretch">
+						<!-- Left Column: Timeline -->
+						<div class="col-lg-6 mb-4">
+							<div class="timeline-wrapper" style="position: relative; padding: 30px 20px; background: white; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.06); height: 100%;">
+								<!-- Timeline Vertical Line -->
+								<div class="timeline-line" style="position: absolute; left: 52px; top: 60px; bottom: 60px; width: 4px; background: linear-gradient(180deg, #1766a2 0%, #f39c12 50%, #27ae60 100%); border-radius: 3px;"></div>
+
+								<!-- Timeline Item 1: Foundation -->
+								<div class="timeline-item" style="margin-bottom: 45px; position: relative; padding-left: 15px;">
+									<div class="timeline-badge" style="position: absolute; left: 0; top: 0; width: 80px; height: 80px; background: linear-gradient(135deg, #1766a2, #2980b9); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 900; font-size: 1.2rem; box-shadow: 0 6px 20px rgba(23, 102, 162, 0.35); border: 5px solid #fff; z-index: 2;">
+										1987
+									</div>
+									<div class="timeline-content" style="margin-left: 105px; background: linear-gradient(135deg, #f8f9fa, #ffffff); padding: 28px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #1766a2; transition: all 0.3s ease;">
+										<h5 style="color: #1766a2; font-weight: 800; margin-bottom: 12px; font-size: 1.2rem; display: flex; align-items: center;">
+											<i class="fas fa-flag" style="margin-right: 10px; font-size: 1rem;"></i>
+											Foundation & Establishment
+										</h5>
+										<p style="color: #666; margin-bottom: 0; line-height: 1.7; font-size: 0.95rem;">WAMDEVIN formally established under the Commonwealth Secretariat to promote management development excellence through regional collaboration and institutional networking.</p>
+									</div>
+								</div>
+
+								<!-- Timeline Item 2: Early Growth -->
+								<div class="timeline-item" style="margin-bottom: 45px; position: relative; padding-left: 15px;">
+									<div class="timeline-badge" style="position: absolute; left: 0; top: 0; width: 80px; height: 80px; background: linear-gradient(135deg, #8e44ad, #9b59b6); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 900; font-size: 1.1rem; box-shadow: 0 6px 20px rgba(142, 68, 173, 0.35); border: 5px solid #fff; z-index: 2;">
+										1990s
+									</div>
+									<div class="timeline-content" style="margin-left: 105px; background: linear-gradient(135deg, #f8f9fa, #ffffff); padding: 28px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #8e44ad; transition: all 0.3s ease;">
+										<h5 style="color: #8e44ad; font-weight: 800; margin-bottom: 12px; font-size: 1.2rem; display: flex; align-items: center;">
+											<i class="fas fa-seedling" style="margin-right: 10px; font-size: 1rem;"></i>
+											Early Growth Phase
+										</h5>
+										<p style="color: #666; margin-bottom: 0; line-height: 1.7; font-size: 0.95rem;">Membership expands across multiple West African nations, establishing collaborative frameworks and launching pioneering training programs for public sector leaders.</p>
+									</div>
+								</div>
+
+								<!-- Timeline Item 3: Regional Expansion -->
+								<div class="timeline-item" style="margin-bottom: 45px; position: relative; padding-left: 15px;">
+									<div class="timeline-badge" style="position: absolute; left: 0; top: 0; width: 80px; height: 80px; background: linear-gradient(135deg, #f39c12, #e67e22); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 900; font-size: 1.1rem; box-shadow: 0 6px 20px rgba(243, 156, 18, 0.35); border: 5px solid #fff; z-index: 2;">
+										2000s
+									</div>
+									<div class="timeline-content" style="margin-left: 105px; background: linear-gradient(135deg, #f8f9fa, #ffffff); padding: 28px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #f39c12; transition: all 0.3s ease;">
+										<h5 style="color: #f39c12; font-weight: 800; margin-bottom: 12px; font-size: 1.2rem; display: flex; align-items: center;">
+											<i class="fas fa-chart-line" style="margin-right: 10px; font-size: 1rem;"></i>
+											Regional Expansion
+										</h5>
+										<p style="color: #666; margin-bottom: 0; line-height: 1.7; font-size: 0.95rem;">Network grows to encompass 8+ West African countries with 30+ member institutions, business schools, and specialized training centers.</p>
+									</div>
+								</div>
+
+								<!-- Timeline Item 4: Digital Transformation -->
+								<div class="timeline-item" style="margin-bottom: 45px; position: relative; padding-left: 15px;">
+									<div class="timeline-badge" style="position: absolute; left: 0; top: 0; width: 80px; height: 80px; background: linear-gradient(135deg, #e74c3c, #c0392b); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 900; font-size: 1.1rem; box-shadow: 0 6px 20px rgba(231, 76, 60, 0.35); border: 5px solid #fff; z-index: 2;">
+										2010s
+									</div>
+									<div class="timeline-content" style="margin-left: 105px; background: linear-gradient(135deg, #f8f9fa, #ffffff); padding: 28px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #e74c3c; transition: all 0.3s ease;">
+										<h5 style="color: #e74c3c; font-weight: 800; margin-bottom: 12px; font-size: 1.2rem; display: flex; align-items: center;">
+											<i class="fas fa-laptop-code" style="margin-right: 10px; font-size: 1rem;"></i>
+											Digital Transformation
+										</h5>
+										<p style="color: #666; margin-bottom: 0; line-height: 1.7; font-size: 0.95rem;">Embracing technology-driven learning platforms, online training modules, and virtual collaboration tools to expand regional reach and impact.</p>
+									</div>
+								</div>
+
+								<!-- Timeline Item 5: Current Excellence -->
+								<div class="timeline-item" style="position: relative; padding-left: 15px;">
+									<div class="timeline-badge" style="position: absolute; left: 0; top: 0; width: 80px; height: 80px; background: linear-gradient(135deg, #27ae60, #2ecc71); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 900; font-size: 1.2rem; box-shadow: 0 6px 20px rgba(39, 174, 96, 0.35); border: 5px solid #fff; z-index: 2;">
+										2026
+									</div>
+									<div class="timeline-content" style="margin-left: 105px; background: linear-gradient(135deg, #f8f9fa, #ffffff); padding: 28px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #27ae60; transition: all 0.3s ease;">
+										<h5 style="color: #27ae60; font-weight: 800; margin-bottom: 12px; font-size: 1.2rem; display: flex; align-items: center;">
+											<i class="fas fa-trophy" style="margin-right: 10px; font-size: 1rem;"></i>
+											Ongoing Excellence
+										</h5>
+										<p style="color: #666; margin-bottom: 0; line-height: 1.7; font-size: 0.95rem;">Serving 5,000+ trained professionals across 45+ member institutions with cutting-edge management development programs driving regional transformation.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Right Column: Core Identity & Stats -->
+						<div class="col-lg-6 mb-4">
+							<!-- Core Identity Card -->
+							<div style="background: linear-gradient(135deg, #0f3460 0%, #1766a2 100%); border-radius: 20px; padding: 45px; color: white; margin-bottom: 25px; box-shadow: 0 15px 40px rgba(23, 102, 162, 0.25); position: relative; overflow: hidden;">
+								<!-- Decorative Pattern -->
+								<div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.03); border-radius: 50%;"></div>
+								<div style="position: absolute; bottom: -30px; left: -30px; width: 150px; height: 150px; background: rgba(243, 156, 18, 0.05); border-radius: 50%;"></div>
+								
+								<div style="position: relative; z-index: 1;">
+									<div style="display: inline-block; background: rgba(243, 156, 18, 0.2); padding: 8px 20px; border-radius: 30px; margin-bottom: 20px; border: 1px solid rgba(243, 156, 18, 0.4);">
+										<h6 style="color: #f39c12; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin: 0; font-size: 0.8rem;">Who We Are</h6>
+									</div>
+									<h3 style="color: white; font-weight: 900; margin-bottom: 22px; font-size: 2rem; line-height: 1.3; letter-spacing: -0.5px;">
+										A Network of Management Excellence
+									</h3>
+									<p style="color: rgba(255,255,255,0.92); line-height: 1.9; margin-bottom: 30px; font-size: 1.05rem; font-weight: 300;">
+										WAMDEVIN stands as West Africa's premier collaborative network of management development institutions, training centers, and business schools—united in our commitment to strengthening regional human capital and advancing public sector excellence through innovation and partnership.
+									</p>
+									
+									<!-- Key Impact Stats Grid -->
+									<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 30px;">
+										<div style="background: rgba(255,255,255,0.12); padding: 25px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(10px); text-align: center; transition: all 0.3s ease;">
+											<div style="display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+												<i class="fas fa-calendar-alt" style="color: #f39c12; font-size: 1.5rem; margin-right: 10px;"></i>
+												<h4 style="color: #f39c12; font-size: 2.3rem; font-weight: 900; margin: 0;">38+</h4>
+											</div>
+											<p style="color: rgba(255,255,255,0.85); margin: 0; font-size: 0.95rem; font-weight: 600;">Years of Impact</p>
+										</div>
+										
+										<div style="background: rgba(255,255,255,0.12); padding: 25px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(10px); text-align: center; transition: all 0.3s ease;">
+											<div style="display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+												<i class="fas fa-university" style="color: #1dd1a1; font-size: 1.5rem; margin-right: 10px;"></i>
+												<h4 style="color: #1dd1a1; font-size: 2.3rem; font-weight: 900; margin: 0;">45+</h4>
+											</div>
+											<p style="color: rgba(255,255,255,0.85); margin: 0; font-size: 0.95rem; font-weight: 600;">Member Institutions</p>
+										</div>
+										
+										<div style="background: rgba(255,255,255,0.12); padding: 25px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(10px); text-align: center; transition: all 0.3s ease;">
+											<div style="display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+												<i class="fas fa-globe-africa" style="color: #f39c12; font-size: 1.5rem; margin-right: 10px;"></i>
+												<h4 style="color: #f39c12; font-size: 2.3rem; font-weight: 900; margin: 0;">8+</h4>
+											</div>
+											<p style="color: rgba(255,255,255,0.85); margin: 0; font-size: 0.95rem; font-weight: 600;">Countries</p>
+										</div>
+										
+										<div style="background: rgba(255,255,255,0.12); padding: 25px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(10px); text-align: center; transition: all 0.3s ease;">
+											<div style="display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+												<i class="fas fa-users" style="color: #1dd1a1; font-size: 1.5rem; margin-right: 10px;"></i>
+												<h4 style="color: #1dd1a1; font-size: 2.3rem; font-weight: 900; margin: 0;">5K+</h4>
+											</div>
+											<p style="color: rgba(255,255,255,0.85); margin: 0; font-size: 0.95rem; font-weight: 600;">Professionals Trained</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Mission & Vision Cards -->
+							<div class="row g-3">
+								<!-- Mission Card -->
+								<div class="col-md-6">
+									<div style="background: white; border-radius: 18px; padding: 32px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); border-top: 5px solid #1766a2; height: 100%; transition: all 0.3s ease; position: relative; overflow: hidden;">
+										<div style="position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; background: rgba(23, 102, 162, 0.03); border-radius: 50%;"></div>
+										<div style="position: relative; z-index: 1;">
+											<div style="display: inline-flex; align-items: center; justify-content: center; width: 55px; height: 55px; background: linear-gradient(135deg, #1766a2, #2980b9); border-radius: 50%; margin-bottom: 18px; box-shadow: 0 5px 15px rgba(23, 102, 162, 0.25);">
+												<i class="fas fa-bullseye" style="color: white; font-size: 1.5rem;"></i>
+											</div>
+											<h5 style="color: #1766a2; font-weight: 800; margin-bottom: 15px; font-size: 1.25rem; letter-spacing: -0.3px;">
+												Our Mission
+											</h5>
+											<p style="color: #666; line-height: 1.8; margin-bottom: 0; font-size: 0.95rem;">
+												To strengthen regional human resources development and advance public sector excellence through collaborative management development and capacity building.
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Vision Card -->
+								<div class="col-md-6">
+									<div style="background: white; border-radius: 18px; padding: 32px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); border-top: 5px solid #f39c12; height: 100%; transition: all 0.3s ease; position: relative; overflow: hidden;">
+										<div style="position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; background: rgba(243, 156, 18, 0.03); border-radius: 50%;"></div>
+										<div style="position: relative; z-index: 1;">
+											<div style="display: inline-flex; align-items: center; justify-content: center; width: 55px; height: 55px; background: linear-gradient(135deg, #f39c12, #e67e22); border-radius: 50%; margin-bottom: 18px; box-shadow: 0 5px 15px rgba(243, 156, 18, 0.25);">
+												<i class="fas fa-eye" style="color: white; font-size: 1.5rem;"></i>
+											</div>
+											<h5 style="color: #f39c12; font-weight: 800; margin-bottom: 15px; font-size: 1.25rem; letter-spacing: -0.3px;">
+												Our Vision
+											</h5>
+											<p style="color: #666; line-height: 1.8; margin-bottom: 0; font-size: 0.95rem;">
+												A world-class network of management development institutions driving transformational leadership and sustainable development across West Africa.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Call-to-Action Section -->
+					<div class="row" style="margin-top: 60px;">
+						<div class="col-12 text-center">
+							<div style="background: linear-gradient(135deg, rgba(23, 102, 162, 0.05), rgba(243, 156, 18, 0.05)); padding: 50px 30px; border-radius: 20px; border: 2px solid rgba(23, 102, 162, 0.1);">
+								<h4 style="color: #1a1a1a; font-weight: 800; font-size: 1.8rem; margin-bottom: 15px;">
+									Join Our Legacy of Excellence
+								</h4>
+								<p style="color: #666; font-size: 1.1rem; margin-bottom: 35px; max-width: 600px; margin-left: auto; margin-right: auto;">
+									Discover how WAMDEVIN can support your institution's growth and regional impact
+								</p>
+								<div style="display: inline-flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+									<a href="about.php" class="cta-button" style="display: inline-flex; align-items: center; padding: 18px 45px; background: linear-gradient(135deg, #1766a2, #0a3d5c); color: white; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 1.05rem; transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(23, 102, 162, 0.3);">
+										<i class="fas fa-book-open" style="margin-right: 12px; font-size: 1.1rem;"></i>
+										Learn Full History
+										<i class="fas fa-arrow-right" style="margin-left: 12px;"></i>
+									</a>
+									<a href="contact.php" class="cta-button-outline" style="display: inline-flex; align-items: center; padding: 18px 45px; background: white; color: #1766a2; text-decoration: none; border: 3px solid #1766a2; border-radius: 50px; font-weight: 700; font-size: 1.05rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+										<i class="fas fa-handshake" style="margin-right: 12px; font-size: 1.1rem;"></i>
+										Join WAMDEVIN
+										<i class="fas fa-plus-circle" style="margin-left: 12px;"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Enhanced Responsive Styles -->
+				<style>
+					/* Hover Effects */
+					.cta-button:hover {
+						transform: translateY(-3px);
+						box-shadow: 0 12px 30px rgba(23, 102, 162, 0.4) !important;
+						background: linear-gradient(135deg, #0a3d5c, #1766a2) !important;
+					}
+
+					.cta-button-outline:hover {
+						transform: translateY(-3px);
+						background: #1766a2 !important;
+						color: white !important;
+						box-shadow: 0 8px 20px rgba(23, 102, 162, 0.3) !important;
+					}
+
+					.timeline-content:hover {
+						transform: translateX(5px);
+						box-shadow: 0 8px 25px rgba(0,0,0,0.12) !important;
+					}
+
+					/* Mobile Responsive Design */
+					@media (max-width: 991px) {
+						.timeline-wrapper {
+							margin-bottom: 30px;
+						}
+					}
+
+					@media (max-width: 768px) {
+						/* Adjust timeline for mobile */
+						.timeline-line {
+							left: 42px !important;
+						}
+
+						.timeline-badge {
+							width: 65px !important;
+							height: 65px !important;
+							font-size: 1rem !important;
+						}
+
+						.timeline-content {
+							margin-left: 90px !important;
+							padding: 22px !important;
+						}
+
+						.timeline-content h5 {
+							font-size: 1.05rem !important;
+						}
+
+						.timeline-content p {
+							font-size: 0.9rem !important;
+						}
+
+						/* Stack CTA buttons */
+						.cta-button, .cta-button-outline {
+							width: 100%;
+							justify-content: center;
+							margin-bottom: 15px;
+						}
+
+						/* Adjust header sizes */
+						h2 {
+							font-size: 2.2rem !important;
+						}
+
+						/* Stats grid adjustment */
+						.col-lg-6 div[style*="grid-template-columns"] {
+							grid-template-columns: 1fr !important;
+						}
+					}
+
+					@media (max-width: 576px) {
+						.historical-section {
+							padding: 50px 0 !important;
+						}
+
+						.timeline-badge {
+							width: 55px !important;
+							height: 55px !important;
+							font-size: 0.9rem !important;
+							left: 5px !important;
+						}
+
+						.timeline-line {
+							left: 32px !important;
+						}
+
+						.timeline-content {
+							margin-left: 75px !important;
+							padding: 18px !important;
+						}
+
+						.timeline-item {
+							margin-bottom: 35px !important;
+						}
+
+						h2 {
+							font-size: 1.8rem !important;
+						}
+
+						.cta-button, .cta-button-outline {
+							padding: 15px 30px !important;
+							font-size: 0.95rem !important;
+						}
+					}
+				</style>
+			</div>
+			<!-- Historical Antecedents End -->
+			
+			<!-- ELITE EXCELLENCE & IMPACT SECTION -->
+			<div class="section-area section-sp2" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); position: relative; overflow: hidden;">
+				<!-- Animated Background Elements -->
+				<div style="position: absolute; top: -100px; right: -100px; width: 400px; height: 400px; background: rgba(23, 102, 162, 0.1); border-radius: 50%; z-index: 0;"></div>
+				<div style="position: absolute; bottom: -80px; left: -80px; width: 350px; height: 350px; background: rgba(243, 156, 18, 0.08); border-radius: 50%; z-index: 0;"></div>
+				
+				<div class="container" style="position: relative; z-index: 1;">
+					<!-- Section Header -->
+					<div class="row mb-5">
+						<div class="col-12 text-center">
+							<h6 style="color: #f39c12; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; display: inline-block; padding: 12px 25px; background: rgba(243, 156, 18, 0.15); border-radius: 50px; border: 1px solid rgba(243, 156, 18, 0.3);">Excellence & Impact</h6>
+							<h2 style="font-size: 2.8rem; font-weight: 800; color: #ffffff; margin-bottom: 20px; line-height: 1.3;">
+								WAMDEVIN's Legacy of Regional Excellence
+							</h2>
+							<p style="font-size: 1.15rem; color: #d0d0d0; max-width: 700px; margin: 0 auto; line-height: 1.8;">
+								Three decades of transforming management excellence across West Africa through strategic partnerships, innovative programs, and institutional capacity building
+							</p>
+							<div style="width: 70px; height: 4px; background: linear-gradient(90deg, #f39c12, #1766a2); margin: 30px auto; border-radius: 2px;"></div>
+						</div>
+					</div>
+
+					<!-- Elite Achievements Grid -->
+					<div class="row mb-5">
+						<!-- Achievement 1 -->
+						<div class="col-lg-3 col-md-6 mb-4">
+							<div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(243, 156, 18, 0.3); padding: 40px 30px; border-radius: 15px; text-align: center; backdrop-filter: blur(10px); transition: all 0.4s ease; height: 100%;">
+								<div style="font-size: 3rem; color: #f39c12; margin-bottom: 20px; font-weight: 800;">
+									<i class="fas fa-award"></i>
+								</div>
+								<h3 style="color: #ffffff; font-size: 2.5rem; font-weight: 800; margin-bottom: 10px;">
+									<span class="counter">38</span>+
+								</h3>
+								<p style="color: #b0b0b0; font-size: 1.1rem; font-weight: 600; margin: 0;">Years of Excellence</p>
+								<p style="color: #808080; font-size: 0.9rem; margin-top: 10px;">Established 1987 under Commonwealth Secretariat</p>
+							</div>
+						</div>
+
+						<!-- Achievement 2 -->
+						<div class="col-lg-3 col-md-6 mb-4">
+							<div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(23, 102, 162, 0.3); padding: 40px 30px; border-radius: 15px; text-align: center; backdrop-filter: blur(10px); transition: all 0.4s ease; height: 100%;">
+								<div style="font-size: 3rem; color: #1766a2; margin-bottom: 20px; font-weight: 800;">
+									<i class="fas fa-globe-americas"></i>
+								</div>
+								<h3 style="color: #ffffff; font-size: 2.5rem; font-weight: 800; margin-bottom: 10px;">
+									<span class="counter">8</span>+
+								</h3>
+								<p style="color: #b0b0b0; font-size: 1.1rem; font-weight: 600; margin: 0;">Member Countries</p>
+								<p style="color: #808080; font-size: 0.9rem; margin-top: 10px;">Spanning West African region</p>
+							</div>
+						</div>
+
+						<!-- Achievement 3 -->
+						<div class="col-lg-3 col-md-6 mb-4">
+							<div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(39, 174, 96, 0.3); padding: 40px 30px; border-radius: 15px; text-align: center; backdrop-filter: blur(10px); transition: all 0.4s ease; height: 100%;">
+								<div style="font-size: 3rem; color: #27ae60; margin-bottom: 20px; font-weight: 800;">
+									<i class="fas fa-graduation-cap"></i>
+								</div>
+								<h3 style="color: #ffffff; font-size: 2.5rem; font-weight: 800; margin-bottom: 10px;">
+									<span class="counter">5000</span>+
+								</h3>
+								<p style="color: #b0b0b0; font-size: 1.1rem; font-weight: 600; margin: 0;">Professionals Trained</p>
+								<p style="color: #808080; font-size: 0.9rem; margin-top: 10px;">Elite management practitioners globally</p>
+							</div>
+						</div>
+
+						<!-- Achievement 4 -->
+						<div class="col-lg-3 col-md-6 mb-4">
+							<div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(155, 89, 182, 0.3); padding: 40px 30px; border-radius: 15px; text-align: center; backdrop-filter: blur(10px); transition: all 0.4s ease; height: 100%;">
+								<div style="font-size: 3rem; color: #9b59b6; margin-bottom: 20px; font-weight: 800;">
+									<i class="fas fa-building"></i>
+								</div>
+								<h3 style="color: #ffffff; font-size: 2.5rem; font-weight: 800; margin-bottom: 10px;">
+									<span class="counter">45</span>+
+								</h3>
+								<p style="color: #b0b0b0; font-size: 1.1rem; font-weight: 600; margin: 0;">Member Institutions</p>
+								<p style="color: #808080; font-size: 0.9rem; margin-top: 10px;">Leading academic & training organizations</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Elite Initiatives -->
+					<div class="row mt-5">
+						<div class="col-12 mb-4">
+							<h3 style="color: #ffffff; font-size: 2rem; font-weight: 800; text-align: center; margin-bottom: 40px;">
+								Strategic Pillars of Excellence
+							</h3>
+						</div>
+					</div>
+
+					<div class="row">
+						<!-- Pillar 1 -->
+						<div class="col-lg-4 col-md-6 mb-4">
+							<div style="background: linear-gradient(135deg, rgba(23, 102, 162, 0.2), rgba(23, 102, 162, 0.05)); border: 1px solid rgba(23, 102, 162, 0.4); padding: 40px; border-radius: 15px; backdrop-filter: blur(10px); transition: all 0.4s ease;">
+								<div style="display: flex; align-items: center; margin-bottom: 20px;">
+									<div style="background: linear-gradient(135deg, #1766a2, #2980b9); color: white; width: 70px; height: 70px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-right: 20px;">
+										<i class="fas fa-book-open"></i>
+									</div>
+									<h4 style="color: #ffffff; font-weight: 700; margin: 0; font-size: 1.3rem;">Knowledge Creation</h4>
+								</div>
+								<p style="color: #b0b0b0; line-height: 1.8; margin: 0;">Cutting-edge research and policy analysis driving evidence-based management development across the region</p>
+							</div>
+						</div>
+
+						<!-- Pillar 2 -->
+						<div class="col-lg-4 col-md-6 mb-4">
+							<div style="background: linear-gradient(135deg, rgba(243, 156, 18, 0.2), rgba(243, 156, 18, 0.05)); border: 1px solid rgba(243, 156, 18, 0.4); padding: 40px; border-radius: 15px; backdrop-filter: blur(10px); transition: all 0.4s ease;">
+								<div style="display: flex; align-items: center; margin-bottom: 20px;">
+									<div style="background: linear-gradient(135deg, #f39c12, #e67e22); color: white; width: 70px; height: 70px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-right: 20px;">
+										<i class="fas fa-network-wired"></i>
+									</div>
+									<h4 style="color: #ffffff; font-weight: 700; margin: 0; font-size: 1.3rem;">Strategic Networking</h4>
+								</div>
+								<p style="color: #b0b0b0; line-height: 1.8; margin: 0;">Fostering institutional collaboration and partnerships for sustainable regional development and capacity sharing</p>
+							</div>
+						</div>
+
+						<!-- Pillar 3 -->
+						<div class="col-lg-4 col-md-6 mb-4">
+							<div style="background: linear-gradient(135deg, rgba(39, 174, 96, 0.2), rgba(39, 174, 96, 0.05)); border: 1px solid rgba(39, 174, 96, 0.4); padding: 40px; border-radius: 15px; backdrop-filter: blur(10px); transition: all 0.4s ease;">
+								<div style="display: flex; align-items: center; margin-bottom: 20px;">
+									<div style="background: linear-gradient(135deg, #27ae60, #2ecc71); color: white; width: 70px; height: 70px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-right: 20px;">
+										<i class="fas fa-gem"></i>
+									</div>
+									<h4 style="color: #ffffff; font-weight: 700; margin: 0; font-size: 1.3rem;">Leadership Excellence</h4>
+								</div>
+								<p style="color: #b0b0b0; line-height: 1.8; margin: 0;">Developing transformational leaders equipped to drive organizational excellence and public sector innovation</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- CTA Section -->
+					<div class="row mt-5 pt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
+						<div class="col-12 text-center">
+							<h3 style="color: #ffffff; font-size: 1.8rem; font-weight: 700; margin-bottom: 30px;">
+								Join the Network of Excellence
+							</h3>
+							<div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+								<a href="membership.php" style="padding: 15px 40px; background: linear-gradient(135deg, #f39c12, #e67e22); color: white; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 1.05rem; transition: all 0.3s ease; display: inline-block; border: 2px solid transparent;">
+									Become a Member <i class="fas fa-arrow-right" style="margin-left: 10px;"></i>
+								</a>
+								<a href="about.php" style="padding: 15px 40px; background: transparent; color: #f39c12; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 1.05rem; transition: all 0.3s ease; display: inline-block; border: 2px solid #f39c12;">
+									Learn More <i class="fas fa-arrow-right" style="margin-left: 10px;"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Hover Effects CSS -->
+				<style>
+					.section-area.section-sp2 > div[style*="background: rgba"] {
+						transition: all 0.4s ease;
+					}
+
+					.section-area.section-sp2 > div[style*="background: linear-gradient"] > div:hover {
+						transform: translateY(-10px);
+						border-color: rgba(243, 156, 18, 0.6) !important;
+						background: rgba(255,255,255,0.12) !important;
+					}
+
+					.section-area.section-sp2 a:hover {
+						transform: scale(1.05);
+						box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+					}
+
+					@media (max-width: 768px) {
+						.section-area.section-sp2 h2 {
+							font-size: 2rem !important;
+						}
+
+						.section-area.section-sp2 h3 {
+							font-size: 1.5rem !important;
+						}
+
+						.section-area.section-sp2 p {
+							font-size: 0.95rem !important;
+						}
+					}
+				</style>
+			</div>
+			</div>
+			<!-- Form END -->
+
+			<!-- TRANSFORMATIONAL DEVELOPMENT INITIATIVES SECTION -->
+			<div class="section-area section-sp2" style="background: linear-gradient(135deg, #ffffff 0%, #f8fbff 50%, #f0f5ff 100%); position: relative; overflow: hidden; padding: 80px 0;">
+				<!-- Decorative Background Elements -->
+				<div style="position: absolute; top: -100px; right: -100px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(23, 102, 162, 0.06) 0%, transparent 70%); z-index: 0;"></div>
+				<div style="position: absolute; bottom: -80px; left: -80px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(243, 156, 18, 0.05) 0%, transparent 70%); z-index: 0;"></div>
+				
+				<div class="container" style="position: relative; z-index: 1;">
+					<!-- Section Header -->
+					<div class="row mb-5">
+						<div class="col-12 text-center">
+							<div style="display: inline-block; background: linear-gradient(135deg, rgba(23, 102, 162, 0.08), rgba(243, 156, 18, 0.08)); padding: 12px 32px; border-radius: 50px; margin-bottom: 25px; border: 2px solid rgba(23, 102, 162, 0.15);">
+								<h6 style="color: #1766a2; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; margin: 0; font-size: 0.85rem;">
+									<i class="fas fa-calendar-check" style="margin-right: 10px;"></i>Our Transformational Platform
+								</h6>
+							</div>
+							<h2 style="font-size: 3rem; font-weight: 900; color: #1a1a1a; margin-bottom: 20px; line-height: 1.2; letter-spacing: -0.5px;">
+								Capacity Building & Leadership Development
+							</h2>
+							<div style="width: 80px; height: 4px; background: linear-gradient(90deg, #1766a2, #f39c12); margin: 0 auto 25px; border-radius: 2px;"></div>
+							<p style="font-size: 1.2rem; color: #555; max-width: 900px; margin: 0 auto; line-height: 1.9; font-weight: 400;">
+								WAMDEVIN's upcoming initiatives are designed to strengthen human capital development and advance public sector excellence across West Africa. Through strategic retreats, intensive training programmes, and collaborative learning platforms, we nurture transformational leadership that drives sustainable development in our region.
+							</p>
+						</div>
+					</div>
+
+				<!-- 2026 Training Programmes Table -->
+						<div style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.1); margin-bottom: 40px;">
+							<!-- Table Header -->
+							<div style="background: linear-gradient(135deg, #1766a2, #2980b9); padding: 30px 40px; text-align: center;">
+								<h3 style="color: white; font-weight: 800; font-size: 1.8rem; margin: 0; letter-spacing: -0.5px;">
+									<i class="fas fa-calendar-alt" style="margin-right: 12px;"></i>
+									TRAINING PROGRAMMES OF WAMDEVIN FOR 2026
+								</h3>
+								<p style="color: rgba(255,255,255,0.9); margin: 10px 0 0 0; font-size: 1.05rem; font-weight: 500;">Comprehensive Capacity Building Schedule</p>
+							</div>
+							
+							<!-- Responsive Table Container -->
+							<div style="overflow-x: auto;">
+								<table style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
+									<thead>
+										<tr style="background: linear-gradient(135deg, rgba(23, 102, 162, 0.08), rgba(243, 156, 18, 0.08));">
+											<th style="padding: 18px 20px; text-align: left; font-weight: 700; color: #1766a2; border-bottom: 3px solid #1766a2; white-space: nowrap;">S/N</th>
+											<th style="padding: 18px 20px; text-align: left; font-weight: 700; color: #1766a2; border-bottom: 3px solid #1766a2; min-width: 250px;">COURSE TITLE</th>
+											<th style="padding: 18px 20px; text-align: left; font-weight: 700; color: #1766a2; border-bottom: 3px solid #1766a2; white-space: nowrap;">DATE</th>
+											<th style="padding: 18px 20px; text-align: left; font-weight: 700; color: #1766a2; border-bottom: 3px solid #1766a2; white-space: nowrap;">VENUE</th>
+											<th style="padding: 18px 20px; text-align: left; font-weight: 700; color: #1766a2; border-bottom: 3px solid #1766a2; min-width: 200px;">TARGET AUDIENCE</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr style="transition: all 0.3s ease; border-bottom: 1px solid #eee;">
+											<td style="padding: 20px; color: #1766a2; font-weight: 700; font-size: 1.1rem;">1.</td>
+											<td style="padding: 20px; color: #333; line-height: 1.6; font-weight: 600;">Work-life Balance and Organisational Commitment</td>
+											<td style="padding: 20px; color: #666; white-space: nowrap;"><i class="fas fa-calendar" style="color: #f39c12; margin-right: 6px;"></i>25-26 Feb, 2026</td>
+											<td style="padding: 20px; color: #666;"><i class="fas fa-map-marker-alt" style="color: #27ae60; margin-right: 6px;"></i>ASCON, Badagry</td>
+											<td style="padding: 20px; color: #666; line-height: 1.6;">Administrative, Finance, Executive and Faculty Staff</td>
+										</tr>
+										<tr style="transition: all 0.3s ease; background: rgba(23, 102, 162, 0.02); border-bottom: 1px solid #eee;">
+											<td style="padding: 20px; color: #1766a2; font-weight: 700; font-size: 1.1rem;">2.</td>
+											<td style="padding: 20px; color: #333; line-height: 1.6; font-weight: 600;">Application of Modern ICT Tools for Training Delivery and Evaluation</td>
+											<td style="padding: 20px; color: #666; white-space: nowrap;"><i class="fas fa-calendar" style="color: #f39c12; margin-right: 6px;"></i>12-13 Mar, 2026</td>
+											<td style="padding: 20px; color: #666;"><i class="fas fa-laptop" style="color: #27ae60; margin-right: 6px;"></i>Online & Badagry</td>
+											<td style="padding: 20px; color: #666; line-height: 1.6;">Faculty & Non-Faculty Staff of MDIs</td>
+										</tr>
+										<tr style="transition: all 0.3s ease; border-bottom: 1px solid #eee;">
+											<td style="padding: 20px; color: #1766a2; font-weight: 700; font-size: 1.1rem;">3.</td>
+											<td style="padding: 20px; color: #333; line-height: 1.6; font-weight: 600;">Grant Writing Workshop</td>
+											<td style="padding: 20px; color: #666; white-space: nowrap;"><i class="fas fa-calendar" style="color: #f39c12; margin-right: 6px;"></i>25-26 Mar, 2026</td>
+											<td style="padding: 20px; color: #666;"><i class="fas fa-laptop" style="color: #27ae60; margin-right: 6px;"></i>Online & Badagry</td>
+											<td style="padding: 20px; color: #666; line-height: 1.6;">Staff of MDIs in West Africa</td>
+										</tr>
+										<tr style="transition: all 0.3s ease; background: rgba(23, 102, 162, 0.02); border-bottom: 1px solid #eee;">
+											<td style="padding: 20px; color: #1766a2; font-weight: 700; font-size: 1.1rem;">4.</td>
+											<td style="padding: 20px; color: #333; line-height: 1.6; font-weight: 600;">Advanced Mentorship Training</td>
+											<td style="padding: 20px; color: #666; white-space: nowrap;"><i class="fas fa-calendar" style="color: #f39c12; margin-right: 6px;"></i>16-17 Apr, 2026</td>
+											<td style="padding: 20px; color: #666;"><i class="fas fa-laptop" style="color: #27ae60; margin-right: 6px;"></i>Online & Badagry</td>
+											<td style="padding: 20px; color: #666; line-height: 1.6;">Staff of MDIs in West Africa</td>
+										</tr>
+										<tr style="transition: all 0.3s ease; border-bottom: 1px solid #eee;">
+											<td style="padding: 20px; color: #1766a2; font-weight: 700; font-size: 1.1rem;">5.</td>
+											<td style="padding: 20px; color: #333; line-height: 1.6; font-weight: 600;">E-Learning Platforms for L&D Practitioners (Intermediate)</td>
+											<td style="padding: 20px; color: #666; white-space: nowrap;"><i class="fas fa-calendar" style="color: #f39c12; margin-right: 6px;"></i>28-29 May, 2026</td>
+											<td style="padding: 20px; color: #666;"><i class="fas fa-laptop" style="color: #27ae60; margin-right: 6px;"></i>Online</td>
+											<td style="padding: 20px; color: #666; line-height: 1.6;">Staff of MDIs in West Africa</td>
+										</tr>
+										<tr style="transition: all 0.3s ease; background: rgba(23, 102, 162, 0.02); border-bottom: 1px solid #eee;">
+											<td style="padding: 20px; color: #1766a2; font-weight: 700; font-size: 1.1rem;">6.</td>
+											<td style="padding: 20px; color: #333; line-height: 1.6; font-weight: 600;">Train-The-Trainers' (Blended)</td>
+											<td style="padding: 20px; color: #666; white-space: nowrap;"><i class="fas fa-calendar" style="color: #f39c12; margin-right: 6px;"></i>9-27 Jun, 2026</td>
+											<td style="padding: 20px; color: #666;"><i class="fas fa-laptop" style="color: #27ae60; margin-right: 6px;"></i>Online & Badagry</td>
+											<td style="padding: 20px; color: #666; line-height: 1.6;">Faculty Staff of MDIs in West Africa</td>
+										</tr>
+										<tr style="transition: all 0.3s ease; border-bottom: 1px solid #eee;">
+											<td style="padding: 20px; color: #1766a2; font-weight: 700; font-size: 1.1rem;">7.</td>
+											<td style="padding: 20px; color: #333; line-height: 1.6; font-weight: 600;">New Approach to Curriculum Development in Learning and Development</td>
+											<td style="padding: 20px; color: #666; white-space: nowrap;"><i class="fas fa-calendar" style="color: #f39c12; margin-right: 6px;"></i>9-10 Jul, 2026</td>
+											<td style="padding: 20px; color: #666;"><i class="fas fa-map-marker-alt" style="color: #27ae60; margin-right: 6px;"></i>Ghana</td>
+											<td style="padding: 20px; color: #666; line-height: 1.6;">Staff of MDIs in West Africa</td>
+										</tr>
+										<tr style="transition: all 0.3s ease; background: rgba(23, 102, 162, 0.02); border-bottom: 1px solid #eee;">
+											<td style="padding: 20px; color: #1766a2; font-weight: 700; font-size: 1.1rem;">8.</td>
+											<td style="padding: 20px; color: #333; line-height: 1.6; font-weight: 600;">Case Writing Workshop for MDIs Staff</td>
+											<td style="padding: 20px; color: #666; white-space: nowrap;"><i class="fas fa-calendar" style="color: #f39c12; margin-right: 6px;"></i>20-21 Aug, 2026</td>
+											<td style="padding: 20px; color: #666;"><i class="fas fa-map-marker-alt" style="color: #27ae60; margin-right: 6px;"></i>Nigeria</td>
+											<td style="padding: 20px; color: #666; line-height: 1.6;">Faculty Staff of MDIS in West Africa</td>
+										</tr>
+										<tr style="transition: all 0.3s ease; border-bottom: 1px solid #eee;">
+											<td style="padding: 20px; color: #1766a2; font-weight: 700; font-size: 1.1rem;">9.</td>
+											<td style="padding: 20px; color: #333; line-height: 1.6; font-weight: 600;">Mainstreaming Gender into Training Programmes of MDIs</td>
+											<td style="padding: 20px; color: #666; white-space: nowrap;"><i class="fas fa-calendar" style="color: #f39c12; margin-right: 6px;"></i>9-10 Sep, 2026</td>
+											<td style="padding: 20px; color: #666;"><i class="fas fa-map-marker-alt" style="color: #27ae60; margin-right: 6px;"></i>Nigeria</td>
+											<td style="padding: 20px; color: #666; line-height: 1.6;">Faculty & Non-Faculty Staff of MDIs</td>
+										</tr>
+										<tr style="transition: all 0.3s ease; background: rgba(23, 102, 162, 0.02); border-bottom: 1px solid #eee;">
+											<td style="padding: 20px; color: #1766a2; font-weight: 700; font-size: 1.1rem;">10.</td>
+											<td style="padding: 20px; color: #333; line-height: 1.6; font-weight: 600;">Enhancing Management Consultancy Skills for Faculty Staff of MDIs</td>
+											<td style="padding: 20px; color: #666; white-space: nowrap;"><i class="fas fa-calendar" style="color: #f39c12; margin-right: 6px;"></i>24-25 Sep, 2026</td>
+											<td style="padding: 20px; color: #666;"><i class="fas fa-laptop" style="color: #27ae60; margin-right: 6px;"></i>Online</td>
+											<td style="padding: 20px; color: #666; line-height: 1.6;">Faculty Staff of MDIs in West Africa</td>
+										</tr>
+										<tr style="transition: all 0.3s ease; border-bottom: 1px solid #eee;">
+											<td style="padding: 20px; color: #1766a2; font-weight: 700; font-size: 1.1rem;">11.</td>
+											<td style="padding: 20px; color: #333; line-height: 1.6; font-weight: 600;">Fundamentals of Research Methodology for L&D Practitioners</td>
+											<td style="padding: 20px; color: #666; white-space: nowrap;"><i class="fas fa-calendar" style="color: #f39c12; margin-right: 6px;"></i>15-16 Oct, 2026</td>
+											<td style="padding: 20px; color: #666;"><i class="fas fa-laptop" style="color: #27ae60; margin-right: 6px;"></i>Online & Badagry</td>
+											<td style="padding: 20px; color: #666; line-height: 1.6;">Faculty Staff of MDIs in West Africa</td>
+										</tr>
+										<tr style="transition: all 0.3s ease; background: rgba(23, 102, 162, 0.02); border-bottom: 1px solid #eee;">
+											<td style="padding: 20px; color: #1766a2; font-weight: 700; font-size: 1.1rem;">12.</td>
+											<td style="padding: 20px; color: #333; line-height: 1.6; font-weight: 600;">EXCO Meeting and Workshop on Enhancing Revenue Generation Skills for MDIs</td>
+											<td style="padding: 20px; color: #666; white-space: nowrap;"><i class="fas fa-calendar" style="color: #f39c12; margin-right: 6px;"></i>25-27 Nov, 2026</td>
+											<td style="padding: 20px; color: #666;"><i class="fas fa-map-marker-alt" style="color: #27ae60; margin-right: 6px;"></i>The Gambia</td>
+											<td style="padding: 20px; color: #666; line-height: 1.6;">EXCO Members</td>
+										</tr>
+										<tr style="transition: all 0.3s ease; border-bottom: 1px solid #eee;">
+											<td style="padding: 20px; color: #1766a2; font-weight: 700; font-size: 1.1rem;">13.</td>
+											<td style="padding: 20px; color: #333; line-height: 1.6; font-weight: 600;">Administrative Principles, Practices, and Processes</td>
+											<td style="padding: 20px; color: #666; white-space: nowrap;"><i class="fas fa-calendar" style="color: #f39c12; margin-right: 6px;"></i>17-18 Dec, 2026</td>
+											<td style="padding: 20px; color: #666;"><i class="fas fa-map-marker-alt" style="color: #27ae60; margin-right: 6px;"></i>Badagry</td>
+											<td style="padding: 20px; color: #666; line-height: 1.6;">Administrative, Finance, Executive and Faculty Staff</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<!-- Table Footer with Call-to-Action -->
+							<div style="background: linear-gradient(135deg, rgba(23, 102, 162, 0.05), rgba(243, 156, 18, 0.05)); padding: 30px 40px; text-align: center; border-top: 3px solid #1766a2;">
+								<p style="color: #555; margin: 0 0 20px 0; font-size: 1.05rem; font-weight: 500;">
+									<i class="fas fa-info-circle" style="color: #1766a2; margin-right: 8px;"></i>
+									<strong>13 Comprehensive Training Programmes</strong> designed to enhance capacity building across West African MDIs
+								</p>
+								<a href="contact.php" style="display: inline-flex; align-items: center; padding: 15px 40px; background: linear-gradient(135deg, #1766a2, #2980b9); color: white; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 1rem; transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(23, 102, 162, 0.3);">
+									<i class="fas fa-user-plus" style="margin-right: 10px;"></i>
+									Register for Training
+									<i class="fas fa-arrow-right" style="margin-left: 10px;"></i>
+								</a>
+							</div>
+						</div>
+						
+						<style>
+							/* Table Hover Effects */
+							tbody tr:hover {
+								background: rgba(23, 102, 162, 0.06) !important;
+								transform: translateX(5px);
+							}
+							
+							/* Mobile Responsive */
+							@media (max-width: 768px) {
+								table {
+									font-size: 0.85rem;
+								}
+								th, td {
+									padding: 12px 10px !important;
+								}
+								th {
+									font-size: 0.8rem;
+								}
+							}
+						</style>
+				</div>
+
+				<!-- Impact Mission Statement -->
+				<div class="row mt-5 pt-5">
+					<div class="col-12">
+						<div style="background: linear-gradient(135deg, rgba(23, 102, 162, 0.08), rgba(243, 156, 18, 0.08)); padding: 50px 40px; border-radius: 20px; border: 2px solid rgba(23, 102, 162, 0.15); position: relative; overflow: hidden;">
+							<div style="position: absolute; top: -30px; right: -30px; width: 150px; height: 150px; background: rgba(243, 156, 18, 0.05); border-radius: 50%;"></div>
+							<div style="position: relative; z-index: 1;">
+								<div style="display: flex; align-items: start; gap: 30px;">
+									<div style="flex-shrink: 0;">
+										<div style="width: 60px; height: 60px; background: linear-gradient(135deg, #1766a2, #f39c12); border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+											<i class="fas fa-rocket" style="color: white; font-size: 1.8rem;"></i>
+										</div>
+									</div>
+									<div style="flex: 1;">
+										<h4 style="color: #1a1a1a; font-weight: 800; font-size: 1.3rem; margin-bottom: 12px;">
+											Why Participate in WAMDEVIN Initiatives?
+										</h4>
+										<p style="color: #555; line-height: 1.9; margin-bottom: 0; font-size: 1.05rem; font-weight: 300;">
+											These transformational programmes are meticulously designed to <strong>strengthen human capital development</strong>, <strong>advance public sector excellence</strong>, and <strong>nurture transformational leaders</strong> who will drive sustainable development across West Africa. By joining our initiatives, you become part of a regional network committed to excellence, innovation, and collaborative progress.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Call-to-Action -->
+				<div class="row mt-5 pt-4">
+					<div class="col-12 text-center">
+						<div style="display: inline-flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+							<a href="index.php#events" style="display: inline-flex; align-items: center; padding: 18px 45px; background: linear-gradient(135deg, #1766a2, #0a3d5c); color: white; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 1.05rem; transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(23, 102, 162, 0.3);">
+								<i class="fas fa-calendar-alt" style="margin-right: 12px; font-size: 1.1rem;"></i>
+								Explore All Events <i class="fas fa-arrow-right" style="margin-left: 10px;"></i>
+							</a>
+							<a href="contact.php" style="display: inline-flex; align-items: center; padding: 18px 45px; background: white; color: #1766a2; text-decoration: none; border: 3px solid #1766a2; border-radius: 50px; font-weight: 700; font-size: 1.05rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+								<i class="fas fa-envelope" style="margin-right: 12px; font-size: 1.1rem;"></i>
+								Register Your Interest
+								<i class="fas fa-arrow-right" style="margin-left: 10px;"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Events Carousel Styles -->
+			<style>
+				.events-owl-carousel.owl-carousel {
+					margin: 0 -15px;
+				}
+				
+				.events-owl-carousel.owl-carousel .item {
+					padding: 0 15px;
+				}
+
+				.events-owl-carousel.owl-carousel .item > div {
+					transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+				}
+
+				.events-owl-carousel.owl-carousel .item > div:hover {
+					transform: translateY(-15px);
+					box-shadow: 0 25px 50px rgba(0,0,0,0.15) !important;
+				}
+
+				.events-owl-carousel.owl-carousel .item > div:hover img {
+					transform: scale(1.1);
+				}
+
+				.events-owl-carousel.owl-carousel .item img {
+					transition: transform 0.5s ease;
+				}
+
+				.events-owl-carousel.owl-carousel .item a:hover {
+					transform: scale(1.08);
+				}
+
+				/* Enhanced CTA Button Hover */
+				a[style*="linear-gradient"]:hover {
+					transform: translateY(-3px) !important;
+				}
+
+				/* Responsive Design */
+				@media (max-width: 992px) {
+					.events-owl-carousel.owl-carousel .item > div h4 {
+						font-size: 1.15rem !important;
+					}
+				}
+
+				@media (max-width: 768px) {
+					.events-owl-carousel.owl-carousel .item > div {
+						padding: 25px !important;
+					}
+
+					.events-owl-carousel.owl-carousel .item > div h4 {
+						font-size: 1.1rem !important;
+					}
+
+					.events-owl-carousel.owl-carousel .item > div p {
+						font-size: 0.9rem !important;
+					}
+				}
+
+				@media (max-width: 576px) {
+					.events-owl-carousel.owl-carousel .item {
+						padding: 0 10px !important;
+					}
+
+					.events-owl-carousel.owl-carousel .item > div {
+						padding: 20px !important;
+					}
+
+					.events-owl-carousel.owl-carousel .item > div h4 {
+						font-size: 1rem !important;
+					}
+
+					/* Stack CTA buttons on mobile */
+					a[style*="display: inline-flex"] {
+						width: 100% !important;
+						justify-content: center;
+						margin-bottom: 12px !important;
+					}
+				}
+			</style>
+
+			<!-- Initialize Owl Carousel for Events -->
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					if (jQuery && jQuery.fn.owlCarousel) {
+						jQuery('.events-owl-carousel').owlCarousel({
+							loop: true,
+							margin: 20,
+							nav: true,
+							autoplay: false,
+							responsive: {
+								0: {
+									items: 1
+								},
+								600: {
+									items: 2
+								},
+								1000: {
+									items: 3
+								}
+							},
+							navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>']
+						});
+					}
+				});
+			</script>
+			</div>
+		</div>
+		
+		<!-- RECENT & UPCOMING ACTIVITIES SECTION -->
+		<div class="section-area section-sp2" style="background: linear-gradient(135deg, rgba(23, 102, 162, 0.03), rgba(243, 156, 18, 0.03));">
+			<div class="container">
+				<!-- Section Header -->
+				<div class="row mb-5">
+					<div class="col-12 text-center">
+						<h6 style="color: #1766a2; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; display: inline-block; padding: 12px 25px; background: rgba(23, 102, 162, 0.1); border-radius: 50px; border: 1px solid rgba(23, 102, 162, 0.2);">
+							<i class="fas fa-calendar-check" style="margin-right: 8px;"></i>Activity Timeline
+						</h6>
+						<h2 style="font-size: 2.8rem; font-weight: 800; color: #1a1a1a; margin-bottom: 20px; line-height: 1.3;">
+							Recent & Upcoming Activities
+						</h2>
+						<p style="font-size: 1.1rem; color: #666; max-width: 700px; margin: 0 auto; line-height: 1.8;">
+							Track our completed initiatives and upcoming professional development opportunities for 2026
+						</p>
+						<div style="width: 70px; height: 4px; background: linear-gradient(90deg, #1766a2, #f39c12); margin: 30px auto; border-radius: 2px;"></div>
+					</div>
+				</div>
+
+				<!-- Activities Timeline -->
+				<div class="row">
+					<div class="col-12">
+						<div class="activities-timeline">
+							
+							<!-- COMPLETED EVENTS -->
+							<div class="timeline-section mb-5">
+								<div class="row">
+									<div class="col-12">
+										<h4 style="color: #27ae60; font-weight: 700; margin-bottom: 30px; font-size: 1.4rem;">
+											<i class="fas fa-check-circle" style="margin-right: 10px;"></i>Completed Activities
+										</h4>
+									</div>
+								</div>
+								
+								<div class="row">
+									<!-- Event 1: Nov 2025 Retreat -->
+									<div class="col-md-6 mb-4">
+										<div style="background: white; border-radius: 15px; padding: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-left: 5px solid #27ae60; position: relative; overflow: hidden; transition: all 0.3s ease;" class="activity-card">
+											<div style="position: absolute; top: 20px; right: 20px; background: #27ae60; color: white; font-weight: 700; font-size: 0.75rem; padding: 6px 15px; border-radius: 20px; text-transform: uppercase; letter-spacing: 1px;">
+												COMPLETED
+											</div>
+											<div style="margin-top: 10px;">
+												<h5 style="color: #1a1a1a; font-weight: 800; margin-bottom: 15px; font-size: 1.3rem; line-height: 1.4;">
+													Retreat Lagos, Nigeria
+												</h5>
+												<p style="color: #555; font-weight: 600; margin-bottom: 15px; font-size: 1.05rem;">
+													A 3-Day High-Level Networking Workshop
+												</p>
+												<div style="display: flex; align-items: center; color: #666; margin-bottom: 10px;">
+													<i class="fas fa-calendar" style="color: #1766a2; margin-right: 10px; width: 20px;"></i>
+													<span style="font-weight: 500;">Nov 25 - 27, 2025</span>
+												</div>
+												<div style="display: flex; align-items: center; color: #666;">
+													<i class="fas fa-map-marker-alt" style="color: #1766a2; margin-right: 10px; width: 20px;"></i>
+													<span style="font-weight: 500;">Lagos, Nigeria</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Event 2: Sept 2025 Summit -->
+									<div class="col-md-6 mb-4">
+										<div style="background: white; border-radius: 15px; padding: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-left: 5px solid #27ae60; position: relative; overflow: hidden; transition: all 0.3s ease;" class="activity-card">
+											<div style="position: absolute; top: 20px; right: 20px; background: #27ae60; color: white; font-weight: 700; font-size: 0.75rem; padding: 6px 15px; border-radius: 20px; text-transform: uppercase; letter-spacing: 1px;">
+												COMPLETED
+											</div>
+											<div style="margin-top: 10px;">
+												<h5 style="color: #1a1a1a; font-weight: 800; margin-bottom: 15px; font-size: 1.3rem; line-height: 1.4;">
+													Summit Lagos, Nigeria
+												</h5>
+												<p style="color: #555; font-weight: 600; margin-bottom: 15px; font-size: 1.05rem;">
+													Annual Leadership Summit
+												</p>
+												<div style="display: flex; align-items: center; color: #666; margin-bottom: 10px;">
+													<i class="fas fa-calendar" style="color: #1766a2; margin-right: 10px; width: 20px;"></i>
+													<span style="font-weight: 500;">Sept 1 - 2, 2025</span>
+												</div>
+												<div style="display: flex; align-items: center; color: #666;">
+													<i class="fas fa-map-marker-alt" style="color: #1766a2; margin-right: 10px; width: 20px;"></i>
+													<span style="font-weight: 500;">Lagos, Nigeria</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- UPCOMING EVENTS 2026 -->
+							<div class="timeline-section">
+								<div class="row">
+									<div class="col-12">
+										<h4 style="color: #1766a2; font-weight: 700; margin-bottom: 30px; font-size: 1.4rem;">
+											<i class="fas fa-arrow-circle-right" style="margin-right: 10px;"></i>Upcoming 2026 Programmes
+										</h4>
+									</div>
+								</div>
+								
+								<div class="row">
+									<!-- Event 3: FEB 2026 Work-life Balance -->
+									<div class="col-md-6 col-lg-3 mb-4">
+										<div style="background: white; border-radius: 15px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 5px solid #1766a2; position: relative; overflow: hidden; transition: all 0.3s ease; height: 100%;" class="activity-card">
+											<div style="position: absolute; top: 20px; right: 20px; background: #1766a2; color: white; font-weight: 700; font-size: 0.75rem; padding: 6px 12px; border-radius: 8px; text-transform: uppercase; letter-spacing: 1px;">
+												FEB 2026
+											</div>
+											<div style="margin-top: 10px;">
+												<h5 style="color: #1a1a1a; font-weight: 800; margin-bottom: 15px; font-size: 1.2rem; line-height: 1.4;">
+													Work-life Balance and Organizational Commitment
+												</h5>
+												<div style="display: flex; align-items: center; color: #666; margin-bottom: 10px;">
+													<i class="fas fa-map-marker-alt" style="color: #1766a2; margin-right: 10px; width: 20px;"></i>
+													<span style="font-weight: 500; font-size: 0.95rem;">ASCON, Topo-Badagry, Lagos, Nigeria</span>
+												</div>
+												<div style="display: flex; align-items: center; color: #666; margin-bottom: 15px;">
+													<i class="fas fa-tag" style="color: #f39c12; margin-right: 10px; width: 20px;"></i>
+													<span style="font-weight: 600; color: #f39c12; font-size: 0.9rem;">Upcoming: 2026 Programme</span>
+												</div>
+												<a href="contact.php" style="display: inline-flex; align-items: center; justify-content: center; width: 100%; padding: 12px; background: linear-gradient(135deg, #1766a2, #0a3d5c); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease; margin-top: auto;">
+													<i class="fas fa-user-plus" style="margin-right: 8px;"></i>Register
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<!-- Event 4: MAR 2026 ICT Tools -->
+									<div class="col-md-6 col-lg-3 mb-4">
+										<div style="background: white; border-radius: 15px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 5px solid #f39c12; position: relative; overflow: hidden; transition: all 0.3s ease; height: 100%;" class="activity-card">
+											<div style="position: absolute; top: 20px; right: 20px; background: #f39c12; color: white; font-weight: 700; font-size: 0.75rem; padding: 6px 12px; border-radius: 8px; text-transform: uppercase; letter-spacing: 1px;">
+												MAR 2026
+											</div>
+											<div style="margin-top: 10px;">
+												<h5 style="color: #1a1a1a; font-weight: 800; margin-bottom: 15px; font-size: 1.2rem; line-height: 1.4;">
+													ICT Tools for Learning and Development
+												</h5>
+												<div style="display: flex; align-items: center; color: #666; margin-bottom: 10px;">
+													<i class="fas fa-laptop" style="color: #f39c12; margin-right: 10px; width: 20px;"></i>
+													<span style="font-weight: 500; font-size: 0.95rem;">Virtual Platform</span>
+												</div>
+												<div style="display: flex; align-items: center; color: #666; margin-bottom: 15px;">
+													<i class="fas fa-tag" style="color: #f39c12; margin-right: 10px; width: 20px;"></i>
+													<span style="font-weight: 600; color: #f39c12; font-size: 0.9rem;">Upcoming: 2026 Programme</span>
+												</div>
+												<a href="contact.php" style="display: inline-flex; align-items: center; justify-content: center; width: 100%; padding: 12px; background: linear-gradient(135deg, #f39c12, #d68910); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease; margin-top: auto;">
+													<i class="fas fa-user-plus" style="margin-right: 8px;"></i>Register
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<!-- Event 5: APR 2026 Mentorship -->
+									<div class="col-md-6 col-lg-3 mb-4">
+										<div style="background: white; border-radius: 15px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 5px solid #9b59b6; position: relative; overflow: hidden; transition: all 0.3s ease; height: 100%;" class="activity-card">
+											<div style="position: absolute; top: 20px; right: 20px; background: #9b59b6; color: white; font-weight: 700; font-size: 0.75rem; padding: 6px 12px; border-radius: 8px; text-transform: uppercase; letter-spacing: 1px;">
+												APR 2026
+											</div>
+											<div style="margin-top: 10px;">
+												<h5 style="color: #1a1a1a; font-weight: 800; margin-bottom: 15px; font-size: 1.2rem; line-height: 1.4;">
+													Mentorship Programmes
+												</h5>
+												<div style="display: flex; align-items: center; color: #666; margin-bottom: 10px;">
+													<i class="fas fa-laptop" style="color: #9b59b6; margin-right: 10px; width: 20px;"></i>
+													<span style="font-weight: 500; font-size: 0.95rem;">Virtual Platform</span>
+												</div>
+												<div style="display: flex; align-items: center; color: #666; margin-bottom: 15px;">
+													<i class="fas fa-tag" style="color: #f39c12; margin-right: 10px; width: 20px;"></i>
+													<span style="font-weight: 600; color: #f39c12; font-size: 0.9rem;">Upcoming: 2026 Programme</span>
+												</div>
+												<a href="contact.php" style="display: inline-flex; align-items: center; justify-content: center; width: 100%; padding: 12px; background: linear-gradient(135deg, #9b59b6, #7d3c98); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease; margin-top: auto;">
+													<i class="fas fa-user-plus" style="margin-right: 8px;"></i>Register
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<!-- Event 6: JUNE 2026 Train-The-Trainers -->
+									<div class="col-md-6 col-lg-3 mb-4">
+										<div style="background: white; border-radius: 15px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 5px solid #e74c3c; position: relative; overflow: hidden; transition: all 0.3s ease; height: 100%;" class="activity-card">
+											<div style="position: absolute; top: 20px; right: 20px; background: #e74c3c; color: white; font-weight: 700; font-size: 0.75rem; padding: 6px 12px; border-radius: 8px; text-transform: uppercase; letter-spacing: 1px;">
+												JUNE 2026
+											</div>
+											<div style="margin-top: 10px;">
+												<h5 style="color: #1a1a1a; font-weight: 800; margin-bottom: 15px; font-size: 1.2rem; line-height: 1.4;">
+													Train-The-Trainers Workshop
+												</h5>
+												<div style="display: flex; align-items: center; color: #666; margin-bottom: 10px;">
+													<i class="fas fa-map-marker-alt" style="color: #e74c3c; margin-right: 10px; width: 20px;"></i>
+													<span style="font-weight: 500; font-size: 0.95rem;">Virtual & ASCON, Topo-Badagry, Lagos, Nigeria</span>
+												</div>
+												<div style="display: flex; align-items: center; color: #666; margin-bottom: 15px;">
+													<i class="fas fa-tag" style="color: #f39c12; margin-right: 10px; width: 20px;"></i>
+													<span style="font-weight: 600; color: #f39c12; font-size: 0.9rem;">Upcoming: 2026 Programme</span>
+												</div>
+												<a href="contact.php" style="display: inline-flex; align-items: center; justify-content: center; width: 100%; padding: 12px; background: linear-gradient(135deg, #e74c3c, #c0392b); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease; margin-top: auto;">
+													<i class="fas fa-user-plus" style="margin-right: 8px;"></i>Register
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Download Calendar CTA -->
+							<div class="row mt-5">
+								<div class="col-12 text-center">
+									<div style="background: linear-gradient(135deg, rgba(23, 102, 162, 0.08), rgba(243, 156, 18, 0.08)); padding: 40px; border-radius: 15px; border: 2px dashed rgba(23, 102, 162, 0.3);">
+										<h4 style="color: #1a1a1a; font-weight: 800; margin-bottom: 20px; font-size: 1.5rem;">
+											<i class="fas fa-download" style="margin-right: 12px; color: #1766a2;"></i>Get the Complete Schedule
+										</h4>
+										<p style="color: #555; margin-bottom: 25px; font-size: 1.05rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+											Download our comprehensive 2026 activities calendar to plan your professional development journey
+										</p>
+										<a href="assets/documents/WAMDEVIN-2026-Calendar.pdf" download style="display: inline-flex; align-items: center; padding: 18px 45px; background: linear-gradient(135deg, #1766a2, #0a3d5c); color: white; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(23, 102, 162, 0.3);">
+											<i class="fas fa-calendar-alt" style="margin-right: 12px; font-size: 1.2rem;"></i>
+											Download Full 2026 Calendar
+											<i class="fas fa-arrow-down" style="margin-left: 12px;"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Activity Cards Hover Styles -->
+			<style>
+				.activity-card:hover {
+					transform: translateY(-8px) !important;
+					box-shadow: 0 20px 50px rgba(0,0,0,0.15) !important;
+				}
+
+				.activity-card a:hover {
+					transform: scale(1.05);
+					box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+				}
+
+				/* Responsive Adjustments */
+				@media (max-width: 992px) {
+					.activity-card h5 {
+						font-size: 1.15rem !important;
+					}
+				}
+
+				@media (max-width: 768px) {
+					.activity-card {
+						padding: 20px !important;
+					}
+					
+					.activity-card h5 {
+						font-size: 1.1rem !important;
+					}
+
+					.timeline-section h4 {
+						font-size: 1.2rem !important;
+					}
+				}
+			</style>
+		</div>
+		
+		<!-- RECENT NEWS SECTION -->
+		<div class="section-area section-sp2" style="background: linear-gradient(to bottom, #f8f9fa, #ffffff);">
+			<div class="container">
+				<!-- Section Header -->
+				<div class="row mb-5">
+					<div class="col-12 text-center">
+						<h6 style="color: #1766a2; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; display: inline-block; padding: 12px 25px; background: rgba(23, 102, 162, 0.1); border-radius: 50px; border: 1px solid rgba(23, 102, 162, 0.2);">Latest Updates</h6>
+						<h2 style="font-size: 2.8rem; font-weight: 800; color: #1a1a1a; margin-bottom: 20px; line-height: 1.3;">
+							Recent News & Updates
+						</h2>
+						<p style="font-size: 1.1rem; color: #666; max-width: 700px; margin: 0 auto; line-height: 1.8;">
+							Stay informed with the latest news, publications, and developments from WAMDEVIN and our member institutes
+						</p>
+						<div style="width: 70px; height: 4px; background: linear-gradient(90deg, #1766a2, #f39c12); margin: 30px auto; border-radius: 2px;"></div>
+					</div>
+				</div>
+
+				<!-- News Items Carousel -->
+				<div class="recent-news-carousel owl-carousel owl-theme" style="padding: 20px 0;">
+					<!-- News Item 1 -->
+					<div class="item">
+						<div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.4s ease; height: 100%; display: flex; flex-direction: column; border-top: 4px solid #1766a2;">
+							<!-- Image -->
+							<div style="height: 200px; overflow: hidden; background: linear-gradient(135deg, #1766a2, #2980b9);">
+								<img src="assets/images/blog/latest-blog/pic1.jpg" alt="News" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+							</div>
+							<!-- Content -->
+							<div style="padding: 25px; flex: 1; display: flex; flex-direction: column;">
+								<div style="display: flex; gap: 15px; margin-bottom: 15px; font-size: 0.9rem; color: #888;">
+									<span style="display: flex; align-items: center; gap: 6px;"><i class="fas fa-calendar" style="color: #1766a2;"></i>March 2025</span>
+									<span style="display: flex; align-items: center; gap: 6px;"><i class="fas fa-user" style="color: #1766a2;"></i>Editor</span>
+								</div>
+								<h5 style="color: #1a1a1a; font-weight: 800; margin-bottom: 12px; line-height: 1.4; flex-grow: 1;">WAMDEVIN Organises Two-Week Advanced TTT Course</h5>
+								<p style="color: #666; line-height: 1.6; margin-bottom: 15px; font-size: 0.95rem;">In today's rapidly evolving work environment, learning and development practitioners play a vital role in cultivating organizational excellence.</p>
+								<a href="blog-details.php" style="display: inline-flex; align-items: center; gap: 8px; color: #1766a2; text-decoration: none; font-weight: 700; transition: all 0.3s ease;">
+									Read More <i class="fas fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- News Item 2 -->
+					<div class="item">
+						<div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.4s ease; height: 100%; display: flex; flex-direction: column; border-top: 4px solid #f39c12;">
+							<!-- Image -->
+							<div style="height: 200px; overflow: hidden; background: linear-gradient(135deg, #f39c12, #e67e22);">
+								<img src="assets/images/blog/latest-blog/pic2.jpg" alt="News" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+							</div>
+							<!-- Content -->
+							<div style="padding: 25px; flex: 1; display: flex; flex-direction: column;">
+								<div style="display: flex; gap: 15px; margin-bottom: 15px; font-size: 0.9rem; color: #888;">
+									<span style="display: flex; align-items: center; gap: 6px;"><i class="fas fa-calendar" style="color: #f39c12;"></i>March 17, 2025</span>
+									<span style="display: flex; align-items: center; gap: 6px;"><i class="fas fa-user" style="color: #f39c12;"></i>Editorial</span>
+								</div>
+								<h5 style="color: #1a1a1a; font-weight: 800; margin-bottom: 12px; line-height: 1.4; flex-grow: 1;">WAMDEVIN Appoints New Executive Secretary</h5>
+								<p style="color: #666; line-height: 1.6; margin-bottom: 15px; font-size: 0.95rem;">The Executive Committee (EXCO) of the West Africa Management Development Institutes Network has appointed a distinguished new executive to lead the organization.</p>
+								<a href="about.php" style="display: inline-flex; align-items: center; gap: 8px; color: #f39c12; text-decoration: none; font-weight: 700; transition: all 0.3s ease;">
+									Read More <i class="fas fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- News Item 3 -->
+					<div class="item">
+						<div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.4s ease; height: 100%; display: flex; flex-direction: column; border-top: 4px solid #27ae60;">
+							<!-- Image -->
+							<div style="height: 200px; overflow: hidden; background: linear-gradient(135deg, #27ae60, #2ecc71);">
+								<img src="assets/images/blog/latest-blog/pic3.jpg" alt="News" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+							</div>
+							<!-- Content -->
+							<div style="padding: 25px; flex: 1; display: flex; flex-direction: column;">
+								<div style="display: flex; gap: 15px; margin-bottom: 15px; font-size: 0.9rem; color: #888;">
+									<span style="display: flex; align-items: center; gap: 6px;"><i class="fas fa-calendar" style="color: #27ae60;"></i>March 2025</span>
+									<span style="display: flex; align-items: center; gap: 6px;"><i class="fas fa-user" style="color: #27ae60;"></i>Editorial</span>
+								</div>
+								<h5 style="color: #1a1a1a; font-weight: 800; margin-bottom: 12px; line-height: 1.4; flex-grow: 1;">WAMDEVIN Commences Research on School Entrepreneurship</h5>
+								<p style="color: #666; line-height: 1.6; margin-bottom: 15px; font-size: 0.95rem;">In line with its mission to enhance socio-economic prosperity, WAMDEVIN has initiated comprehensive research on entrepreneurship education programmes.</p>
+								<a href="blog-details.php" style="display: inline-flex; align-items: center; gap: 8px; color: #27ae60; text-decoration: none; font-weight: 700; transition: all 0.3s ease;">
+									Read More <i class="fas fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- News Carousel Styles -->
+				<style>
+					.recent-news-carousel.owl-carousel {
+						margin: 0 -15px;
+					}
+
+					.recent-news-carousel.owl-carousel .item {
+						padding: 0 15px;
+					}
+
+					.recent-news-carousel.owl-carousel .item > div {
+						transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+					}
+
+					.recent-news-carousel.owl-carousel .item > div:hover {
+						transform: translateY(-10px);
+						box-shadow: 0 20px 40px rgba(0,0,0,0.12) !important;
+					}
+
+					.recent-news-carousel.owl-carousel .item img {
+						transition: transform 0.5s ease;
+					}
+
+					.recent-news-carousel.owl-carousel .item:hover img {
+						transform: scale(1.08);
+					}
+
+					.recent-news-carousel.owl-carousel .item a:hover {
+						transform: translateX(5px);
+					}
+
+					@media (max-width: 768px) {
+						.recent-news-carousel.owl-carousel .item > div h5 {
+							font-size: 1rem !important;
+						}
+					}
+				</style>
+
+				<!-- Initialize Carousel -->
+				<script>
+					document.addEventListener('DOMContentLoaded', function() {
+						if (jQuery && jQuery.fn.owlCarousel) {
+							var newsCarousel = jQuery('.recent-news-carousel');
+							if (newsCarousel.length > 0) {
+								newsCarousel.owlCarousel({
+									loop: true,
+									margin: 20,
+									nav: true,
+									autoplay: false,
+									responsive: {
+										0: { items: 1 },
+										600: { items: 2 },
+										1000: { items: 3 }
+									},
+									navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>']
+								});
+							}
+						}
+					});
+				</script>
+			</div>
+		</div>
+		<!-- Recent News End -->
+		
+		<!-- PROFESSIONAL EXCO LEADERSHIP SECTION -->
+			<div class="section-area section-sp2" style="background: linear-gradient(135deg, #0f3460 0%, #16213e 50%, #1a1a2e 100%); position: relative; overflow: hidden;">
+				<!-- Decorative Background Elements -->
+				<div style="position: absolute; top: -80px; right: -80px; width: 350px; height: 350px; background: rgba(23, 102, 162, 0.08); border-radius: 50%; z-index: 0;"></div>
+				<div style="position: absolute; bottom: -100px; left: -100px; width: 400px; height: 400px; background: rgba(243, 156, 18, 0.06); border-radius: 50%; z-index: 0;"></div>
+
+				<div class="container" style="position: relative; z-index: 1;">
+					<!-- Section Header -->
+					<div class="row mb-5">
+						<div class="col-12 text-center">
+							<h6 style="color: #f39c12; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; display: inline-block; padding: 12px 25px; background: rgba(243, 156, 18, 0.15); border-radius: 50px; border: 1px solid rgba(243, 156, 18, 0.3);">Leadership & Governance</h6>
+							<h2 style="font-size: 2.8rem; font-weight: 800; color: #ffffff; margin-bottom: 20px; line-height: 1.3;">
+								WAMDEVIN Executive Committee
+							</h2>
+							<p style="font-size: 1.15rem; color: #d0d0d0; max-width: 700px; margin: 0 auto; line-height: 1.8;">
+								Meet the distinguished leaders and visionaries steering WAMDEVIN's mission to transform management excellence across West Africa
+							</p>
+							<div style="width: 70px; height: 4px; background: linear-gradient(90deg, #f39c12, #1766a2); margin: 30px auto; border-radius: 2px;"></div>
+						</div>
+					</div>
+
+					<!-- EXCO Members Carousel -->
+					<div class="exco-carousel owl-carousel owl-theme" style="padding: 20px 0;">
+						<!-- Member 1: President -->
+						<div class="item">
+							<div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.15); transition: all 0.4s ease; height: 100%; display: flex; flex-direction: column;">
+								<!-- Image Container -->
+								<div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, #1766a2, #2980b9);">
+									<img src="assets/images/exco/exco-1.jpg" alt="Alh. Alieu K. Jarju - WAMDEVIN President" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+									<!-- Role Badge -->
+									<div style="position: absolute; top: 15px; left: 15px; background: linear-gradient(135deg, #f39c12, #e67e22); color: white; padding: 8px 15px; border-radius: 25px; font-weight: 700; font-size: 0.85rem; box-shadow: 0 4px 12px rgba(243, 156, 18, 0.4);">
+										<i class="fas fa-crown" style="margin-right: 6px;"></i>PRESIDENT
+									</div>
+								</div>
+								<!-- Content Container -->
+								<div style="padding: 30px 25px; flex: 1; display: flex; flex-direction: column;">
+									<h4 style="color: #1a1a1a; font-weight: 800; margin-bottom: 5px; font-size: 1.25rem;">Alh. Alieu K. Jarju</h4>
+									<p style="color: #f39c12; font-weight: 700; font-size: 0.9rem; margin-bottom: 15px;">
+										<i class="fas fa-building" style="margin-right: 6px;"></i>Director-General, MDI, The Gambia
+									</p>
+									<p style="color: #666; line-height: 1.7; margin-bottom: 0; flex-grow: 1; font-size: 0.95rem;">Visionary leader who transformed MDI from a training centre into a degree-awarding institution. Established accredited bachelor's and master's programmes, strengthened international collaborations, and introduced postgraduate programmes including MPSM, MSc PM, and MA M&E.</p>
+									<div style="display: flex; gap: 10px; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;">
+										<a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #f39c12; color: white; border-radius: 50%; text-decoration: none; transition: all 0.3s ease; font-size: 1rem;"><i class="fab fa-linkedin"></i></a>
+										<a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #1766a2; color: white; border-radius: 50%; text-decoration: none; transition: all 0.3s ease; font-size: 1rem;"><i class="fas fa-envelope"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Member 2: 1st Vice President -->
+						<div class="item">
+							<div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.15); transition: all 0.4s ease; height: 100%; display: flex; flex-direction: column;">
+								<!-- Image Container -->
+								<div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, #9b59b6, #8e44ad);">
+									<img src="assets/images/exco/exco-2.jpg" alt="Dr. Funke Adepoju - 1st Vice President" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+									<!-- Role Badge -->
+									<div style="position: absolute; top: 15px; left: 15px; background: linear-gradient(135deg, #9b59b6, #8e44ad); color: white; padding: 8px 15px; border-radius: 25px; font-weight: 700; font-size: 0.85rem; box-shadow: 0 4px 12px rgba(155, 89, 182, 0.4);">
+										<i class="fas fa-award" style="margin-right: 6px;"></i>1ST VICE PRESIDENT
+									</div>
+								</div>
+								<!-- Content Container -->
+								<div style="padding: 30px 25px; flex: 1; display: flex; flex-direction: column;">
+									<h4 style="color: #1a1a1a; font-weight: 800; margin-bottom: 5px; font-size: 1.25rem;">Dr. (Mrs) Funke Adepoju</h4>
+									<p style="color: #9b59b6; font-weight: 700; font-size: 0.9rem; margin-bottom: 15px;">
+										<i class="fas fa-building" style="margin-right: 6px;"></i>Director-General, ASCON, Nigeria
+									</p>
+									<p style="color: #666; line-height: 1.7; margin-bottom: 0; flex-grow: 1; font-size: 0.95rem;">Transforming ASCON into a national reform hub with 30+ years in public administration. MBA holder and doctoral student, completed executive training at Harvard and Oxford. 2025 Visiting Fellow at Blavatnik School, University of Oxford. Leading digital learning transformation and e-governance focus.</p>
+									<div style="display: flex; gap: 10px; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;">
+										<a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #9b59b6; color: white; border-radius: 50%; text-decoration: none; transition: all 0.3s ease; font-size: 1rem;"><i class="fab fa-linkedin"></i></a>
+										<a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #1766a2; color: white; border-radius: 50%; text-decoration: none; transition: all 0.3s ease; font-size: 1rem;"><i class="fas fa-envelope"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Member 3: 2nd Vice President -->
+						<div class="item">
+							<div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.15); transition: all 0.4s ease; height: 100%; display: flex; flex-direction: column;">
+								<!-- Image Container -->
+								<div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, #27ae60, #2ecc71);">
+									<img src="assets/images/exco/exco-3.jpg" alt="Prof. Samuel Kwaku Bonsu - 2nd Vice President" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+									<!-- Role Badge -->
+									<div style="position: absolute; top: 15px; left: 15px; background: linear-gradient(135deg, #27ae60, #2ecc71); color: white; padding: 8px 15px; border-radius: 25px; font-weight: 700; font-size: 0.85rem; box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);">
+										<i class="fas fa-graduation-cap" style="margin-right: 6px;"></i>2ND VICE PRESIDENT
+									</div>
+								</div>
+								<!-- Content Container -->
+								<div style="padding: 30px 25px; flex: 1; display: flex; flex-direction: column;">
+									<h4 style="color: #1a1a1a; font-weight: 800; margin-bottom: 5px; font-size: 1.25rem;">Professor Samuel Kwaku Bonsu</h4>
+									<p style="color: #27ae60; font-weight: 700; font-size: 0.9rem; margin-bottom: 15px;">
+										<i class="fas fa-building" style="margin-right: 6px;"></i>Rector, GIMPA, Ghana
+									</p>
+									<p style="color: #666; line-height: 1.7; margin-bottom: 0; flex-grow: 1; font-size: 0.95rem;">PhD from University of Rhode Island, tenured Professor at York University's Schulich School of Business. Former Director of PhD Marketing programme and Dean of School of Governance & Leadership at GIMPA. Published groundbreaking research in prestigious journals and served as Visiting Professor across Europe, Africa, and Asia.</p>
+									<div style="display: flex; gap: 10px; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;">
+										<a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #27ae60; color: white; border-radius: 50%; text-decoration: none; transition: all 0.3s ease; font-size: 1rem;"><i class="fab fa-linkedin"></i></a>
+										<a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #1766a2; color: white; border-radius: 50%; text-decoration: none; transition: all 0.3s ease; font-size: 1rem;"><i class="fas fa-envelope"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Member 4: Executive Member -->
+						<div class="item">
+							<div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.15); transition: all 0.4s ease; height: 100%; display: flex; flex-direction: column;">
+								<!-- Image Container -->
+								<div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, #f39c12, #e67e22);">
+									<img src="assets/images/exco/exco-4.jpg" alt="Hon. Nee-Alah T. Varpilah - Executive Member" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+									<!-- Role Badge -->
+									<div style="position: absolute; top: 15px; left: 15px; background: linear-gradient(135deg, #f39c12, #e67e22); color: white; padding: 8px 15px; border-radius: 25px; font-weight: 700; font-size: 0.85rem; box-shadow: 0 4px 12px rgba(243, 156, 18, 0.4);">
+										<i class="fas fa-briefcase" style="margin-right: 6px;"></i>EXECUTIVE MEMBER
+									</div>
+								</div>
+								<!-- Content Container -->
+								<div style="padding: 30px 25px; flex: 1; display: flex; flex-direction: column;">
+									<h4 style="color: #1a1a1a; font-weight: 800; margin-bottom: 5px; font-size: 1.25rem;">Hon. Nee-Alah T. Varpilah</h4>
+									<p style="color: #f39c12; font-weight: 700; font-size: 0.9rem; margin-bottom: 15px;">
+										<i class="fas fa-building" style="margin-right: 6px;"></i>Director-General, LIPA Liberia
+									</p>
+									<p style="color: #666; line-height: 1.7; margin-bottom: 0; flex-grow: 1; font-size: 0.95rem;">Leading modernization of Liberian public-sector training. LIPA became PMI Authorized Training Partner, signed MOUs with Amos Claudius Sawyer Foundation, and expanded programs including professional certifications and governance training to strengthen Liberia's public-sector human capital.</p>
+									<div style="display: flex; gap: 10px; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;">
+										<a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #f39c12; color: white; border-radius: 50%; text-decoration: none; transition: all 0.3s ease; font-size: 1rem;"><i class="fab fa-linkedin"></i></a>
+										<a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #1766a2; color: white; border-radius: 50%; text-decoration: none; transition: all 0.3s ease; font-size: 1rem;"><i class="fas fa-envelope"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Member 5: Executive Member -->
+						<div class="item">
+							<div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.15); transition: all 0.4s ease; height: 100%; display: flex; flex-direction: column;">
+								<!-- Image Container -->
+								<div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, #1766a2, #2980b9);">
+									<img src="assets/images/exco/exco-5.jpg" alt="Dr. Gladys Njoukiang Asaah - Executive Member" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+									<!-- Role Badge -->
+									<div style="position: absolute; top: 15px; left: 15px; background: linear-gradient(135deg, #1766a2, #2980b9); color: white; padding: 8px 15px; border-radius: 25px; font-weight: 700; font-size: 0.85rem; box-shadow: 0 4px 12px rgba(23, 102, 162, 0.4);">
+										<i class="fas fa-user-tie" style="margin-right: 6px;"></i>EXECUTIVE MEMBER
+									</div>
+								</div>
+								<!-- Content Container -->
+								<div style="padding: 30px 25px; flex: 1; display: flex; flex-direction: column;">
+									<h4 style="color: #1a1a1a; font-weight: 800; margin-bottom: 5px; font-size: 1.25rem;">Dr. Gladys Njoukiang Asaah</h4>
+									<p style="color: #1766a2; font-weight: 700; font-size: 0.9rem; margin-bottom: 15px;">
+										<i class="fas fa-building" style="margin-right: 6px;"></i>Regional Director, PAID-WA Cameroon
+									</p>
+									<p style="color: #666; line-height: 1.7; margin-bottom: 0; flex-grow: 1; font-size: 0.95rem;">Doctorate in Investment Management, MSc Banking & Finance, PGD Economics. Former branch manager in microfinance and lecturer at Catholic University Institute of Buea. Leading PAID-WA programmes across West Africa in finance, governance, ICT, health, and development as a key training and research centre.</p>
+									<div style="display: flex; gap: 10px; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;">
+										<a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #1766a2; color: white; border-radius: 50%; text-decoration: none; transition: all 0.3s ease; font-size: 1rem;"><i class="fab fa-linkedin"></i></a>
+										<a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #f39c12; color: white; border-radius: 50%; text-decoration: none; transition: all 0.3s ease; font-size: 1rem;"><i class="fas fa-envelope"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Member 6: Executive Member -->
+						<div class="item">
+							<div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.15); transition: all 0.4s ease; height: 100%; display: flex; flex-direction: column;">
+								<!-- Image Container -->
+								<div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, #e74c3c, #c0392b);">
+									<img src="assets/images/exco/exco-6.jpg" alt="Prof. Ezekiel Duramany-Lakkoh - Executive Member" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+									<!-- Role Badge -->
+									<div style="position: absolute; top: 15px; left: 15px; background: linear-gradient(135deg, #e74c3c, #c0392b); color: white; padding: 8px 15px; border-radius: 25px; font-weight: 700; font-size: 0.85rem; box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);">
+										<i class="fas fa-book-open" style="margin-right: 6px;"></i>EXECUTIVE MEMBER
+									</div>
+								</div>
+								<!-- Content Container -->
+								<div style="padding: 30px 25px; flex: 1; display: flex; flex-direction: column;">
+									<h4 style="color: #1a1a1a; font-weight: 800; margin-bottom: 5px; font-size: 1.25rem;">Professor Ezekiel Duramany-Lakkoh</h4>
+									<p style="color: #e74c3c; font-weight: 700; font-size: 0.9rem; margin-bottom: 15px;">
+										<i class="fas fa-building" style="margin-right: 6px;"></i>Deputy Vice-Chancellor, IPAM Sierra Leone
+									</p>
+									<p style="color: #666; line-height: 1.7; margin-bottom: 0; flex-grow: 1; font-size: 0.95rem;">PhD in Finance/Accounting, appointed Deputy Vice-Chancellor in 2025. Previously Dean of Faculty of Accounting & Finance at IPAM and CEO of JIT Capital Group. Expanded IPAM's academic programs and promoted digital learning across the institution.</p>
+									<div style="display: flex; gap: 10px; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;">
+										<a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #e74c3c; color: white; border-radius: 50%; text-decoration: none; transition: all 0.3s ease; font-size: 1rem;"><i class="fab fa-linkedin"></i></a>
+										<a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #1766a2; color: white; border-radius: 50%; text-decoration: none; transition: all 0.3s ease; font-size: 1rem;"><i class="fas fa-envelope"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Member 7: Executive Secretary -->
+						<div class="item">
+							<div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.15); transition: all 0.4s ease; height: 100%; display: flex; flex-direction: column; border-top: 4px solid #f39c12;">
+								<!-- Image Container -->
+								<div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, #f39c12, #e67e22);">
+									<img src="assets/images/exco/exco-7.jpg" alt="Olaolu A. Adewumi - Executive Secretary" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+									<!-- Role Badge -->
+									<div style="position: absolute; top: 15px; left: 15px; background: linear-gradient(135deg, #f39c12, #e67e22); color: white; padding: 8px 15px; border-radius: 25px; font-weight: 700; font-size: 0.85rem; box-shadow: 0 4px 12px rgba(243, 156, 18, 0.4);">
+										<i class="fas fa-cogs" style="margin-right: 6px;"></i>EXECUTIVE SECRETARY
+									</div>
+								</div>
+								<!-- Content Container -->
+								<div style="padding: 30px 25px; flex: 1; display: flex; flex-direction: column;">
+									<h4 style="color: #1a1a1a; font-weight: 800; margin-bottom: 5px; font-size: 1.25rem;">Olaolu A. Adewumi</h4>
+									<p style="color: #f39c12; font-weight: 700; font-size: 0.9rem; margin-bottom: 15px;">
+										<i class="fas fa-star" style="margin-right: 6px;"></i>WAMDEVIN Secretariat
+									</p>
+									<p style="color: #666; line-height: 1.7; margin-bottom: 0; flex-grow: 1; font-size: 0.95rem;">30+ years with WAMDEVIN, holds B.Sc. in Government & Public Administration and MPA. Leads capacity-building, research, training, and policy initiatives. Distinguished by unwavering commitment to excellence, strategic vision, and transformative leadership in management development across West Africa.</p>
+									<div style="display: flex; gap: 10px; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;">
+										<a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #f39c12; color: white; border-radius: 50%; text-decoration: none; transition: all 0.3s ease; font-size: 1rem;"><i class="fab fa-linkedin"></i></a>
+										<a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #1766a2; color: white; border-radius: 50%; text-decoration: none; transition: all 0.3s ease; font-size: 1rem;"><i class="fas fa-envelope"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- EXCO Carousel Styles -->
+				<style>
+					.exco-carousel.owl-carousel {
+						margin: 0 -15px;
+					}
+
+					.exco-carousel.owl-carousel .item {
+						padding: 0 15px;
+					}
+
+					.exco-carousel.owl-carousel .item > div {
+						transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+					}
+
+					.exco-carousel.owl-carousel .item > div:hover {
+						transform: translateY(-15px);
+						box-shadow: 0 25px 50px rgba(0,0,0,0.2) !important;
+					}
+
+					.exco-carousel.owl-carousel .item img {
+						transition: transform 0.5s ease;
+					}
+
+					.exco-carousel.owl-carousel .item:hover img {
+						transform: scale(1.1);
+					}
+
+					.exco-carousel.owl-carousel .item a:hover {
+						transform: scale(1.15);
+					}
+
+					@media (max-width: 768px) {
+						.exco-carousel.owl-carousel .item > div h4 {
+							font-size: 1.1rem !important;
+						}
+
+						.exco-carousel.owl-carousel .item > div p {
+							font-size: 0.9rem !important;
+						}
+					}
+
+					@media (max-width: 576px) {
+						.exco-carousel.owl-carousel .item {
+							padding: 0 !important;
+						}
+					}
+				</style>
+
+				<!-- Initialize Owl Carousel for EXCO -->
+				<script>
+					document.addEventListener('DOMContentLoaded', function() {
+						if (jQuery && jQuery.fn.owlCarousel) {
+							jQuery('.exco-carousel').owlCarousel({
+								loop: true,
+								margin: 20,
+								nav: true,
+								autoplay: false,
+								responsive: {
+									0: {
+										items: 1
+									},
+									600: {
+										items: 2
+									},
+									1000: {
+										items: 3
+									}
+								},
+								navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>']
+							});
+						}
+					});
+				</script>
+			</div>
+			
+			<!-- Testimonials END -->
+			
+        </div>
+		<!-- contact area END -->
+	</div>
+	</main>
+    <!-- Content END-->
+	<!-- Footer ==== -->
+	<footer class="wam-footer">
+		<div class="footer-top">
+			<div class="pt-exebar">
+				<div class="container">
+					<div class="d-flex align-items-stretch">
+						<div class="pt-logo mr-auto">
+							<a href="index.php"><img src="assets/images/logo-white.png" alt="WAMDEVIN logo"/></a>
+						</div>
+						<div class="pt-social-link">
+							<ul class="list-inline m-a0">
+								<li><a href="#" class="btn-link" aria-label="Facebook"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" class="btn-link" aria-label="Twitter"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#" class="btn-link" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#" class="btn-link" aria-label="YouTube"><i class="fa fa-youtube-play"></i></a></li>
+							</ul>
+						</div>
+						<div class="pt-btn-join">
+							<a href="membership.php" class="btn" data-translate="footer.joinNow">Join Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-12 col-sm-12 footer-col-4">
+						<div class="widget">
+							<h5 class="footer-title" data-translate="footer.signUpUpdates">Sign Up For Updates</h5>
+							<p class="text-capitalize m-b20" data-translate="footer.signUpDesc">Get news on training, research, and regional initiatives.</p>
+							<div class="subscribe-form m-b20">
+								<form class="subscription-form" action="#" method="post">
+									<div class="ajax-message"></div>
+									<div class="input-group">
+										<input name="email" required="required" class="form-control" placeholder="Your Email Address" type="email">
+										<span class="input-group-btn">
+											<button name="submit" value="Submit" type="submit" class="btn"><i class="fa fa-arrow-right"></i></button>
+										</span>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-5 col-md-7 col-sm-12">
+						<div class="row">
+							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
+								<div class="widget footer_widget">
+									<h5 class="footer-title" data-translate="footer.company">Company</h5>
+									<ul>
+										<li><a href="index.php" data-translate="nav.home">Home</a></li>
+										<li><a href="about.php" data-translate="nav.about">About</a></li>
+										<li><a href="leadership.php" data-translate="nav.leadership">Leadership</a></li>
+										<li><a href="contact.php" data-translate="nav.contact">Contact</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
+								<div class="widget footer_widget">
+									<h5 class="footer-title" data-translate="footer.quickLinks">Quick Links</h5>
+									<ul>
+										<li><a href="membership.php" data-translate="nav.membership">Membership</a></li>
+										<li><a href="partners.php" data-translate="nav.partners">Partners</a></li>
+										<li><a href="projects.php" data-translate="nav.projects">Projects</a></li>
+										<li><a href="index.php" data-translate="footer.events">Events</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
+								<div class="widget footer_widget">
+									<h5 class="footer-title" data-translate="footer.services">Services</h5>
+									<ul>
+										<li><a href="trainners.php" data-translate="nav.training">Training</a></li>
+										<li><a href="research.php" data-translate="nav.research">Research</a></li>
+										<li><a href="publication.php" data-translate="nav.publication">Publications</a></li>
+										<li><a href="consultancy.php" data-translate="nav.consultancy">Consultancy</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4">
+						<div class="widget widget_gallery gallery-grid-4">
+							<h5 class="footer-title">Our Gallery</h5>
+							<div class="footer-gallery-carousel owl-carousel magnific-image">
+								<div class="item"><a href="assets/images/gallery/pic1.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic1.jpg" alt="Gallery image"></a></div>
+								<div class="item"><a href="assets/images/gallery/pic2.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic2.jpg" alt="Gallery image"></a></div>
+								<div class="item"><a href="assets/images/gallery/pic3.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic3.jpg" alt="Gallery image"></a></div>
+								<div class="item"><a href="assets/images/gallery/pic4.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic4.jpg" alt="Gallery image"></a></div>
+								<div class="item"><a href="assets/images/gallery/pic5.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic5.jpg" alt="Gallery image"></a></div>
+								<div class="item"><a href="assets/images/gallery/pic6.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic6.jpg" alt="Gallery image"></a></div>
+								<div class="item"><a href="assets/images/gallery/pic7.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic7.jpg" alt="Gallery image"></a></div>
+								<div class="item"><a href="assets/images/gallery/pic8.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic8.jpg" alt="Gallery image"></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+						<a target="_blank" href="https://www.wamdevin.org">WAMDEVIN <?php echo date('Y'); ?></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer END ==== -->
+	<style>
+		.wam-footer {
+			background: linear-gradient(180deg, #0b1830 0%, #071425 55%, #06101e 100%);
+			color: #d6e2ee;
+		}
+
+		.wam-footer .footer-top {
+			padding: 60px 0 40px;
+			border-top: 1px solid rgba(255, 255, 255, 0.08);
+		}
+
+		.wam-footer .pt-exebar {
+			background: rgba(255, 255, 255, 0.05);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+			padding: 18px 0;
+			margin-bottom: 35px;
+		}
+
+		.wam-footer .pt-logo img {
+			height: 44px;
+			width: auto;
+		}
+
+		.wam-footer .footer-title {
+			color: #ffffff;
+			font-weight: 800;
+			margin-bottom: 18px;
+			letter-spacing: 0.4px;
+		}
+
+		.wam-footer p {
+			color: #d6e2ee;
+		}
+
+		.wam-footer a {
+			color: #d6e2ee;
+			transition: color 0.2s ease;
+		}
+
+		.wam-footer a:hover {
+			color: #f4b23a;
+		}
+
+		.wam-footer .footer_widget ul,
+		.wam-footer .widget ul {
+			list-style: none;
+			padding-left: 0;
+			margin: 0;
+		}
+
+		.wam-footer .footer_widget ul li,
+		.wam-footer .widget ul li {
+			margin-bottom: 10px;
+		}
+
+		.wam-footer .pt-social-link .btn-link {
+			color: #ffffff;
+			background: rgba(255, 255, 255, 0.12);
+			border-radius: 50%;
+			width: 38px;
+			height: 38px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			transition: all 0.2s ease;
+		}
+
+		.wam-footer .pt-social-link .btn-link:hover {
+			background: #f4b23a;
+			color: #06101e;
+		}
+
+		.wam-footer .subscribe-form .form-control {
+			background: #06101e;
+			border: 1px solid rgba(255, 255, 255, 0.15);
+			color: #ffffff;
+		}
+
+		.wam-footer .subscribe-form .form-control::placeholder {
+			color: #9fb2c4;
+		}
+
+		.wam-footer .subscribe-form .btn {
+			background: #f4b23a;
+			color: #06101e;
+			border: none;
+		}
+
+		.wam-footer .widget_gallery img {
+			border-radius: 6px;
+			box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+		}
+
+		.wam-footer .footer-gallery-carousel .item {
+			padding: 4px;
+		}
+
+		.wam-footer .footer-gallery-carousel img {
+			width: 100%;
+			height: 90px;
+			object-fit: cover;
+		}
+
+		.wam-footer .footer-bottom {
+			padding: 18px 0;
+			border-top: 1px solid rgba(255, 255, 255, 0.12);
+			background: #050c18;
+		}
+
+		@media (max-width: 768px) {
+			.wam-footer .pt-exebar .d-flex {
+				flex-direction: column;
+				gap: 15px;
+			}
+
+			.wam-footer .pt-btn-join {
+				align-self: flex-start;
+			}
+
+			.wam-footer .footer-gallery-carousel img {
+				height: 110px;
+			}
+		}
+	</style>
+	<button class="back-to-top fa fa-chevron-up"></button>
+</div>
+<!-- page-wraper END -->
+	
+<!-- External JavaScripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+<script src="assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+<script src="assets/vendors/magnific-popup/magnific-popup.js"></script>
+<script src="assets/vendors/counter/waypoints-min.js"></script>
+<script src="assets/vendors/counter/counterup.min.js"></script>
+<script src="assets/vendors/imagesloaded/imagesloaded.js"></script>
+<script src="assets/vendors/masonry/masonry.js"></script>
+<script src="assets/vendors/masonry/filter.js"></script>
+<script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
+<script src="assets/js/functions.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/contact.js"></script>
+<script src='assets/vendors/switcher/switcher.js'></script>
+<!-- Revolution JavaScripts Files -->
+<script src="assets/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="assets/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script src="assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="assets/vendors/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="assets/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="assets/vendors/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="assets/vendors/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="assets/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script>
+jQuery(document).ready(function() {
+	var ttrevapi;
+	var tpj =jQuery;
+	if(tpj("#rev_slider_486_1").revolution == undefined){
+		revslider_showDoubleJqueryError("#rev_slider_486_1");
+	}else{
+		ttrevapi = tpj("#rev_slider_486_1").show().revolution({
+			sliderType:"standard",
+			jsFileLocation:"assets/vendors/revolution/js/",
+			sliderLayout:"fullwidth",
+			dottedOverlay:"none",
+			delay:9000,
+			navigation: {
+				keyboardNavigation:"on",
+				keyboard_direction: "horizontal",
+				mouseScrollNavigation:"off",
+				mouseScrollReverse:"default",
+				onHoverStop:"on",
+				touch:{
+					touchenabled:"on",
+					swipe_threshold: 75,
+					swipe_min_touches: 1,
+					swipe_direction: "horizontal",
+					drag_block_vertical: false
+				}
+				,
+				arrows: {
+					style: "uranus",
+					enable: true,
+					hide_onmobile: false,
+					hide_onleave: false,
+					tmp: '',
+					left: {
+						h_align: "left",
+						v_align: "center",
+						h_offset: 10,
+						v_offset: 0
+					},
+					right: {
+						h_align: "right",
+						v_align: "center",
+						h_offset: 10,
+						v_offset: 0
+					}
+				},
+				
+			},
+			viewPort: {
+				enable:true,
+				outof:"pause",
+				visible_area:"80%",
+				presize:false
+			},
+			responsiveLevels:[1240,1024,778,480],
+			visibilityLevels:[1240,1024,778,480],
+			gridwidth:[1240,1024,778,480],
+			gridheight:[768,600,600,600],
+			lazyType:"none",
+			parallax: {
+				type:"scroll",
+				origo:"enterpoint",
+				speed:400,
+				levels:[5,10,15,20,25,30,35,40,45,50,46,47,48,49,50,55],
+				type:"scroll",
+			},
+			shadow:0,
+			spinner:"off",
+			stopLoop:"off",
+			stopAfterLoops:-1,
+			stopAtSlide:-1,
+			shuffle:"off",
+			autoHeight:"off",
+			hideThumbsOnMobile:"off",
+			hideSliderAtLimit:0,
+			hideCaptionAtLimit:0,
+			hideAllCaptionAtLilmit:0,
+			debugMode:false,
+			fallbacks: {
+				simplifyAll:"off",
+				nextSlideOnWindowFocus:"off",
+				disableFocusListener:false,
+			}
+		});
+	}
+});	
+</script>
+
+<script>
+	jQuery(document).ready(function() {
+		if (jQuery && jQuery.fn.owlCarousel) {
+			jQuery('.footer-gallery-carousel').owlCarousel({
+				loop: true,
+				margin: 8,
+				nav: false,
+				dots: false,
+				autoplay: true,
+				autoplayTimeout: 2000,
+				autoplayHoverPause: true,
+				responsive: {
+					0: { items: 1 },
+					576: { items: 2 },
+					992: { items: 2 }
+				}
+			});
+		}
+	});
+</script>
+
+<!-- Language Switcher Script -->
+<script src="assets/js/language-switcher.js"></script>
+
+</body>
+</html>
+
+
+
+

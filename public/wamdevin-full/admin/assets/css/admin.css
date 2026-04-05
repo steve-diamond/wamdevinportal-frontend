@@ -1,0 +1,13 @@
+/*
+ * WAMDEVIN Admin CSS Bundle
+ * Consolidated entrypoint for admin styles
+ */
+
+@import url('admin-modern.css');
+@import url('assets.css');
+@import url('typography.css');
+@import url('shortcodes/shortcodes.css');
+@import url('style.css');
+@import url('dashboard.css');
+@import url('color/color-1.css');
+@import url('wamdevin-admin.css');

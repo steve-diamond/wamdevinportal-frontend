@@ -1,0 +1,33 @@
+[11-Oct-2025 00:43:53 UTC] PHP Warning:  include(includes/header.php): Failed to open stream: No such file or directory in /home/wamdevin/public_html/about.php on line 35
+[11-Oct-2025 00:43:53 UTC] PHP Warning:  include(includes/header.php): Failed to open stream: No such file or directory in /home/wamdevin/public_html/about.php on line 35
+[11-Oct-2025 00:43:53 UTC] PHP Warning:  include(): Failed opening 'includes/header.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/wamdevin/public_html/about.php on line 35
+[11-Oct-2025 00:43:53 UTC] PHP Warning:  include(/home/wamdevin/public_html/includes/footer-scripts.php): Failed to open stream: No such file or directory in /home/wamdevin/public_html/about.php on line 324
+[11-Oct-2025 00:43:53 UTC] PHP Warning:  include(/home/wamdevin/public_html/includes/footer-scripts.php): Failed to open stream: No such file or directory in /home/wamdevin/public_html/about.php on line 324
+[11-Oct-2025 00:43:53 UTC] PHP Warning:  include(): Failed opening '/home/wamdevin/public_html/includes/footer-scripts.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/wamdevin/public_html/about.php on line 324
+[11-Oct-2025 01:04:19 UTC] PHP Warning:  include(/home/wamdevin/public_html/includes/footer-scripts.php): Failed to open stream: No such file or directory in /home/wamdevin/public_html/leadership.php on line 393
+[11-Oct-2025 01:04:19 UTC] PHP Warning:  include(/home/wamdevin/public_html/includes/footer-scripts.php): Failed to open stream: No such file or directory in /home/wamdevin/public_html/leadership.php on line 393
+[11-Oct-2025 01:04:19 UTC] PHP Warning:  include(): Failed opening '/home/wamdevin/public_html/includes/footer-scripts.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/wamdevin/public_html/leadership.php on line 393
+[11-Oct-2025 01:04:43 UTC] PHP Warning:  include(/home/wamdevin/public_html/includes/footer-scripts.php): Failed to open stream: No such file or directory in /home/wamdevin/public_html/contact.php on line 148
+[11-Oct-2025 01:04:43 UTC] PHP Warning:  include(/home/wamdevin/public_html/includes/footer-scripts.php): Failed to open stream: No such file or directory in /home/wamdevin/public_html/contact.php on line 148
+[11-Oct-2025 01:04:43 UTC] PHP Warning:  include(): Failed opening '/home/wamdevin/public_html/includes/footer-scripts.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/wamdevin/public_html/contact.php on line 148
+[11-Oct-2025 01:16:50 UTC] PHP Warning:  include(/home/wamdevin/public_html/includes/footer-scripts.php): Failed to open stream: No such file or directory in /home/wamdevin/public_html/contact.php on line 148
+[11-Oct-2025 01:16:50 UTC] PHP Warning:  include(/home/wamdevin/public_html/includes/footer-scripts.php): Failed to open stream: No such file or directory in /home/wamdevin/public_html/contact.php on line 148
+[11-Oct-2025 01:16:50 UTC] PHP Warning:  include(): Failed opening '/home/wamdevin/public_html/includes/footer-scripts.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/wamdevin/public_html/contact.php on line 148
+[11-Oct-2025 01:21:15 UTC] PHP Warning:  include(/home/wamdevin/public_html/includes/footer-scripts.php): Failed to open stream: No such file or directory in /home/wamdevin/public_html/index.php on line 2082
+[11-Oct-2025 01:21:15 UTC] PHP Warning:  include(/home/wamdevin/public_html/includes/footer-scripts.php): Failed to open stream: No such file or directory in /home/wamdevin/public_html/index.php on line 2082
+[11-Oct-2025 01:21:15 UTC] PHP Warning:  include(): Failed opening '/home/wamdevin/public_html/includes/footer-scripts.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/wamdevin/public_html/index.php on line 2082
+[19-Oct-2025 06:50:44 UTC] PHP Warning:  require_once(/home/wamdevin/public_html/includes/language.php): Failed to open stream: No such file or directory in /home/wamdevin/public_html/index.php on line 3
+[19-Oct-2025 06:50:44 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/wamdevin/public_html/includes/language.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/wamdevin/public_html/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/wamdevin/public_html/index.php on line 3
+[19-Oct-2025 06:50:47 UTC] PHP Warning:  require_once(/home/wamdevin/public_html/includes/language.php): Failed to open stream: No such file or directory in /home/wamdevin/public_html/index.php on line 3
+[19-Oct-2025 06:50:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/wamdevin/public_html/includes/language.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/wamdevin/public_html/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/wamdevin/public_html/index.php on line 3
+[19-Oct-2025 06:50:48 UTC] PHP Warning:  require_once(/home/wamdevin/public_html/includes/language.php): Failed to open stream: No such file or directory in /home/wamdevin/public_html/index.php on line 3
+[19-Oct-2025 06:50:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/wamdevin/public_html/includes/language.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/wamdevin/public_html/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/wamdevin/public_html/index.php on line 3

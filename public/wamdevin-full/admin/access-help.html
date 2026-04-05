@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAMDEVIN Admin Login - Quick Test</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: linear-gradient(135deg, #1766a2, #27ae60); 
+            margin: 0; 
+            padding: 20px; 
+            min-height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+        }
+        .container { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 15px; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1); 
+            max-width: 500px; 
+            width: 100%;
+        }
+        h1 { color: #1766a2; text-align: center; margin-bottom: 30px; }
+        .credential-box { 
+            background: #f8f9fa; 
+            padding: 20px; 
+            border-radius: 10px; 
+            margin-bottom: 20px; 
+            border-left: 5px solid #1766a2;
+        }
+        .credential-box h3 { color: #1766a2; margin: 0 0 10px 0; }
+        .credential-box p { margin: 5px 0; }
+        .credential-box strong { color: #333; }
+        .test-links { text-align: center; margin-top: 30px; }
+        .btn { 
+            display: inline-block; 
+            padding: 12px 24px; 
+            margin: 5px; 
+            background: #1766a2; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn:hover { 
+            background: #0f4c75; 
+            transform: translateY(-2px); 
+            box-shadow: 0 5px 15px rgba(23, 102, 162, 0.3);
+            color: white;
+        }
+        .btn.secondary { background: #f39c12; }
+        .btn.secondary:hover { background: #d68910; }
+        .status { 
+            text-align: center; 
+            padding: 15px; 
+            background: #d4edda; 
+            color: #155724; 
+            border: 1px solid #c3e6cb; 
+            border-radius: 8px; 
+            margin-bottom: 20px;
+        }
+        .error { 
+            background: #f8d7da; 
+            color: #721c24; 
+            border-color: #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 WAMDEVIN Admin Access</h1>
+        
+        <div class="status">
+            <strong>✅ System Status:</strong> WAMDEVIN Admin Portal is ready for login testing
+        </div>
+
+        <div class="credential-box">
+            <h3>👑 Administrator Access</h3>
+            <p><strong>Email:</strong> admin@wamdevin.org</p>
+            <p><strong>Password:</strong> WAMDEVIN2024!Admin</p>
+            <p><small>Full system administration access</small></p>
+        </div>
+
+        <div class="credential-box">
+            <h3>👨‍🏫 Facilitator Access</h3>
+            <p><strong>Email:</strong> facilitator@wamdevin.org</p>
+            <p><strong>Password:</strong> WAMDEVIN2024!Facilitator</p>
+            <p><small>Course and profile management</small></p>
+        </div>
+
+        <div class="credential-box">
+            <h3>📋 Coordinator Access</h3>
+            <p><strong>Email:</strong> coordinator@wamdevin.org</p>
+            <p><strong>Password:</strong> WAMDEVIN2024!Coordinator</p>
+            <p><small>Program coordination tools</small></p>
+        </div>
+
+        <div class="test-links">
+            <a href="login.php" class="btn">🔐 Official Admin Login</a>
+            <a href="login-debug.php" class="btn secondary">🔧 Debug Tool</a>
+            <a href="../index.php" class="btn" style="background: #27ae60;">🏠 Main Website</a>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; color: #666; font-size: 14px;">
+            <p><strong>WAMDEVIN</strong> - West African Management Development Institute Network</p>
+            <p>Professional Administrative Portal - Production Ready</p>
+        </div>
+    </div>
+</body>
+</html>

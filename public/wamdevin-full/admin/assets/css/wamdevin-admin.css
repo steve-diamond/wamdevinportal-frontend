@@ -1,0 +1,557 @@
+/*
+======================================
+WAMDEVIN ADMIN DASHBOARD STYLES
+West African Management Development Network
+Professional Administrative Interface
+======================================
+*/
+
+/* WAMDEVIN Brand Variables */
+:root {
+    --wamdevin-primary: #1766a2;
+    --wamdevin-secondary: #f39c12;
+    --wamdevin-dark: #2c3e50;
+    --wamdevin-light: #ecf0f1;
+    --wamdevin-success: #27ae60;
+    --wamdevin-white: #ffffff;
+    --wamdevin-gray: #95a5a6;
+    --wamdevin-red: #e74c3c;
+    --wamdevin-shadow: rgba(23, 102, 162, 0.1);
+}
+
+/* WAMDEVIN Professional Header */
+.ttr-header {
+    background: linear-gradient(135deg, var(--wamdevin-primary), #1a5a8a);
+    box-shadow: 0 2px 15px var(--wamdevin-shadow);
+    border-bottom: 3px solid var(--wamdevin-secondary);
+}
+
+.ttr-header .ttr-header-wrapper {
+    border-bottom: none;
+}
+
+/* WAMDEVIN Logo Styling */
+.ttr-logo-box {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 0 20px 20px 0;
+    padding: 5px 15px;
+    transition: all 0.3s ease;
+}
+
+.ttr-logo-box:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateX(5px);
+}
+
+/* Professional Sidebar */
+.ttr-sidebar {
+    background: linear-gradient(180deg, var(--wamdevin-dark), #1a252f);
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.ttr-sidebar-navi ul li a {
+    color: #bdc3c7;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+.ttr-sidebar-navi ul li a:hover,
+.ttr-sidebar-navi ul li.ttr-active a {
+    background: var(--wamdevin-primary);
+    border-left: 4px solid var(--wamdevin-secondary);
+    color: white;
+    transform: translateX(5px);
+}
+
+.ttr-sidebar-navi ul li a .ttr-icon {
+    color: var(--wamdevin-secondary);
+}
+
+/* WAMDEVIN Dashboard Cards */
+.widget-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-left: 5px solid var(--wamdevin-primary);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.widget-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    border-left: 5px solid var(--wamdevin-secondary);
+}
+
+.widget-card .wc-item {
+    padding: 25px;
+    position: relative;
+}
+
+.widget-card .wc-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, var(--wamdevin-primary), var(--wamdevin-secondary));
+    opacity: 0.1;
+    border-radius: 50%;
+    transform: translate(30px, -30px);
+}
+
+/* Professional Statistics Cards */
+.counter-style-1 {
+    background: linear-gradient(135deg, var(--wamdevin-primary), var(--wamdevin-secondary));
+    color: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(23, 102, 162, 0.3);
+    transition: all 0.3s ease;
+}
+
+.counter-style-1:hover {
+    transform: scale(1.05);
+}
+
+.counter-style-1 .counter-text {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* WAMDEVIN Branded Buttons */
+.btn-wamdevin {
+    background: linear-gradient(135deg, var(--wamdevin-primary), var(--wamdevin-secondary));
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(23, 102, 162, 0.3);
+}
+
+.btn-wamdevin:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(23, 102, 162, 0.4);
+    color: white;
+}
+
+/* Professional Table Styling */
+.table-responsive {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.table thead th {
+    background: linear-gradient(135deg, var(--wamdevin-primary), #1a5a8a);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 20px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+    background: rgba(23, 102, 162, 0.05);
+    transform: scale(1.01);
+}
+
+/* Widget Box Enhancements */
+.widget-box {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: none;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.widget-box:hover {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.widget-box .wc-title {
+    background: linear-gradient(135deg, var(--wamdevin-primary), #1a5a8a);
+    color: white;
+    padding: 20px 25px;
+    margin: 0;
+    border-bottom: 3px solid var(--wamdevin-secondary);
+}
+
+.widget-box .wc-title h4 {
+    color: white;
+    margin: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Layout helpers */
+.wam-inline-note {
+    margin-bottom: 12px;
+    color: #5a6473;
+}
+
+.wam-table-full {
+    width: 100%;
+}
+
+.wam-progress-85 {
+    width: 85%;
+}
+
+.wam-progress-92 {
+    width: 92%;
+}
+
+.wam-progress-68 {
+    width: 68%;
+}
+
+.wam-progress-75 {
+    width: 75%;
+}
+
+/* Dashboard Mission Blocks */
+.wam-alert {
+    margin-bottom: 24px;
+}
+
+.wam-brief-lead {
+    color: #5a6473;
+    font-size: 1.05rem;
+    margin-bottom: 24px;
+    max-width: 980px;
+}
+
+.wam-brief-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 10px 24px rgba(16, 24, 39, 0.08);
+    height: 100%;
+    border-left: 5px solid var(--wamdevin-primary);
+}
+
+.wam-brief-card--accent {
+    border-left-color: var(--wamdevin-secondary);
+}
+
+.wam-brief-card--success {
+    border-left-color: var(--wamdevin-success);
+}
+
+.wam-brief-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    color: var(--wamdevin-primary);
+    background: rgba(23, 102, 162, 0.12);
+}
+
+.wam-brief-icon--accent {
+    color: var(--wamdevin-secondary);
+    background: rgba(243, 156, 18, 0.12);
+}
+
+.wam-brief-icon--success {
+    color: var(--wamdevin-success);
+    background: rgba(39, 174, 96, 0.12);
+}
+
+.wam-brief-title {
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #101827;
+}
+
+.wam-brief-text {
+    color: #5a6473;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.wam-progress-bar {
+    width: 0%;
+}
+
+.wam-empty-state {
+    padding: 18px;
+    border: 1px dashed #cbd5e1;
+    border-radius: 12px;
+    color: #64748b;
+}
+
+.wam-empty-text {
+    color: #64748b;
+    margin: 0;
+}
+
+.wam-hidden {
+    display: none !important;
+}
+
+/* Admin Login Enhancements */
+.wam-login-title {
+    color: var(--wamdevin-primary);
+    font-weight: 800;
+}
+
+.wam-portal-features {
+    margin-bottom: 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Page intro component */
+.wam-page-intro {
+    background: linear-gradient(135deg, rgba(23, 102, 162, 0.08), rgba(243, 156, 18, 0.06));
+    border: 1px solid rgba(23, 102, 162, 0.12);
+    border-radius: 16px;
+    padding: 22px 24px;
+    margin: 0 0 24px 0;
+}
+
+.wam-page-intro__header {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.wam-page-intro__eyebrow {
+    color: var(--wamdevin-primary);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.wam-page-intro__title {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #101827;
+    margin: 0;
+}
+
+.wam-page-intro__lead {
+    color: #5a6473;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.wam-page-intro__list {
+    margin: 0;
+    padding-left: 18px;
+    color: #5a6473;
+}
+
+.wam-page-intro__list li {
+    margin-bottom: 6px;
+}
+
+/* Regional Focus Elements */
+.africa-stats {
+    background: linear-gradient(135deg, var(--wamdevin-secondary), #e67e22);
+    color: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(243, 156, 18, 0.3);
+}
+
+/* Professional Notifications */
+.notification-badge {
+    background: var(--wamdevin-secondary);
+    color: white;
+    border-radius: 50%;
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    box-shadow: 0 3px 10px rgba(243, 156, 18, 0.3);
+}
+
+.noti-box-list ul li {
+    border-bottom: 1px solid #f8f9fa;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.noti-box-list ul li:hover {
+    background: rgba(23, 102, 162, 0.05);
+    transform: translateX(5px);
+}
+
+/* Footer Enhancement */
+.admin-footer {
+    background: linear-gradient(135deg, var(--wamdevin-dark), #1a252f);
+    color: white;
+    padding: 20px 0;
+    margin-top: 50px;
+    box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.admin-footer a {
+    color: var(--wamdevin-secondary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.admin-footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Professional Breadcrumb */
+.db-breadcrumb {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border-left: 5px solid var(--wamdevin-primary);
+}
+
+.breadcrumb-title {
+    color: var(--wamdevin-dark);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.db-breadcrumb-list li a {
+    color: var(--wamdevin-primary);
+    text-decoration: none;
+}
+
+/* Professional Form Elements */
+.form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--wamdevin-primary);
+    box-shadow: 0 0 0 0.2rem rgba(23, 102, 162, 0.25);
+}
+
+/* Calendar Enhancements */
+#calendar {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fc-event {
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .counter-style-1 {
+        margin-bottom: 20px;
+    }
+    
+    .widget-card {
+        margin-bottom: 20px;
+    }
+    
+    .ttr-sidebar {
+        transform: translateX(-100%);
+    }
+    
+    .ttr-sidebar.ttr-opened {
+        transform: translateX(0);
+    }
+    
+    .admin-footer {
+        text-align: center;
+    }
+    
+    .admin-footer .col-md-6 {
+        margin-bottom: 10px;
+    }
+}
+
+/* Animation Classes */
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.widget-card {
+    animation: slideInUp 0.6s ease-out;
+}
+
+/* Professional Loading States */
+.loading {
+    position: relative;
+    overflow: hidden;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* Professional Success/Error States */
+.success-state {
+    border-left: 5px solid var(--wamdevin-success);
+    background: rgba(39, 174, 96, 0.1);
+}
+
+.error-state {
+    border-left: 5px solid var(--wamdevin-red);
+    background: rgba(231, 76, 60, 0.1);
+}
+
+/* WAMDEVIN Badge Styles */
+.wamdevin-badge {
+    background: linear-gradient(135deg, var(--wamdevin-primary), var(--wamdevin-secondary));
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

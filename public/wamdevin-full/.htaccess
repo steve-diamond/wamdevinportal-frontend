@@ -1,0 +1,393 @@
+# ===============================================
+# WAMDEVIN Website - Apache Configuration
+# Version: 2.0.0
+# Last Updated: February 2026
+# ===============================================
+
+# Performance, Security, and SEO Optimization
+
+# ===============================================
+# 1. ENABLE REWRITE ENGINE
+# ===============================================
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /wamdevin/
+    
+    # Force HTTPS (Production only - uncomment when ready)
+    # RewriteCond %{HTTPS} off
+    # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    
+    # Force WWW (or non-WWW - choose one)
+    # Force WWW:
+    # RewriteCond %{HTTP_HOST} !^www\. [NC]
+    # RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+    
+    # Remove trailing slash (optional)
+    # RewriteCond %{REQUEST_FILENAME} !-d
+    # RewriteCond %{REQUEST_URI} (.+)/$
+    # RewriteRule ^ %1 [R=301,L]
+    
+    # Remove .php extension from URLs
+    # RewriteCond %{REQUEST_FILENAME}.php -f
+    # RewriteRule ^(.+?)/?$ $1.php [L]
+</IfModule>
+
+# ===============================================
+# 2. COMPRESSION (GZIP & DEFLATE)
+# ===============================================
+<IfModule mod_deflate.c>
+    # Compress HTML, CSS, JavaScript, Text, XML
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/atom+xml
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE application/ld+json
+    AddOutputFilterByType DEFLATE image/svg+xml
+    AddOutputFilterByType DEFLATE application/font-woff
+    AddOutputFilterByType DEFLATE application/font-woff2
+    AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+    AddOutputFilterByType DEFLATE font/ttf
+    AddOutputFilterByType DEFLATE font/otf
+    AddOutputFilterByType DEFLATE font/woff
+    AddOutputFilterByType DEFLATE font/woff2
+    
+    # Don't compress images and other binaries
+    SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|webp|ico|pdf|zip|gz|rar)$ no-gzip dont-vary
+    
+    # Make sure proxies don't deliver the wrong content
+    Header append Vary User-Agent env=!dont-vary
+</IfModule>
+
+# Alternative: mod_gzip
+<IfModule mod_gzip.c>
+    mod_gzip_on Yes
+    mod_gzip_dechunk Yes
+    mod_gzip_item_include file \.(html?|txt|css|js|php|pl|json|xml|svg)$
+    mod_gzip_item_include mime ^text/.*
+    mod_gzip_item_include mime ^application/x-javascript.*
+    mod_gzip_item_include mime ^application/javascript.*
+    mod_gzip_item_exclude mime ^image/.*
+    mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</IfModule>
+
+# ===============================================
+# 3. BROWSER CACHING
+# ===============================================
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+    
+    # HTML (no cache - always fresh)
+    ExpiresByType text/html "access plus 0 seconds"
+    
+    # CSS and JavaScript (cache for 1 year)
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType application/x-javascript "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+    
+    # Images (cache for 1 year)
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # Fonts (cache for 1 year)
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/otf "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+    ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+    
+    # Data and Documents (cache for 1 month)
+    ExpiresByType application/pdf "access plus 1 month"
+    ExpiresByType application/zip "access plus 1 month"
+    ExpiresByType application/json "access plus 0 seconds"
+    ExpiresByType application/xml "access plus 0 seconds"
+    ExpiresByType text/xml "access plus 0 seconds"
+    
+    # Manifest files
+    ExpiresByType application/manifest+json "access plus 1 week"
+    ExpiresByType text/cache-manifest "access plus 0 seconds"
+    
+    # RSS/Atom Feeds
+    ExpiresByType application/rss+xml "access plus 1 hour"
+    ExpiresByType application/atom+xml "access plus 1 hour"
+</IfModule>
+
+# Alternative: Cache-Control headers
+<IfModule mod_headers.c>
+    # HTML - No cache
+    <FilesMatch "\.(html|htm|php)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires 0
+    </FilesMatch>
+    
+    # CSS and JavaScript - 1 year
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    
+    # Images - 1 year
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    
+    # Fonts - 1 year
+    <FilesMatch "\.(ttf|otf|woff|woff2|eot)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    
+    # PDFs and Archives - 1 month
+    <FilesMatch "\.(pdf|zip|rar|gz)$">
+        Header set Cache-Control "public, max-age=2592000"
+    </FilesMatch>
+</IfModule>
+
+# ===============================================
+# 4. SECURITY HEADERS
+# ===============================================
+<IfModule mod_headers.c>
+    # Prevent MIME type sniffing
+    Header set X-Content-Type-Options "nosniff"
+    
+    # Prevent clickjacking
+    Header set X-Frame-Options "SAMEORIGIN"
+    
+    # Enable XSS protection
+    Header set X-XSS-Protection "1; mode=block"
+    
+    # Referrer Policy
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Content Security Policy (adjust as needed)
+    # Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; img-src 'self' data: https: http:; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; connect-src 'self'; media-src 'self'; object-src 'none'; frame-src 'self' https://www.youtube.com https://www.facebook.com"
+    
+    # Permissions Policy (formerly Feature Policy)
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    
+    # Strict Transport Security (HTTPS only - uncomment when ready)
+    # Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    
+    # Remove Server signature
+    Header unset Server
+    Header unset X-Powered-By
+</IfModule>
+
+# Disable server signature
+ServerSignature Off
+
+# ===============================================
+# 5. FILE ACCESS PROTECTION
+# ===============================================
+
+# Prevent directory browsing
+Options -Indexes
+
+# Protect sensitive files
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Protect configuration files
+<FilesMatch "\.(htaccess|htpasswd|ini|conf|log|sql|env|json|lock)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Protect includes directory (optional)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^includes/ - [F,L]
+</IfModule>
+
+# ===============================================
+# 6. CHARACTER ENCODING
+# ===============================================
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .html .css .js .xml .json .rss .atom
+
+<IfModule mod_mime.c>
+    AddCharset UTF-8 .php
+</IfModule>
+
+# ===============================================
+# 7. MIME TYPES
+# ===============================================
+<IfModule mod_mime.c>
+    # JavaScript
+    AddType application/javascript js
+    AddType application/json json
+    
+    # Fonts
+    AddType font/ttf ttf
+    AddType font/otf otf
+    AddType font/woff woff
+    AddType font/woff2 woff2
+    AddType application/vnd.ms-fontobject eot
+    
+    # Images
+    AddType image/webp webp
+    AddType image/svg+xml svg svgz
+    
+    # Video
+    AddType video/mp4 mp4 m4v
+    AddType video/webm webm
+    AddType video/ogg ogv
+    
+    # Audio
+    AddType audio/mp3 mp3
+    AddType audio/mp4 m4a
+    AddType audio/ogg ogg oga
+    AddType audio/webm webm
+    
+    # Other
+    AddType application/pdf pdf
+    AddType application/xml xml
+    AddType text/x-vcard vcf
+    AddType text/cache-manifest appcache manifest
+    AddType application/manifest+json webmanifest
+</IfModule>
+
+# ===============================================
+# 8. ERROR PAGES
+# ===============================================
+ErrorDocument 400 /error-pages/400.html
+ErrorDocument 401 /error-pages/401.html
+ErrorDocument 403 /error-pages/403.html
+ErrorDocument 404 /error-404.php
+ErrorDocument 500 /error-pages/500.html
+ErrorDocument 502 /error-pages/502.html
+ErrorDocument 503 /error-pages/503.html
+
+# ===============================================
+# 9. PHP SETTINGS (if applicable)
+# ===============================================
+<IfModule mod_php7.c>
+    # Security
+    php_flag display_errors Off
+    php_flag log_errors On
+    php_value error_log /path/to/php-errors.log
+    
+    # Performance
+    php_value max_execution_time 300
+    php_value max_input_time 300
+    php_value memory_limit 256M
+    php_value upload_max_filesize 10M
+    php_value post_max_size 12M
+    
+    # Sessions
+    php_value session.cookie_httponly 1
+    php_value session.cookie_secure 1
+</IfModule>
+
+# ===============================================
+# 10. CORS (if needed for API)
+# ===============================================
+<IfModule mod_headers.c>
+    # Allow specific origins (replace * with specific domain in production)
+    # Header set Access-Control-Allow-Origin "*"
+    # Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    # Header set Access-Control-Allow-Headers "Content-Type, Authorization"
+</IfModule>
+
+# ===============================================
+# 11. PERFORMANCE OPTIMIZATIONS
+# ===============================================
+
+# Enable Keep-Alive
+<IfModule mod_headers.c>
+    Header set Connection keep-alive
+</IfModule>
+
+# ETags (Entity Tags)
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+FileETag None
+
+# Limit request size (prevent DoS)
+LimitRequestBody 10485760
+
+# ===============================================
+# 12. SEO OPTIMIZATIONS
+# ===============================================
+
+# Canonical URLs (prevent duplicate content)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Remove multiple query parameters (customize as needed)
+    # RewriteCond %{QUERY_STRING} ^(.*)&ref=.*$
+    # RewriteRule ^(.*)$ /$1?%1 [R=301,L]
+    
+    # Normalize index.php URLs
+    # RewriteCond %{THE_REQUEST} ^.*/index\.php
+    # RewriteRule ^(.*)index.php$ /$1 [R=301,L]
+</IfModule>
+
+# ===============================================
+# 13. ALLOW ACCESS TO SPECIFIC FILES
+# ===============================================
+<FilesMatch "^(robots\.txt|sitemap\.xml|favicon\.ico|apple-touch-icon.*\.png|browserconfig\.xml|manifest\.json)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+# ===============================================
+# 14. PREFETCHING & PRELOADING
+# ===============================================
+<IfModule mod_headers.c>
+    # DNS Prefetch (add your external domains)
+    # Header add Link "<https://fonts.googleapis.com>; rel=dns-prefetch"
+    # Header add Link "<https://cdnjs.cloudflare.com>; rel=dns-prefetch"
+    
+    # Preconnect to critical domains
+    # Header add Link "<https://fonts.googleapis.com>; rel=preconnect; crossorigin"
+    # Header add Link "<https://fonts.gstatic.com>; rel=preconnect; crossorigin"
+</IfModule>
+
+# ===============================================
+# 15. LOGGING
+# ===============================================
+
+# Custom error log (adjust path)
+# ErrorLog /path/to/error.log
+
+# Custom access log
+# CustomLog /path/to/access.log combined
+
+# ===============================================
+# END OF CONFIGURATION
+# ===============================================
+
+# NOTES:
+# 1. Test thoroughly in development before deploying to production
+# 2. Some directives are commented out - enable as needed
+# 3. Adjust paths and domains for your specific environment
+# 4. Monitor server logs after deployment
+# 5. Keep backups before modifying this file
+
+# For Apache 2.4+ specific configurations, use:
+# <IfModule mod_authz_core.c>
+#     Require all denied
+# </IfModule>
+
+# For Apache 2.2, use:
+# Order deny,allow
+# Deny from all

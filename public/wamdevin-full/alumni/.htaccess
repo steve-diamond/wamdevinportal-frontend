@@ -1,0 +1,58 @@
+# Alumni Portal Security & Routing Rules
+
+# Deny access to includes directory
+<IfModule mod_rewrite.c>
+    Options -Indexes
+    RewriteEngine On
+
+    # Block direct access to includes
+    RewriteRule ^includes/ - [F,L]
+    RewriteRule ^api/\.  - [F,L]
+
+    # Redirect bare /alumni/ or /alumni/index to landing if no token cookie
+</IfModule>
+
+# Block access to PHP internals
+<Files ".env">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Disable server signature
+ServerSignature Off
+
+# Security headers (supplemental to PHP headers)
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
+
+# Cache control for API responses
+<FilesMatch "^api/">
+    <IfModule mod_headers.c>
+        Header set Cache-Control "no-store, no-cache, must-revalidate"
+        Header set Pragma "no-cache"
+    </IfModule>
+</FilesMatch>
+
+# Cache static assets
+<FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico|woff2?|ttf|eot)$">
+    <IfModule mod_headers.c>
+        Header set Cache-Control "public, max-age=2592000"
+    </IfModule>
+</FilesMatch>
+
+# Block sensitive file access
+<FilesMatch "\.(sql|log|bak|orig|dist|sh|yml|yaml|lock|json)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Allow mcp.json and composer.json for tools
+<Files "composer.json">
+    Order deny,allow
+    Allow from all
+</Files>
