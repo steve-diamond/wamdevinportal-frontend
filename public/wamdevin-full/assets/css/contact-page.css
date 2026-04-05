@@ -1,0 +1,461 @@
+/* ===============================================
+   WAMDEVIN Contact Page Styles
+   Professional branding aligned with WAMDEVIN philosophy
+   ================================================ */
+
+:root {
+    --wamdevin-primary: #1766a2;
+    --wamdevin-secondary: #f39c12;
+    --wamdevin-dark: #2c3e50;
+    --wamdevin-light: #ecf0f1;
+    --wamdevin-success: #27ae60;
+    --wamdevin-accent: #e74c3c;
+}
+
+/* ===============================================
+   FORM ELEMENTS
+   ================================================ */
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: var(--wamdevin-dark);
+    margin-bottom: 8px;
+    display: block;
+    font-size: 0.95rem;
+}
+
+.form-control,
+.form-select {
+    border: 2px solid #e1e8ed;
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    background-color: #f8f9fa;
+    width: 100%;
+    font-family: inherit;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--wamdevin-primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(23, 102, 162, 0.1);
+    background-color: white;
+}
+
+.form-control:disabled,
+.form-select:disabled {
+    background-color: #e9ecef;
+    opacity: 0.7;
+}
+
+/* Form Validation Styles */
+.form-control.is-valid {
+    border-color: var(--wamdevin-success);
+    background-color: rgba(39, 174, 96, 0.05);
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+    background-color: rgba(220, 53, 69, 0.05);
+}
+
+.form-check-input {
+    border: 2px solid #e1e8ed;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-check-input:checked {
+    background-color: var(--wamdevin-primary);
+    border-color: var(--wamdevin-primary);
+}
+
+.form-check-input:focus {
+    border-color: var(--wamdevin-primary);
+    box-shadow: 0 0 0 3px rgba(23, 102, 162, 0.1);
+}
+
+.form-check-label {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* ===============================================
+   BUTTONS
+   ================================================ */
+
+.btn-wamdevin {
+    background: linear-gradient(135deg, var(--wamdevin-primary), var(--wamdevin-secondary));
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    user-select: none;
+}
+
+.btn-wamdevin:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(23, 102, 162, 0.3);
+    color: white;
+    text-decoration: none;
+}
+
+.btn-wamdevin:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(23, 102, 162, 0.2);
+}
+
+.btn-wamdevin:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ===============================================
+   CONTACT SECTIONS
+   ================================================ */
+
+.contact-section {
+    padding: 70px 0;
+}
+
+.contact-section.light {
+    background-color: #f5f7fa;
+}
+
+.contact-section h2 {
+    color: var(--wamdevin-primary);
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+}
+
+.contact-section h3 {
+    color: var(--wamdevin-dark);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* ===============================================
+   CONTACT CARDS
+   ================================================ */
+
+.contact-card {
+    background: white;
+    border-radius: 15px;
+    padding: 35px 25px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 25px;
+    height: 100%;
+    border-left: 5px solid var(--wamdevin-primary);
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    border-left-color: var(--wamdevin-secondary);
+}
+
+.contact-card-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--wamdevin-primary), var(--wamdevin-secondary));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.contact-card h4 {
+    color: var(--wamdevin-primary);
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.contact-card p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+.contact-card a {
+    color: var(--wamdevin-secondary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+    color: var(--wamdevin-primary);
+    text-decoration: underline;
+}
+
+.contact-card address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+/* ===============================================
+   STATISTICS CARDS
+   ================================================ */
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+    color: white;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.stat-card h5 {
+    color: var(--wamdevin-secondary);
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.stat-number {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--wamdevin-secondary);
+    margin: 15px 0;
+}
+
+.stat-card p {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* ===============================================
+   MAP CONTAINER
+   ================================================ */
+
+.map-wrapper {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    height: 400px;
+}
+
+.map-wrapper iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .map-wrapper {
+        height: 300px;
+    }
+}
+
+/* ===============================================
+   BREADCRUMB
+   ================================================ */
+
+.breadcrumb-section {
+    background: linear-gradient(135deg, rgba(23, 102, 162, 0.08), rgba(243, 156, 18, 0.08));
+    padding: 15px 0;
+}
+
+.breadcrumb-section .breadcrumb {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb-section .breadcrumb-item {
+    font-size: 0.95rem;
+}
+
+.breadcrumb-section .breadcrumb-item a {
+    color: var(--wamdevin-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-section .breadcrumb-item a:hover {
+    color: var(--wamdevin-secondary);
+}
+
+.breadcrumb-section .breadcrumb-item.active {
+    color: var(--wamdevin-secondary);
+    font-weight: 600;
+}
+
+/* ===============================================
+   FOOTER ENHANCEMENTS
+   ================================================ */
+
+footer {
+    background: var(--wamdevin-dark);
+    color: #ccc;
+}
+
+footer h6 {
+    color: var(--wamdevin-secondary);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--wamdevin-secondary);
+}
+
+/* ===============================================
+   RESPONSIVE DESIGN
+   ================================================ */
+
+@media (max-width: 992px) {
+    .contact-form {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-card {
+        padding: 25px 20px;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+    .stat-number {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 50px 0;
+    }
+
+    .contact-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-card {
+        padding: 20px 15px;
+    }
+
+    .contact-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .contact-card-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .btn-wamdevin {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ===============================================
+   ACCESSIBILITY
+   ================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .form-control,
+    .form-select,
+    .contact-form {
+        background-color: #2d2d2d;
+        color: #f0f0f0;
+        border-color: #444;
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+        background-color: #1a1a1a;
+        border-color: var(--wamdevin-primary);
+    }
+
+    .contact-card,
+    .contact-info-card {
+        background-color: #2d2d2d;
+        color: #f0f0f0;
+    }
+
+    .contact-card p,
+    .contact-info-card p {
+        color: #d0d0d0;
+    }
+
+    .contact-card h4,
+    .contact-info-card h4 {
+        color: var(--wamdevin-secondary);
+    }
+}
+
+/* ===============================================
+   PRINT STYLES
+   ================================================ */
+
+@media print {
+    .btn-wamdevin,
+    .secondary-menu,
+    footer {
+        display: none !important;
+    }
+
+    .contact-card {
+        page-break-inside: avoid;
+        box-shadow: none;
+    }
+}

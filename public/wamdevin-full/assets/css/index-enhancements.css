@@ -1,0 +1,587 @@
+/* Lightweight enhancements for the index page: hero, features, testimonials */
+:root{
+  --hero-height: 72vh;
+  --primary: #1766a2;
+  --accent: #f5a623;
+  --muted: #6c757d;
+}
+.hero-clean{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:var(--hero-height);
+  background-image:linear-gradient(rgba(10,20,30,0.45), rgba(10,20,30,0.45)), url('../images/page-header.jpg');
+  background-size:cover;
+  background-position:center;
+  color:#fff;
+  text-align:center;
+}
+.hero-clean .hero-inner{max-width:980px;padding:40px}
+.hero-clean h1{font-family:'Jost',system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial; font-size:44px;line-height:1.05;margin-bottom:12px;font-weight:700}
+.hero-clean p.lead{font-size:18px;color:rgba(255,255,255,0.92);margin-bottom:22px}
+.hero-ctas .btn{border-radius:30px;padding:12px 28px;font-weight:600}
+
+/* Gradient buttons and subtle hover */
+.btn-primary{background:linear-gradient(90deg,var(--primary),#0b74c3);border:0;color:#fff}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(11,116,195,0.18)}
+.btn-outline-light{border:1px solid rgba(255,255,255,0.28);color:rgba(255,255,255,0.95)}
+.btn-outline-light:hover{background:rgba(255,255,255,0.06);transform:translateY(-2px)}
+
+/* Reveal on scroll */
+.reveal{opacity:0;transform:translateY(18px);transition:all .6s cubic-bezier(.2,.9,.2,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* Feature card entrance */
+.feature-card{opacity:0;transform:translateY(14px) scale(.995);transition:transform .45s cubic-bezier(.2,.9,.2,1),opacity .45s}
+.feature-card.visible{opacity:1;transform:translateY(0) scale(1)}
+
+/* Testimonial fade */
+.testimonials .slide{transition:opacity .6s ease;opacity:1}
+.testimonials .slide[style*="display: none"]{opacity:0}
+
+/* Parallax background slight movement for hero */
+.hero-clean{background-attachment:fixed;background-size:cover}
+
+.features-row{padding:80px 0;background:linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);position:relative;overflow:hidden}
+.feature-card{border:1px solid #eef2f6;padding:35px 25px;border-radius:15px;text-align:center;transition:all .3s ease;position:relative;z-index:1;background:#fff;box-shadow:0 5px 20px rgba(0,0,0,0.08)}
+.feature-card:hover{transform:translateY(-10px);box-shadow:0 20px 40px rgba(0,0,0,0.15);border-color:transparent}
+.feature-card .icon{font-size:2.5rem;margin-bottom:20px;width:80px;height:80px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px}
+.feature-card h5{font-weight:700;margin-bottom:15px;font-size:1.3rem;color:#2c3e50}
+.feature-card p{color:#6c757d;font-size:15px;line-height:1.6;margin-bottom:20px}
+.feature-stats{padding-top:15px;border-top:1px solid #eee}
+.feature-stats small{font-size:13px}
+
+.testimonials{padding:60px 0;background:#f8fbff}
+.testimonials .testimonial{max-width:800px;margin:0 auto;text-align:center}
+.testimonial p{font-style:italic;color:#334155}
+.testimonial .who{margin-top:12px;color:#0f172a;font-weight:600}
+
+/* Professional enhancements for WAMDEVIN branding */
+.section-title h6 {
+  position: relative;
+  display: inline-block;
+}
+
+.section-title h6:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(135deg, #1056e8, #28a745);
+  border-radius: 2px;
+}
+
+/* Counter animation enhancement */
+.counter-number .counter {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+/* Button hover effects */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Legacy section hover effects */
+.legacy-section:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+/* Professional spacing */
+.py-5 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+/* Brand colors */
+:root {
+  --wamdevin-primary: #1056e8;
+  --wamdevin-secondary: #28a745;
+  --wamdevin-accent: #fd7e14;
+  --wamdevin-dark: #2c3e50;
+  --wamdevin-light: #f8f9fa;
+}
+
+/* Program Cards Enhancement */
+.program-card {
+  position: relative;
+  transition: all 0.4s ease;
+  transform: translateY(0);
+}
+
+.program-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
+}
+
+.program-card:hover .program-image img {
+  transform: scale(1.1);
+}
+
+.program-card:hover .program-overlay {
+  opacity: 1 !important;
+}
+
+.program-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.program-overlay {
+  transition: opacity 0.4s ease;
+}
+
+/* Enhanced Leadership Cards for EXCO Section */
+.leadership-card {
+    transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1) !important;
+    transform: translateY(0);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.leadership-card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5) !important;
+    background: rgba(255,255,255,0.1) !important;
+}
+
+.leadership-card .leader-image img {
+    transition: transform 0.3s ease;
+}
+
+.leadership-card:hover .leader-image img {
+    transform: scale(1.1);
+}
+
+.leadership-card .leader-badge {
+    transition: all 0.3s ease;
+    transform: scale(0.9);
+}
+
+.leadership-card:hover .leader-badge {
+    transform: scale(1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.leadership-card .leader-name {
+    transition: color 0.3s ease;
+}
+
+.leadership-card:hover .leader-name {
+    color: #ffffff !important;
+}
+
+.leadership-card .leader-achievements {
+    transition: all 0.3s ease;
+    transform: translateY(5px);
+    opacity: 0.8;
+}
+
+.leadership-card:hover .leader-achievements {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Executive Committee Section Enhancements */
+.exco-testimonials .owl-nav button {
+    background: linear-gradient(135deg, #3498db, #2980b9) !important;
+    color: white !important;
+    border: none !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    font-size: 18px !important;
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4) !important;
+    transition: all 0.3s ease !important;
+}
+
+.exco-testimonials .owl-nav button:hover {
+    transform: scale(1.1) !important;
+    box-shadow: 0 12px 35px rgba(52, 152, 219, 0.6) !important;
+}
+
+.exco-testimonials .owl-dots .owl-dot {
+    width: 15px !important;
+    height: 15px !important;
+    margin: 0 8px !important;
+}
+
+.exco-testimonials .owl-dots .owl-dot span {
+    background: rgba(255,255,255,0.3) !important;
+    transition: all 0.3s ease !important;
+}
+
+.exco-testimonials .owl-dots .owl-dot.active span {
+    background: #3498db !important;
+    transform: scale(1.2) !important;
+}
+
+@media (max-width:768px){
+  .hero-clean h1{font-size:28px}
+  .hero-clean{padding:40px 12px}
+  .feature-card {padding: 25px 20px;}
+  .legacy-section {padding: 40px 25px !important;}
+  .stat-icon-wrapper {width: 60px !important; height: 60px !important;}
+  .counter-number {font-size: 2.2rem !important;}
+  
+  /* Leadership cards mobile responsiveness */
+  .leadership-card {
+    padding: 30px 20px !important;
+  }
+  
+  .leadership-card .leader-image div {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  
+  .leadership-card .leader-name {
+    font-size: 1.2rem !important;
+  }
+  
+  .leadership-card .leader-bio {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Enhanced Recent News Section */
+.recent-news:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
+}
+
+.recent-news:hover .action-box img {
+  transform: scale(1.05) !important;
+}
+
+.recent-news .post-title a:hover {
+  color: #1766a2 !important;
+}
+
+.recent-news .btn-link:hover {
+  transform: translateX(5px) !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+.core-message-banner:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 20px 40px rgba(23, 102, 162, 0.3) !important;
+}
+
+/* News carousel navigation */
+.recent-news-carousel .owl-nav button {
+  background: linear-gradient(135deg, #1766a2, #0d47a1) !important;
+  color: white !important;
+  border: none !important;
+  width: 45px !important;
+  height: 45px !important;
+  border-radius: 50% !important;
+  font-size: 16px !important;
+  box-shadow: 0 8px 25px rgba(23, 102, 162, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+.recent-news-carousel .owl-nav button:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 12px 35px rgba(23, 102, 162, 0.5) !important;
+}
+
+.recent-news-carousel .owl-dots .owl-dot span {
+  background: rgba(23, 102, 162, 0.3) !important;
+}
+
+.recent-news-carousel .owl-dots .owl-dot.active span {
+  background: #1766a2 !important;
+  transform: scale(1.2) !important;
+}
+
+@media (max-width: 768px) {
+  .core-message-banner {
+    padding: 20px !important;
+  }
+  
+  .core-message-banner .col-md-8,
+  .core-message-banner .col-md-4 {
+    text-align: center !important;
+    margin-bottom: 15px;
+  }
+  
+  .recent-news .info-bx {
+    padding: 20px !important;
+  }
+  
+  .recent-news .post-title {
+    font-size: 1.1rem !important;
+  }
+}
+
+/* Enhanced About Page Styling */
+.vmgt-card:hover {
+  transform: translateY(-10px) !important;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.3) !important;
+}
+
+.function-card:hover {
+  transform: translateY(-10px) !important;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
+  border-color: transparent !important;
+}
+
+.function-card:hover .function-icon {
+  transform: scale(1.1) !important;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2) !important;
+}
+
+.member-card:hover {
+  transform: translateY(-10px) !important;
+  background: rgba(255,255,255,0.1) !important;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.3) !important;
+}
+
+.member-card:hover .member-image img {
+  transform: scale(1.1) !important;
+}
+
+/* Professional input styling */
+#countrySearch:focus {
+  outline: none !important;
+  border-color: #f39c12 !important;
+  box-shadow: 0 0 20px rgba(243, 156, 18, 0.3) !important;
+}
+
+#countrySearch::placeholder {
+  color: rgba(255,255,255,0.7) !important;
+}
+
+/* Page banner stats animation */
+.stats-row > div > div:hover {
+  transform: scale(1.05) !important;
+  background: rgba(255,255,255,0.2) !important;
+}
+
+/* Professional breadcrumb hover */
+.breadcrumb-item a:hover {
+  color: #f39c12 !important;
+}
+
+/* Enhanced section transitions */
+.about-section,
+.vmgt-section,
+.our-functions,
+.members-countries {
+  position: relative;
+  z-index: 1;
+}
+
+/* Professional search animation */
+.search-container input:focus + i {
+  color: #ffffff !important;
+  transform: translateY(-50%) scale(1.2) !important;
+}
+
+/* Membership Page Enhancements */
+.membership-hero-banner {
+    background: linear-gradient(135deg, rgba(23, 102, 162, 0.95), rgba(243, 156, 18, 0.9));
+    position: relative;
+    overflow: hidden;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.membership-hero-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/background/bg1.jpg') center/cover;
+    z-index: -1;
+}
+
+.membership-plan-card {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    background: white;
+}
+
+.membership-plan-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.membership-plan-card.featured {
+    transform: scale(1.05);
+    z-index: 2;
+    position: relative;
+}
+
+.membership-plan-card.featured:hover {
+    transform: scale(1.08) translateY(-10px);
+}
+
+.plan-header {
+    background: linear-gradient(135deg, #1766a2, #2980b9);
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.plan-header.premium {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+.plan-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: rotate(45deg);
+    transition: all 0.6s ease;
+}
+
+.membership-plan-card:hover .plan-header::before {
+    animation: shimmer 1.5s ease-in-out;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) rotate(45deg); }
+}
+
+.plan-price {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: white;
+    margin: 15px 0;
+}
+
+.plan-features {
+    padding: 40px 30px;
+}
+
+.plan-feature {
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.plan-feature:last-child {
+    border-bottom: none;
+}
+
+.plan-feature:hover {
+    background: rgba(23, 102, 162, 0.05);
+    padding-left: 10px;
+}
+
+.plan-feature i {
+    color: #f39c12;
+    margin-right: 12px;
+    font-size: 1.1rem;
+}
+
+.membership-benefit-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-left: 4px solid #f39c12;
+}
+
+.membership-benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border-left-color: #1766a2;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 8rem;
+    color: rgba(23, 102, 162, 0.1);
+    font-family: serif;
+    line-height: 1;
+}
+
+.why-choose-accordion .panel {
+    margin-bottom: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.why-choose-accordion .panel:hover {
+    transform: translateX(10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.video-bx:hover .popup-youtube {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 20px 50px rgba(243, 156, 18, 0.6);
+}
+
+.counter-style-1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+.counter-style-1:hover i {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+/* Responsive adjustments for membership page */
+@media (max-width: 768px) {
+    .membership-hero-banner {
+        min-height: 80vh;
+        text-align: center;
+    }
+    
+    .membership-benefit-card {
+        margin-bottom: 20px;
+    }
+    
+    .membership-plan-card.featured {
+        transform: none;
+        margin-bottom: 30px;
+    }
+    
+    .plan-price {
+        font-size: 2.5rem;
+    }
+}

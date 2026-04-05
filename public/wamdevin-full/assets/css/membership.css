@@ -1,0 +1,14 @@
+/* membership.css - small, non-invasive styles to enhance membership page */
+:root{--membership-accent:#2878EB;--membership-accent-2:#F14D5D}
+.membership-hero{padding:80px 0;background:linear-gradient(180deg,rgba(40,120,235,0.06),rgba(241,77,93,0.03));text-align:center}
+.membership-hero h1{font-size:2.5rem;margin-bottom:0.5rem;color:var(--membership-accent)}
+.membership-hero p.lead{font-size:1.1rem;color:#6B6A75;margin-bottom:1.25rem}
+.membership-cards{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
+.membership-card{background:#fff;border:1px solid #eee;border-radius:8px;padding:24px;width:320px;box-shadow:0 6px 18px rgba(16,24,40,0.06);transition:transform .22s ease,box-shadow .22s ease}
+.membership-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(16,24,40,0.08)}
+.membership-card .price{font-size:1.5rem;font-weight:700;color:var(--membership-accent)}
+.membership-cta{margin:32px 0;text-align:center}
+.membership-benefits{column-count:2;column-gap:30px}
+.membership-faq .acod-head{background:transparent;border-bottom:0}
+.testimonial{background:#f9fbff;border-left:4px solid var(--membership-accent);padding:18px;border-radius:4px}
+@media (max-width:768px){.membership-cards{flex-direction:column;align-items:center}.membership-benefits{column-count:1}}
