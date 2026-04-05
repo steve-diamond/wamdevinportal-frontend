@@ -1,4 +1,12 @@
 {
+  "headers": [
+    {
+      "source": "/wamdevin-full/(.*)\\.php",
+      "headers": [
+        { "key": "Content-Type", "value": "text/html; charset=utf-8" }
+      ]
+    }
+  ],
   "routes": [
     { "src": "/api/(.*)", "dest": "https://api.wamdevin.com/api/$1" },
     { "handle": "filesystem" },
