@@ -4,11 +4,14 @@ import { Link, useLocation } from 'react-router-dom';
 const links = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
+  { to: '/leadership', label: 'Leadership' },
+  { to: '/services', label: 'Services' },
   { to: '/projects', label: 'Projects' },
-  { to: '/gallery-modern', label: 'Gallery' },
+  { to: '/gallery', label: 'Gallery' },
   { to: '/contact-modern', label: 'Contact' },
+  { to: '/portal', label: 'Portal' },
   { to: '/legacy-content', label: 'Legacy Content' },
-  { to: '/login', label: 'Login' }
+  { to: '/signup', label: 'Register' }
 ];
 
 function TopNav() {

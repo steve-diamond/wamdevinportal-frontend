@@ -23,10 +23,8 @@ import Notification from './components/Notification';
 import useStore from './store/useStore';
 import WamdevinContentHub from './pages/WamdevinContentHub';
 import TopNav from './components/TopNav';
-import AboutPortal from './pages/AboutPortal';
 import ContactPortal from './pages/ContactPortal';
 import ProjectsPortal from './pages/ProjectsPortal';
-import GalleryPortal from './pages/GalleryPortal';
 
 function LegacyHomePage() {
   return (
@@ -34,6 +32,18 @@ function LegacyHomePage() {
       <iframe
         title="Wamdevin Legacy Home"
         src="/wamdevin-full/index.html"
+        style={{ width: '100%', minHeight: '100vh', border: 'none', display: 'block' }}
+      />
+    </div>
+  );
+}
+
+function LegacyPageFrame({ src, title }) {
+  return (
+    <div style={{ minHeight: '100vh', background: '#fff' }}>
+      <iframe
+        title={title}
+        src={src}
         style={{ width: '100%', minHeight: '100vh', border: 'none', display: 'block' }}
       />
     </div>
@@ -52,12 +62,16 @@ function AppLayout() {
       <main className="app-content">
         <Routes>
           <Route path="/" element={<LegacyHomePage />} />
-          <Route path="/about" element={<AboutPortal />} />
+          <Route path="/about" element={<LegacyPageFrame src="/wamdevin-full/about.php" title="About" />} />
+          <Route path="/leadership" element={<LegacyPageFrame src="/wamdevin-full/leadership.php" title="Leadership" />} />
+          <Route path="/services" element={<LegacyPageFrame src="/wamdevin-full/service.php" title="Services" />} />
           <Route path="/projects" element={<ProjectsPortal />} />
-          <Route path="/gallery-modern" element={<GalleryPortal />} />
+          <Route path="/gallery" element={<LegacyPageFrame src="/wamdevin-full/gallery.php" title="Gallery" />} />
+          <Route path="/gallery-modern" element={<LegacyPageFrame src="/wamdevin-full/gallery.php" title="Gallery" />} />
           <Route path="/contact-modern" element={<ContactPortal />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/portal" element={<Login />} />
           <Route path="/dashboard" element={<ProtectedRoute><Dashboard user={user} /></ProtectedRoute>} />
           <Route path="/profile" element={<ProtectedRoute><Profile user={user} /></ProtectedRoute>} />
           <Route path="/alumni" element={<ProtectedRoute><AlumniDirectory /></ProtectedRoute>} />
