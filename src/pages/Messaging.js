@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
 import io from 'socket.io-client';
-import axios from 'axios';
 import ChatList from '../components/ChatList';
 import GroupList from '../components/GroupList';
 import ChatWindow from '../components/ChatWindow';
 import MessageInput from '../components/MessageInput';
+import api from '../api';
 
 const Messaging = ({ user }) => {
   const [chats, setChats] = useState([]);
@@ -16,7 +16,9 @@ const Messaging = ({ user }) => {
 
   useEffect(() => {
     if (!user) return;
-    socketRef.current = io('/', { auth: { token: localStorage.getItem('token') } });
+    socketRef.current = io(process.env.REACT_APP_API_URL || window.location.origin, {
+      auth: { token: localStorage.getItem('token') }
+    });
     socketRef.current.on('receive_message', msg => {
       setMessages(prev => [...prev, msg]);
       // Optionally: show notification
@@ -27,14 +29,14 @@ const Messaging = ({ user }) => {
   useEffect(() => {
     if (!user) return;
     // Fetch chat list (users with whom user has messages)
-    axios.get('/api/users/search').then(res => setChats(res.data.users.filter(u => u._id !== user.id)));
-    axios.get('/api/groups').then(res => setGroups(res.data));
+    api.get('/api/users/search').then(res => setChats(res.data.users.filter(u => u._id !== user._id)));
+    api.get('/api/groups').then(res => setGroups(res.data));
   }, [user]);
 
   const loadMessages = (chat, group = false) => {
     setSelectedChat(chat);
     setIsGroup(group);
-    axios.get(`/api/messages/${chat._id}?type=${group ? 'group' : 'user'}`)
+    api.get(`/api/messages/${chat._id}?type=${group ? 'group' : 'user'}`)
       .then(res => setMessages(res.data));
   };
 
@@ -54,7 +56,7 @@ const Messaging = ({ user }) => {
         <GroupList groups={groups} onSelect={g => loadMessages(g, true)} selectedId={isGroup ? selectedChat?._id : null} />
       </div>
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-        <ChatWindow messages={messages} userId={user?.id} />
+        <ChatWindow messages={messages} userId={user?._id} />
         <MessageInput onSend={handleSend} />
       </div>
     </div>

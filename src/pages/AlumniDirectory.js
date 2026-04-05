@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import SearchBar from '../components/SearchBar';
 import FilterPanel from '../components/FilterPanel';
 import AlumniCard from '../components/AlumniCard';
+import api from '../api';
 
 const AlumniDirectory = () => {
   const [search, setSearch] = useState('');
@@ -23,7 +23,7 @@ const AlumniDirectory = () => {
         limit: 10,
         ...params
       }).toString();
-      const res = await axios.get(`/api/users/search?${query}`);
+      const res = await api.get(`/api/users/search?${query}`);
       setAlumni(res.data.users);
       setTotalPages(res.data.pages);
     } catch (err) {

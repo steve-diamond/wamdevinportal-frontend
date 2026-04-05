@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import ResourceCard from '../components/ResourceCard';
 import ResourceFilter from '../components/ResourceFilter';
 import UploadModal from '../components/UploadModal';
 import PreviewModal from '../components/PreviewModal';
+import api from '../api';
 
 const Resources = ({ user }) => {
   const [resources, setResources] = useState([]);
@@ -14,7 +14,7 @@ const Resources = ({ user }) => {
   const [notification, setNotification] = useState('');
 
   const fetchResources = async (cat = category) => {
-    const res = await axios.get(`/api/resources?category=${cat}`);
+    const res = await api.get(`/api/resources?category=${cat}`);
     setResources(res.data);
   };
 
@@ -28,7 +28,7 @@ const Resources = ({ user }) => {
     formData.append('description', description);
     formData.append('category', category);
     try {
-      await axios.post('/api/resources/upload', formData, {
+      await api.post('/api/resources/upload', formData, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -44,12 +44,12 @@ const Resources = ({ user }) => {
   };
 
   const handleDownload = async (resource) => {
-    const res = await axios.get(`/api/resources/${resource._id}/download`);
+    const res = await api.get(`/api/resources/${resource._id}/download`);
     window.open(res.data.url, '_blank');
   };
 
   const handlePreview = async (resource) => {
-    const res = await axios.get(`/api/resources/${resource._id}/download`);
+    const res = await api.get(`/api/resources/${resource._id}/download`);
     setPreviewUrl(res.data.url);
     setPreviewOpen(true);
   };

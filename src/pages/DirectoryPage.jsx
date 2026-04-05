@@ -10,9 +10,13 @@ function DirectoryPage() {
   }, []);
 
   const fetchUsers = async () => {
-    const res = await axios.get(`http://localhost:5000/api/users?name=${search}`, {
-      headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
-    });
+    const token = localStorage.getItem('token');
+    const res = await axios.get(
+      `${process.env.REACT_APP_API_URL}/api/users`,
+      {
+        headers: { Authorization: `Bearer ${token}` }
+      }
+    );
     setUsers(res.data.users);
   };
 

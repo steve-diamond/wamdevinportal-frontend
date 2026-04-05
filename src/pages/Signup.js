@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import useStore from '../store/useStore';
+import api from '../api';
 
 const Signup = () => {
   const [form, setForm] = useState({ fullName: '', email: '', password: '' });
@@ -15,7 +15,7 @@ const Signup = () => {
     setLoading(true);
     setError(null);
     try {
-      await axios.post('/api/auth/signup', form);
+      await api.post('/api/auth/signup', form);
       setNotification('Signup successful! Please verify your email.');
       navigate('/login');
     } catch (err) {
