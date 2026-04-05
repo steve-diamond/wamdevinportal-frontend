@@ -27,6 +27,10 @@ import LegacyFooter from './components/LegacyFooter';
 import ContactPortal from './pages/ContactPortal';
 import ProjectsPortal from './pages/ProjectsPortal';
 
+function toHtmlMirror(pathname) {
+  return pathname.replace(/\.php(\?.*)?$/i, '.html$1');
+}
+
 function LegacyHomePage() {
   return (
     <div style={{ minHeight: '100vh', background: '#fff' }}>
@@ -66,6 +70,19 @@ function LegacyPageFrame({ src, title }) {
         el.style.opacity = '1';
         el.style.visibility = 'visible';
       });
+
+      // Keep legacy navigation browseable in static hosting by mapping PHP links to HTML mirrors.
+      const anchors = doc.querySelectorAll('a[href]');
+      anchors.forEach((anchor) => {
+        const href = anchor.getAttribute('href');
+        if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) {
+          return;
+        }
+
+        if (/\.php(\?|$)/i.test(href)) {
+          anchor.setAttribute('href', toHtmlMirror(href));
+        }
+      });
     } catch (error) {
       // Keep rendering even when frame internals are inaccessible.
       // eslint-disable-next-line no-console
@@ -93,7 +110,7 @@ function LegacyPhpRoute() {
     return <Navigate to="/" replace />;
   }
 
-  return <LegacyPageFrame src={`/wamdevin-full/${legacyPhp}`} title={legacyPhp} />;
+  return <LegacyPageFrame src={toHtmlMirror(`/wamdevin-full/${legacyPhp}`)} title={legacyPhp} />;
 }
 
 function LegacyNestedPhpRoute() {
@@ -108,7 +125,7 @@ function LegacyNestedPhpRoute() {
     return <Navigate to="/" replace />;
   }
 
-  return <LegacyPageFrame src={`/wamdevin-full/${folder}/${legacyPhp}`} title={`${folder}/${legacyPhp}`} />;
+  return <LegacyPageFrame src={toHtmlMirror(`/wamdevin-full/${folder}/${legacyPhp}`)} title={`${folder}/${legacyPhp}`} />;
 }
 
 function AppLayout() {
@@ -123,19 +140,19 @@ function AppLayout() {
       <main className="app-content">
         <Routes>
           <Route path="/" element={<LegacyHomePage />} />
-          <Route path="/about" element={<LegacyPageFrame src="/wamdevin-full/about.php" title="About" />} />
-          <Route path="/leadership" element={<LegacyPageFrame src="/wamdevin-full/leadership.php" title="Leadership" />} />
-          <Route path="/services" element={<LegacyPageFrame src="/wamdevin-full/service.php" title="Services" />} />
-          <Route path="/membership" element={<LegacyPageFrame src="/wamdevin-full/membership.php" title="Membership" />} />
-          <Route path="/partners" element={<LegacyPageFrame src="/wamdevin-full/partners.php" title="Partners" />} />
+          <Route path="/about" element={<LegacyPageFrame src="/wamdevin-full/about.html" title="About" />} />
+          <Route path="/leadership" element={<LegacyPageFrame src="/wamdevin-full/leadership.html" title="Leadership" />} />
+          <Route path="/services" element={<LegacyPageFrame src="/wamdevin-full/service.html" title="Services" />} />
+          <Route path="/membership" element={<LegacyPageFrame src="/wamdevin-full/membership.html" title="Membership" />} />
+          <Route path="/partners" element={<LegacyPageFrame src="/wamdevin-full/partners.html" title="Partners" />} />
           <Route path="/projects" element={<ProjectsPortal />} />
-          <Route path="/training" element={<LegacyPageFrame src="/wamdevin-full/trainners.php" title="Training" />} />
-          <Route path="/research" element={<LegacyPageFrame src="/wamdevin-full/research.php" title="Research" />} />
-          <Route path="/publication" element={<LegacyPageFrame src="/wamdevin-full/publication.php" title="Publication" />} />
-          <Route path="/consultancy" element={<LegacyPageFrame src="/wamdevin-full/consultancy.php" title="Consultancy" />} />
-          <Route path="/gallery" element={<LegacyPageFrame src="/wamdevin-full/gallery.php" title="Gallery" />} />
-          <Route path="/gallery-modern" element={<LegacyPageFrame src="/wamdevin-full/gallery.php" title="Gallery" />} />
-          <Route path="/contact" element={<LegacyPageFrame src="/wamdevin-full/contact.php" title="Contact" />} />
+          <Route path="/training" element={<LegacyPageFrame src="/wamdevin-full/trainners.html" title="Training" />} />
+          <Route path="/research" element={<LegacyPageFrame src="/wamdevin-full/research.html" title="Research" />} />
+          <Route path="/publication" element={<LegacyPageFrame src="/wamdevin-full/publication.html" title="Publication" />} />
+          <Route path="/consultancy" element={<LegacyPageFrame src="/wamdevin-full/consultancy.html" title="Consultancy" />} />
+          <Route path="/gallery" element={<LegacyPageFrame src="/wamdevin-full/gallery.html" title="Gallery" />} />
+          <Route path="/gallery-modern" element={<LegacyPageFrame src="/wamdevin-full/gallery.html" title="Gallery" />} />
+          <Route path="/contact" element={<LegacyPageFrame src="/wamdevin-full/contact.html" title="Contact" />} />
           <Route path="/contact-modern" element={<ContactPortal />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
