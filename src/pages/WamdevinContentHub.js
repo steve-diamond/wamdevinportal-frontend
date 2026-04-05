@@ -33,10 +33,10 @@ function WamdevinContentHub() {
           />
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr', gap: 16 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 16 }}>
           <section style={cardStyle}>
             <h3 style={{ marginTop: 0 }}>Legacy PHP Content ({wamdevinPages.length})</h3>
-            <div style={{ display: 'grid', gap: 8 }}>
+            <div style={{ display: 'grid', gap: 8, maxHeight: 520, overflowY: 'auto', paddingRight: 6 }}>
               {wamdevinPages.map((page) => (
                 <a
                   key={page}
@@ -56,7 +56,10 @@ function WamdevinContentHub() {
             <div style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))',
-              gap: 10
+              gap: 10,
+              maxHeight: 520,
+              overflowY: 'auto',
+              paddingRight: 6
             }}>
               {wamdevinImages.map((image) => (
                 <a

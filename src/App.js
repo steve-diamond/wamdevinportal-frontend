@@ -30,7 +30,7 @@ import GalleryPortal from './pages/GalleryPortal';
 
 function HomePage() {
   return (
-    <div style={{ minHeight: '100vh', padding: '42px 18px', background: 'linear-gradient(135deg, #0b1220 0%, #16335b 50%, #f8fbff 50%, #f8fbff 100%)' }}>
+    <div className="fade-up" style={{ minHeight: '100vh', padding: '42px 18px', background: 'linear-gradient(135deg, #0b1220 0%, #16335b 50%, #f8fbff 50%, #f8fbff 100%)' }}>
       <div style={{ maxWidth: 1100, margin: '0 auto', background: '#ffffff', borderRadius: 18, boxShadow: '0 20px 40px rgba(15, 23, 42, 0.18)', overflow: 'hidden' }}>
         <div style={{ position: 'relative' }}>
           <img
@@ -40,7 +40,7 @@ function HomePage() {
           />
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.5))' }} />
           <div style={{ position: 'absolute', left: 20, bottom: 20, color: '#fff' }}>
-            <h1 style={{ margin: 0, fontSize: 34 }}>Wamdin Alumni Portal</h1>
+            <h1 style={{ margin: 0, fontSize: 34 }}>WAMDIN Alumni Portal</h1>
             <p style={{ margin: '8px 0 0', maxWidth: 580 }}>Fully integrated with Wamdevin legacy media and page content.</p>
           </div>
         </div>
@@ -78,28 +78,39 @@ function App() {
 
   return (
     <Router>
-      <Notification />
-      <TopNav />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPortal />} />
-        <Route path="/projects" element={<ProjectsPortal />} />
-        <Route path="/gallery-modern" element={<GalleryPortal />} />
-        <Route path="/contact-modern" element={<ContactPortal />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/dashboard" element={<ProtectedRoute><Dashboard user={user} /></ProtectedRoute>} />
-        <Route path="/profile" element={<ProtectedRoute><Profile user={user} /></ProtectedRoute>} />
-        <Route path="/alumni" element={<ProtectedRoute><AlumniDirectory /></ProtectedRoute>} />
-        <Route path="/directory" element={<ProtectedRoute><DirectoryPage /></ProtectedRoute>} />
-        <Route path="/messaging" element={<ProtectedRoute><Messaging user={user} /></ProtectedRoute>} />
-        <Route path="/events" element={<ProtectedRoute><Events user={user} /></ProtectedRoute>} />
-        <Route path="/events-live" element={<ProtectedRoute><EventPage /></ProtectedRoute>} />
-        <Route path="/messages-live" element={<ProtectedRoute><MessagesPage /></ProtectedRoute>} />
-        <Route path="/resources" element={<ProtectedRoute><Resources user={user} /></ProtectedRoute>} />
-        <Route path="/admin" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
-        <Route path="/legacy-content" element={<WamdevinContentHub />} />
-      </Routes>
+      <div className="app-shell">
+        <Notification />
+        <TopNav />
+        <main className="app-content">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPortal />} />
+            <Route path="/projects" element={<ProjectsPortal />} />
+            <Route path="/gallery-modern" element={<GalleryPortal />} />
+            <Route path="/contact-modern" element={<ContactPortal />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/dashboard" element={<ProtectedRoute><Dashboard user={user} /></ProtectedRoute>} />
+            <Route path="/profile" element={<ProtectedRoute><Profile user={user} /></ProtectedRoute>} />
+            <Route path="/alumni" element={<ProtectedRoute><AlumniDirectory /></ProtectedRoute>} />
+            <Route path="/directory" element={<ProtectedRoute><DirectoryPage /></ProtectedRoute>} />
+            <Route path="/messaging" element={<ProtectedRoute><Messaging user={user} /></ProtectedRoute>} />
+            <Route path="/events" element={<ProtectedRoute><Events user={user} /></ProtectedRoute>} />
+            <Route path="/events-live" element={<ProtectedRoute><EventPage /></ProtectedRoute>} />
+            <Route path="/messages-live" element={<ProtectedRoute><MessagesPage /></ProtectedRoute>} />
+            <Route path="/resources" element={<ProtectedRoute><Resources user={user} /></ProtectedRoute>} />
+            <Route path="/admin" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
+            <Route path="/legacy-content" element={<WamdevinContentHub />} />
+          </Routes>
+        </main>
+
+        <footer className="portal-footer">
+          <div className="portal-footer-inner">
+            <span>WAMDIN Integrated Portal • Legacy + Modern Experience</span>
+            <span className="portal-chip">/legacy-content</span>
+          </div>
+        </footer>
+      </div>
     </Router>
   );
 }
