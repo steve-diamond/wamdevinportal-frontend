@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, useParams, Navigate } from 'react-router-dom';
 
 
 
@@ -51,6 +51,31 @@ function LegacyPageFrame({ src, title }) {
   );
 }
 
+function LegacyPhpRoute() {
+  const { legacyPhp } = useParams();
+
+  if (!legacyPhp || !legacyPhp.toLowerCase().endsWith('.php')) {
+    return <Navigate to="/" replace />;
+  }
+
+  return <LegacyPageFrame src={`/wamdevin-full/${legacyPhp}`} title={legacyPhp} />;
+}
+
+function LegacyNestedPhpRoute() {
+  const { folder, legacyPhp } = useParams();
+  const allowedFolders = new Set(['admin', 'alumni', 'alumni-api', 'alumni-portal']);
+
+  if (!folder || !allowedFolders.has(folder)) {
+    return <Navigate to="/" replace />;
+  }
+
+  if (!legacyPhp || !legacyPhp.toLowerCase().endsWith('.php')) {
+    return <Navigate to="/" replace />;
+  }
+
+  return <LegacyPageFrame src={`/wamdevin-full/${folder}/${legacyPhp}`} title={`${folder}/${legacyPhp}`} />;
+}
+
 function AppLayout() {
   const { user } = useStore();
   const location = useLocation();
@@ -91,6 +116,8 @@ function AppLayout() {
           <Route path="/resources" element={<ProtectedRoute><Resources user={user} /></ProtectedRoute>} />
           <Route path="/admin" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
           <Route path="/legacy-content" element={<WamdevinContentHub />} />
+          <Route path="/:legacyPhp" element={<LegacyPhpRoute />} />
+          <Route path="/:folder/:legacyPhp" element={<LegacyNestedPhpRoute />} />
         </Routes>
       </main>
 
