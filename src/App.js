@@ -21,40 +21,51 @@ import ProtectedRoute from './components/ProtectedRoute';
 import AdminRoute from './components/AdminRoute';
 import Notification from './components/Notification';
 import useStore from './store/useStore';
+import WamdevinContentHub from './pages/WamdevinContentHub';
+import TopNav from './components/TopNav';
+import AboutPortal from './pages/AboutPortal';
+import ContactPortal from './pages/ContactPortal';
+import ProjectsPortal from './pages/ProjectsPortal';
+import GalleryPortal from './pages/GalleryPortal';
 
 function HomePage() {
   return (
-    <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #f5f7fa 0%, #e4ecfb 100%)', padding: '48px 20px' }}>
-      <div style={{ maxWidth: 960, margin: '0 auto', textAlign: 'center' }}>
-        <h1 style={{ marginBottom: 12 }}>Wamdin Alumni Portal</h1>
-        <p style={{ maxWidth: 620, margin: '0 auto 24px', color: '#374151', lineHeight: 1.6 }}>
-          Connect with fellow alumni, explore events, collaborate in real time, and share resources in one place.
-        </p>
-
-        <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 32 }}>
-          <Link to="/login" style={{ padding: '10px 18px', borderRadius: 8, textDecoration: 'none', background: '#2563eb', color: '#fff' }}>
-            Login
-          </Link>
-          <Link to="/signup" style={{ padding: '10px 18px', borderRadius: 8, textDecoration: 'none', border: '1px solid #2563eb', color: '#2563eb' }}>
-            Create Account
-          </Link>
-          <Link to="/dashboard" style={{ padding: '10px 18px', borderRadius: 8, textDecoration: 'none', border: '1px solid #cbd5e1', color: '#0f172a' }}>
-            Go to Dashboard
-          </Link>
+    <div style={{ minHeight: '100vh', padding: '42px 18px', background: 'linear-gradient(135deg, #0b1220 0%, #16335b 50%, #f8fbff 50%, #f8fbff 100%)' }}>
+      <div style={{ maxWidth: 1100, margin: '0 auto', background: '#ffffff', borderRadius: 18, boxShadow: '0 20px 40px rgba(15, 23, 42, 0.18)', overflow: 'hidden' }}>
+        <div style={{ position: 'relative' }}>
+          <img
+            src="/wamdevin-full/img/header.jpg"
+            alt="Wamdevin banner"
+            style={{ width: '100%', height: 260, objectFit: 'cover' }}
+          />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.5))' }} />
+          <div style={{ position: 'absolute', left: 20, bottom: 20, color: '#fff' }}>
+            <h1 style={{ margin: 0, fontSize: 34 }}>Wamdin Alumni Portal</h1>
+            <p style={{ margin: '8px 0 0', maxWidth: 580 }}>Fully integrated with Wamdevin legacy media and page content.</p>
+          </div>
         </div>
 
-        <div style={{ display: 'grid', gap: 12, gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', textAlign: 'left' }}>
-          <div style={{ background: '#fff', borderRadius: 12, padding: 16, boxShadow: '0 2px 10px rgba(15, 23, 42, 0.06)' }}>
-            <h3 style={{ marginTop: 0 }}>Alumni Directory</h3>
-            <p style={{ marginBottom: 0 }}>Search and filter alumni by skills, location, and institution.</p>
+        <div style={{ padding: 22 }}>
+          <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginBottom: 18 }}>
+            <Link to="/login" style={{ textDecoration: 'none', background: '#1d4ed8', color: '#fff', padding: '10px 16px', borderRadius: 8 }}>Login</Link>
+            <Link to="/signup" style={{ textDecoration: 'none', border: '1px solid #1d4ed8', color: '#1d4ed8', padding: '10px 16px', borderRadius: 8 }}>Create Account</Link>
+            <Link to="/dashboard" style={{ textDecoration: 'none', border: '1px solid #94a3b8', color: '#0f172a', padding: '10px 16px', borderRadius: 8 }}>Dashboard</Link>
+            <Link to="/legacy-content" style={{ textDecoration: 'none', background: '#0f172a', color: '#fff', padding: '10px 16px', borderRadius: 8 }}>Open Legacy Content Hub</Link>
           </div>
-          <div style={{ background: '#fff', borderRadius: 12, padding: 16, boxShadow: '0 2px 10px rgba(15, 23, 42, 0.06)' }}>
-            <h3 style={{ marginTop: 0 }}>Events</h3>
-            <p style={{ marginBottom: 0 }}>Create and register for events directly from the portal.</p>
-          </div>
-          <div style={{ background: '#fff', borderRadius: 12, padding: 16, boxShadow: '0 2px 10px rgba(15, 23, 42, 0.06)' }}>
-            <h3 style={{ marginTop: 0 }}>Messaging</h3>
-            <p style={{ marginBottom: 0 }}>Chat instantly with other members with real-time updates.</p>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))', gap: 12 }}>
+            <div style={{ border: '1px solid #e2e8f0', borderRadius: 10, padding: 14 }}>
+              <h3 style={{ marginTop: 0 }}>Alumni Directory</h3>
+              <p style={{ marginBottom: 0 }}>Search and filter alumni records by name, country, institution, and skills.</p>
+            </div>
+            <div style={{ border: '1px solid #e2e8f0', borderRadius: 10, padding: 14 }}>
+              <h3 style={{ marginTop: 0 }}>Events and Registration</h3>
+              <p style={{ marginBottom: 0 }}>Create and register events with real-time updates to participant activity.</p>
+            </div>
+            <div style={{ border: '1px solid #e2e8f0', borderRadius: 10, padding: 14 }}>
+              <h3 style={{ marginTop: 0 }}>Messaging and Resources</h3>
+              <p style={{ marginBottom: 0 }}>Use direct messaging and access uploaded institutional resources.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -68,8 +79,13 @@ function App() {
   return (
     <Router>
       <Notification />
+      <TopNav />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPortal />} />
+        <Route path="/projects" element={<ProjectsPortal />} />
+        <Route path="/gallery-modern" element={<GalleryPortal />} />
+        <Route path="/contact-modern" element={<ContactPortal />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/dashboard" element={<ProtectedRoute><Dashboard user={user} /></ProtectedRoute>} />
@@ -82,6 +98,7 @@ function App() {
         <Route path="/messages-live" element={<ProtectedRoute><MessagesPage /></ProtectedRoute>} />
         <Route path="/resources" element={<ProtectedRoute><Resources user={user} /></ProtectedRoute>} />
         <Route path="/admin" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
+        <Route path="/legacy-content" element={<WamdevinContentHub />} />
       </Routes>
     </Router>
   );
