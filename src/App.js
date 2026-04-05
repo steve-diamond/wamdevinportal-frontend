@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation, useParams, Navigate } from 'react-router-dom';
 
 
@@ -40,11 +40,46 @@ function LegacyHomePage() {
 }
 
 function LegacyPageFrame({ src, title }) {
+  const frameRef = useRef(null);
+
+  const handleFrameLoad = () => {
+    try {
+      const frame = frameRef.current;
+      const doc = frame?.contentDocument;
+      if (!doc) {
+        return;
+      }
+
+      const loadingOverlay = doc.getElementById('loading-icon-bx');
+      if (loadingOverlay) {
+        loadingOverlay.style.display = 'none';
+      }
+
+      if (doc.body) {
+        doc.body.style.opacity = '1';
+        doc.body.style.visibility = 'visible';
+        doc.body.style.display = 'block';
+      }
+
+      const wrappers = doc.querySelectorAll('#wrapper, .page-wraper, .page-wraper, main');
+      wrappers.forEach((el) => {
+        el.style.opacity = '1';
+        el.style.visibility = 'visible';
+      });
+    } catch (error) {
+      // Keep rendering even when frame internals are inaccessible.
+      // eslint-disable-next-line no-console
+      console.warn('Legacy frame post-load fix skipped:', error);
+    }
+  };
+
   return (
     <div style={{ minHeight: '100vh', background: '#fff' }}>
       <iframe
+        ref={frameRef}
         title={title}
         src={src}
+        onLoad={handleFrameLoad}
         style={{ width: '100%', minHeight: '100vh', border: 'none', display: 'block' }}
       />
     </div>
