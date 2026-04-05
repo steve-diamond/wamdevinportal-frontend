@@ -22,7 +22,8 @@ import AdminRoute from './components/AdminRoute';
 import Notification from './components/Notification';
 import useStore from './store/useStore';
 import WamdevinContentHub from './pages/WamdevinContentHub';
-import TopNav from './components/TopNav';
+import LegacyHeader from './components/LegacyHeader';
+import LegacyFooter from './components/LegacyFooter';
 import ContactPortal from './pages/ContactPortal';
 import ProjectsPortal from './pages/ProjectsPortal';
 
@@ -58,16 +59,23 @@ function AppLayout() {
   return (
     <div className="app-shell">
       <Notification />
-      {!isRootLegacyHome && <TopNav />}
+      {!isRootLegacyHome && <LegacyHeader />}
       <main className="app-content">
         <Routes>
           <Route path="/" element={<LegacyHomePage />} />
           <Route path="/about" element={<LegacyPageFrame src="/wamdevin-full/about.php" title="About" />} />
           <Route path="/leadership" element={<LegacyPageFrame src="/wamdevin-full/leadership.php" title="Leadership" />} />
           <Route path="/services" element={<LegacyPageFrame src="/wamdevin-full/service.php" title="Services" />} />
+          <Route path="/membership" element={<LegacyPageFrame src="/wamdevin-full/membership.php" title="Membership" />} />
+          <Route path="/partners" element={<LegacyPageFrame src="/wamdevin-full/partners.php" title="Partners" />} />
           <Route path="/projects" element={<ProjectsPortal />} />
+          <Route path="/training" element={<LegacyPageFrame src="/wamdevin-full/trainners.php" title="Training" />} />
+          <Route path="/research" element={<LegacyPageFrame src="/wamdevin-full/research.php" title="Research" />} />
+          <Route path="/publication" element={<LegacyPageFrame src="/wamdevin-full/publication.php" title="Publication" />} />
+          <Route path="/consultancy" element={<LegacyPageFrame src="/wamdevin-full/consultancy.php" title="Consultancy" />} />
           <Route path="/gallery" element={<LegacyPageFrame src="/wamdevin-full/gallery.php" title="Gallery" />} />
           <Route path="/gallery-modern" element={<LegacyPageFrame src="/wamdevin-full/gallery.php" title="Gallery" />} />
+          <Route path="/contact" element={<LegacyPageFrame src="/wamdevin-full/contact.php" title="Contact" />} />
           <Route path="/contact-modern" element={<ContactPortal />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
@@ -87,12 +95,7 @@ function AppLayout() {
       </main>
 
       {!isRootLegacyHome && (
-        <footer className="portal-footer">
-          <div className="portal-footer-inner">
-            <span>WAMDIN Integrated Portal • Legacy + Modern Experience</span>
-            <span className="portal-chip">/legacy-content</span>
-          </div>
-        </footer>
+        <LegacyFooter />
       )}
     </div>
   );
