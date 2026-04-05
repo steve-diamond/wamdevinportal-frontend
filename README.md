@@ -54,3 +54,16 @@ API base URL is configured in `src/api.js` using:
 ## Notes
 - Keep `.env` out of source control.
 - `node_modules/` is ignored by `.gitignore`.
+
+## Production Domain Setup (`www.wamdevin.com`)
+1. Deploy frontend to your host and map `www.wamdevin.com`.
+2. Deploy backend to `api.wamdevin.com`.
+3. Set frontend env:
+	- `REACT_APP_API_URL=https://api.wamdevin.com`
+4. Set backend env:
+	- `CLIENT_URL=https://www.wamdevin.com`
+	- `CLIENT_URLS=https://www.wamdevin.com,https://wamdevin.com`
+5. DNS records:
+	- `A`/`CNAME` for `www` to frontend host target
+	- `A`/`CNAME` for `api` to backend host target
+	- Optional redirect from apex `wamdevin.com` to `www.wamdevin.com`
