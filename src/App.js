@@ -171,7 +171,7 @@ function AppLayout() {
           <Route path="/consultancy" element={<LegacyPageFrame src="/wamdevin-full/consultancy.html" title="Consultancy" />} />
           <Route path="/gallery" element={<GalleryPortal />} />
           <Route path="/gallery-modern" element={<GalleryPortal />} />
-          <Route path="/contact" element={<LegacyPageFrame src="/wamdevin-full/contact.html" title="Contact" />} />
+          <Route path="/contact" element={<ContactPortal />} />
           <Route path="/contact-modern" element={<ContactPortal />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
