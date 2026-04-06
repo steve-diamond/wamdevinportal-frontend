@@ -26,6 +26,7 @@ import LegacyHeader from './components/LegacyHeader';
 import LegacyFooter from './components/LegacyFooter';
 import ContactPortal from './pages/ContactPortal';
 import ProjectsPortal from './pages/ProjectsPortal';
+import GalleryPortal from './pages/GalleryPortal';
 
 function toHtmlMirror(pathname) {
   return pathname.replace(/\.php(\?.*)?$/i, '.html$1');
@@ -142,8 +143,8 @@ function AppLayout() {
           <Route path="/research" element={<LegacyPageFrame src="/wamdevin-full/research.html" title="Research" />} />
           <Route path="/publication" element={<LegacyPageFrame src="/wamdevin-full/publication.html" title="Publication" />} />
           <Route path="/consultancy" element={<LegacyPageFrame src="/wamdevin-full/consultancy.html" title="Consultancy" />} />
-          <Route path="/gallery" element={<LegacyPageFrame src="/wamdevin-full/gallery.html" title="Gallery" />} />
-          <Route path="/gallery-modern" element={<LegacyPageFrame src="/wamdevin-full/gallery.html" title="Gallery" />} />
+          <Route path="/gallery" element={<GalleryPortal />} />
+          <Route path="/gallery-modern" element={<GalleryPortal />} />
           <Route path="/contact" element={<LegacyPageFrame src="/wamdevin-full/contact.html" title="Contact" />} />
           <Route path="/contact-modern" element={<ContactPortal />} />
           <Route path="/login" element={<Login />} />
