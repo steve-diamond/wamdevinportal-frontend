@@ -55,6 +55,25 @@ function PortalAccess() {
           </Link>
         </article>
       </section>
+
+      <section
+        style={{
+          marginTop: 18,
+          border: '1px solid #dbe4f0',
+          borderRadius: 12,
+          padding: 16,
+          background: '#f8fbff'
+        }}
+      >
+        <h3 style={{ margin: '0 0 8px' }}>Admin Login Details</h3>
+        <ul style={{ margin: 0, paddingLeft: 20, color: '#334155', lineHeight: 1.7 }}>
+          <li>Admin login URL: /portal/admin</li>
+          <li>Access is restricted to users with role set to admin.</li>
+          <li>Non-admin users are blocked from admin login and admin dashboard access.</li>
+          <li>After successful admin login, you are redirected to /admin.</li>
+          <li>Use assigned administrator credentials from your system administrator.</li>
+        </ul>
+      </section>
     </div>
   );
 }
