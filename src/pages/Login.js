@@ -9,6 +9,15 @@ const Login = ({ portalRole = 'alumni' }) => {
   const { setUser, setLoading, setError, setNotification } = useStore();
   const navigate = useNavigate();
   const isAdminPortal = portalRole === 'admin';
+  const isMembershipPortal = portalRole === 'membership';
+  const loginTitle = isAdminPortal
+    ? 'Admin Portal Login'
+    : (isMembershipPortal ? 'Institutional Membership Login' : 'Alumni Portal Login');
+  const loginSubtitle = isAdminPortal
+    ? 'Authorized administrators only.'
+    : (isMembershipPortal
+      ? 'For institutional focal persons and membership representatives.'
+      : 'Sign in to access your alumni dashboard and services.');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -43,16 +52,16 @@ const Login = ({ portalRole = 'alumni' }) => {
 
   return (
     <form onSubmit={handleSubmit} style={{ maxWidth: 360, margin: '60px auto', padding: 24, border: '1px solid #dbe4f0', borderRadius: 10, background: '#fff' }}>
-      <h2 style={{ marginTop: 0 }}>{isAdminPortal ? 'Admin Portal Login' : 'Alumni Portal Login'}</h2>
+      <h2 style={{ marginTop: 0 }}>{loginTitle}</h2>
       <p style={{ margin: '0 0 12px', color: '#475569' }}>
-        {isAdminPortal ? 'Authorized administrators only.' : 'Sign in to access your alumni dashboard and services.'}
+        {loginSubtitle}
       </p>
       <input type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} required style={{ width: '100%', padding: 9, marginBottom: 10 }} />
       <input type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} required style={{ width: '100%', padding: 9, marginBottom: 10 }} />
       <button type="submit" style={{ width: '100%', padding: '10px 12px', background: '#0f4d92', border: 'none', borderRadius: 8, color: '#fff', fontWeight: 700 }}>
         Login
       </button>
-      <div style={{ marginTop: 12, fontSize: 14 }}>
+      <div style={{ marginTop: 12, fontSize: 14, display: 'flex', gap: 12, flexWrap: 'wrap' }}>
         {isAdminPortal ? (
           <Link to="/portal/alumni" style={{ color: '#1d4ed8', textDecoration: 'none', fontWeight: 700 }}>
             Switch to Alumni Portal
@@ -60,6 +69,16 @@ const Login = ({ portalRole = 'alumni' }) => {
         ) : (
           <Link to="/portal/admin" style={{ color: '#1d4ed8', textDecoration: 'none', fontWeight: 700 }}>
             Switch to Admin Portal
+          </Link>
+        )}
+        {!isMembershipPortal && (
+          <Link to="/portal/membership" style={{ color: '#0f766e', textDecoration: 'none', fontWeight: 700 }}>
+            Switch to Membership Portal
+          </Link>
+        )}
+        {isMembershipPortal && (
+          <Link to="/portal/alumni" style={{ color: '#1d4ed8', textDecoration: 'none', fontWeight: 700 }}>
+            Switch to Alumni Portal
           </Link>
         )}
       </div>

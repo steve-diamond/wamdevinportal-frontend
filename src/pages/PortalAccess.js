@@ -9,7 +9,7 @@ function PortalAccess() {
       </p>
       <h1 style={{ margin: '10px 0 12px' }}>Choose Your Portal</h1>
       <p style={{ color: '#334155', lineHeight: 1.7, maxWidth: 760 }}>
-        Access is available in two channels. Select Alumni Portal for members and registered users, or Admin Portal for platform administrators.
+        Access is available in three channels: Alumni Portal, Institutional Membership Portal, and Admin Portal.
       </p>
 
       <section style={{ display: 'grid', gap: 14, gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', marginTop: 18 }}>
@@ -31,6 +31,27 @@ function PortalAccess() {
             }}
           >
             Enter Alumni Portal
+          </Link>
+        </article>
+
+        <article style={{ border: '1px solid #dbe4f0', borderRadius: 14, background: '#fff', padding: 18, boxShadow: '0 8px 24px rgba(15, 23, 42, 0.06)' }}>
+          <h2 style={{ margin: '0 0 8px', fontSize: 22 }}>Institutional Membership</h2>
+          <p style={{ margin: '0 0 14px', color: '#475569', lineHeight: 1.65 }}>
+            For focal persons and institutional representatives managing membership engagement and collaboration.
+          </p>
+          <Link
+            to="/portal/membership"
+            style={{
+              display: 'inline-block',
+              textDecoration: 'none',
+              background: '#0b6b4b',
+              color: '#fff',
+              borderRadius: 9,
+              padding: '9px 14px',
+              fontWeight: 700
+            }}
+          >
+            Enter Membership Portal
           </Link>
         </article>
 
@@ -67,6 +88,7 @@ function PortalAccess() {
       >
         <h3 style={{ margin: '0 0 8px' }}>Admin Login Details</h3>
         <ul style={{ margin: 0, paddingLeft: 20, color: '#334155', lineHeight: 1.7 }}>
+          <li>Institutional membership login URL: /portal/membership</li>
           <li>Admin login URL: /portal/admin</li>
           <li>Access is restricted to users with role set to admin.</li>
           <li>Non-admin users are blocked from admin login and admin dashboard access.</li>

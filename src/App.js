@@ -183,6 +183,7 @@ function AppLayout() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/portal" element={<PortalAccess />} />
           <Route path="/portal/alumni" element={<Login portalRole="alumni" />} />
+          <Route path="/portal/membership" element={<Login portalRole="membership" />} />
           <Route path="/portal/admin" element={<Login portalRole="admin" />} />
           <Route path="/dashboard" element={<ProtectedRoute><Dashboard user={user} /></ProtectedRoute>} />
           <Route path="/profile" element={<ProtectedRoute><Profile user={user} /></ProtectedRoute>} />
