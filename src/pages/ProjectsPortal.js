@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 
 const priorityProjects = [
   {
+    slug: 'leadership-acceleration',
     title: 'Public Sector Leadership Acceleration Program',
     objective: 'Build high-performance leadership capacity in ministries, agencies, and public institutions across West Africa.',
     scope: 'Regional / Multi-country',
     timeline: '2026-2028',
     status: 'Active',
+    backendPath: '/api/events',
     deliverables: [
       'Executive leadership bootcamps for senior and mid-level officers',
       'Institutional mentoring framework for reform implementation',
@@ -16,11 +18,13 @@ const priorityProjects = [
     expectedImpact: 'Improved policy execution, accountability, and service delivery outcomes in participating institutions.'
   },
   {
+    slug: 'management-observatory',
     title: 'Regional Management Research and Knowledge Observatory',
     objective: 'Generate applied evidence that informs governance reform, administrative modernization, and development management policy.',
     scope: 'Regional research network',
     timeline: '2026-2027',
     status: 'Scaling',
+    backendPath: '/api/resources',
     deliverables: [
       'Annual West Africa management performance report',
       'Cross-country case study repository and digital knowledge base',
@@ -29,11 +33,13 @@ const priorityProjects = [
     expectedImpact: 'Better evidence-based planning and stronger institutional learning across member countries.'
   },
   {
+    slug: 'digital-transformation-support',
     title: 'Institutional Digital Transformation Support Initiative',
     objective: 'Support member institutions to modernize core administrative processes, learning systems, and stakeholder service channels.',
     scope: 'Institution-level interventions',
     timeline: '2026-2029',
     status: 'Pilot + Rollout',
+    backendPath: '/api/users',
     deliverables: [
       'Digital service workflow mapping and redesign',
       'Change management and staff digital readiness training',
@@ -42,6 +48,19 @@ const priorityProjects = [
     expectedImpact: 'Higher operational efficiency, improved transparency, and faster service turnaround in target institutions.'
   }
 ];
+
+function resolveBackendBaseUrl() {
+  const envBase = process.env.REACT_APP_API_URL;
+  if (envBase) {
+    return envBase.replace(/\/$/, '');
+  }
+
+  if (typeof window !== 'undefined' && window.location?.origin) {
+    return window.location.origin;
+  }
+
+  return '';
+}
 
 const projectNavigation = [
   { to: '/research', title: 'Research Hub', note: 'Evidence, studies, and policy insight outputs.' },
@@ -52,6 +71,8 @@ const projectNavigation = [
 ];
 
 function ProjectsPortal() {
+  const backendBaseUrl = resolveBackendBaseUrl();
+
   return (
     <div style={{ maxWidth: 1180, margin: '0 auto', padding: '28px 16px 36px' }}>
       <section style={{ marginBottom: 20 }}>
@@ -99,6 +120,29 @@ function ProjectsPortal() {
             <div style={{ background: 'linear-gradient(90deg, rgba(15,77,146,0.08), rgba(244,197,24,0.16))', borderRadius: 10, padding: 12 }}>
               <strong>Expected Impact:</strong>
               <p style={{ margin: '6px 0 0', color: '#334155', lineHeight: 1.65 }}>{project.expectedImpact}</p>
+            </div>
+
+            <div style={{ marginTop: 12, display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
+              <a
+                href={`${backendBaseUrl}${project.backendPath}`}
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  display: 'inline-block',
+                  textDecoration: 'none',
+                  background: '#0f4d92',
+                  color: '#fff',
+                  borderRadius: 8,
+                  padding: '8px 12px',
+                  fontWeight: 700,
+                  fontSize: 14
+                }}
+              >
+                Open Backend Endpoint
+              </a>
+              <span style={{ color: '#64748b', fontSize: 13 }}>
+                Endpoint: {project.backendPath}
+              </span>
             </div>
           </article>
         ))}

@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+const secretariatAddress = 'WAMDEVIN Secretariat, Accra, Ghana';
+const mapEmbedSrc = 'https://www.google.com/maps?q=' + encodeURIComponent(secretariatAddress) + '&output=embed';
+const mapDirectionLink = 'https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(secretariatAddress);
+
 function ContactPortal() {
   return (
     <div style={{ maxWidth: 1100, margin: '0 auto', padding: '28px 16px 36px' }}>
@@ -34,6 +38,35 @@ function ContactPortal() {
           <p style={{ margin: 0 }}><strong>Engagement:</strong> In-person and virtual collaboration sessions</p>
         </div>
       </div>
+
+      <section style={{ border: '1px solid #dbe4f0', borderRadius: 12, overflow: 'hidden', background: '#fff', marginBottom: 14 }}>
+        <div style={{ padding: 16, borderBottom: '1px solid #e2e8f0' }}>
+          <h3 style={{ margin: '0 0 6px' }}>Directions to the Secretariat</h3>
+          <p style={{ margin: 0, color: '#475569' }}>
+            Use the map below to locate the office and open turn-by-turn Google directions.
+          </p>
+        </div>
+        <iframe
+          title="WAMDEVIN Secretariat Location"
+          src={mapEmbedSrc}
+          width="100%"
+          height="320"
+          style={{ border: 0, display: 'block' }}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          allowFullScreen
+        />
+        <div style={{ padding: 16, borderTop: '1px solid #e2e8f0' }}>
+          <a
+            href={mapDirectionLink}
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: '#0f4d92', fontWeight: 700, textDecoration: 'none' }}
+          >
+            Open Google Maps Directions
+          </a>
+        </div>
+      </section>
 
       <section style={{ background: 'linear-gradient(90deg, rgba(15,77,146,0.08), rgba(244,197,24,0.14))', borderRadius: 12, padding: 16, marginBottom: 14 }}>
         <h3 style={{ margin: '0 0 8px' }}>Before You Contact Us</h3>

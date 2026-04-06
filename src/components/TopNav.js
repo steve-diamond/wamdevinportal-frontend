@@ -8,9 +8,8 @@ const links = [
   { to: '/services', label: 'Services' },
   { to: '/projects', label: 'Projects' },
   { to: '/gallery', label: 'Gallery' },
-  { to: '/contact-modern', label: 'Contact' },
+  { to: '/contact', label: 'Contact' },
   { to: '/portal', label: 'Portal' },
-  { to: '/legacy-content', label: 'Legacy Content' },
   { to: '/signup', label: 'Register' }
 ];
 

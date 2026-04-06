@@ -36,7 +36,7 @@ function LegacyFooter() {
             <div className="legacy-footer-links">
               <Link to="/portal">Login</Link>
               <Link to="/signup">Register</Link>
-              <Link to="/legacy-content">Legacy Content Hub</Link>
+              <Link to="/contact">Contact Desk</Link>
             </div>
           </div>
         </div>

@@ -21,7 +21,6 @@ import ProtectedRoute from './components/ProtectedRoute';
 import AdminRoute from './components/AdminRoute';
 import Notification from './components/Notification';
 import useStore from './store/useStore';
-import WamdevinContentHub from './pages/WamdevinContentHub';
 import LegacyHeader from './components/LegacyHeader';
 import LegacyFooter from './components/LegacyFooter';
 import ContactPortal from './pages/ContactPortal';
@@ -192,7 +191,6 @@ function AppLayout() {
           <Route path="/messages-live" element={<ProtectedRoute><MessagesPage /></ProtectedRoute>} />
           <Route path="/resources" element={<ProtectedRoute><Resources user={user} /></ProtectedRoute>} />
           <Route path="/admin" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
-          <Route path="/legacy-content" element={<WamdevinContentHub />} />
           <Route path="/:legacyPhp" element={<LegacyPhpRoute />} />
           <Route path="/:folder/:legacyPhp" element={<LegacyNestedPhpRoute />} />
         </Routes>
