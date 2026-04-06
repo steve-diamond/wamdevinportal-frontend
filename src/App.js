@@ -32,15 +32,7 @@ function toHtmlMirror(pathname) {
 }
 
 function LegacyHomePage() {
-  return (
-    <div style={{ minHeight: '100vh', background: '#fff' }}>
-      <iframe
-        title="Wamdevin Legacy Home"
-        src="/wamdevin-full/index.html"
-        style={{ width: '100%', minHeight: '100vh', border: 'none', display: 'block' }}
-      />
-    </div>
-  );
+  return <LegacyPageFrame src="/wamdevin-full/index.html" title="Wamdevin Legacy Home" />;
 }
 
 function LegacyPageFrame({ src, title }) {
