@@ -66,9 +66,35 @@ function LegacyPageFrame({ src, title }) {
 
       // Keep legacy navigation browseable in static hosting by mapping PHP links to HTML mirrors.
       const anchors = doc.querySelectorAll('a[href]');
+      const topRouteMap = {
+        'about.php': '/about',
+        'leadership.php': '/leadership',
+        'service.php': '/services',
+        'gallery.php': '/gallery',
+        'contact.php': '/contact',
+        'projects.php': '/projects',
+        'membership.php': '/membership',
+        'partners.php': '/partners',
+        'trainners.php': '/training',
+        'research.php': '/research',
+        'publication.php': '/publication',
+        'consultancy.php': '/consultancy',
+        'login.php': '/portal',
+        'register.php': '/signup'
+      };
+
       anchors.forEach((anchor) => {
         const href = anchor.getAttribute('href');
         if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) {
+          return;
+        }
+
+        const cleanHref = href.replace(/^\.\//, '').replace(/^\//, '').split('?')[0].split('#')[0];
+        const normalized = cleanHref.replace(/^wamdevin-full\//i, '');
+
+        if (topRouteMap[normalized]) {
+          anchor.setAttribute('href', topRouteMap[normalized]);
+          anchor.setAttribute('target', '_top');
           return;
         }
 
