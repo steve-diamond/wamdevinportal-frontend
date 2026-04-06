@@ -80,6 +80,158 @@ a {
   animation: fadeUp 0.45s ease both;
 }
 
+.legacy-header {
+  position: sticky;
+  top: 0;
+  z-index: 1200;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+  background: linear-gradient(105deg, rgba(11, 47, 91, 0.97), rgba(15, 77, 146, 0.96));
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.legacy-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.legacy-brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.legacy-brand-logo {
+  height: 38px;
+  width: auto;
+}
+
+.legacy-nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.legacy-nav-link {
+  text-decoration: none;
+  color: #e2e8f0;
+  background: transparent;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  border-radius: 8px;
+  padding: 7px 11px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.legacy-nav-link:hover {
+  border-color: rgba(246, 201, 14, 0.8);
+  color: #f8fafc;
+}
+
+.legacy-nav-link.is-active {
+  color: #0f172a;
+  background: #f4c518;
+  border-color: #f4c518;
+}
+
+.legacy-auth-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.legacy-btn {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 7px 11px;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.legacy-btn:hover {
+  transform: translateY(-1px);
+}
+
+.legacy-btn-login {
+  color: #fff;
+  background: #1766a2;
+}
+
+.legacy-btn-register {
+  color: #0f172a;
+  background: #f4c518;
+}
+
+.legacy-footer {
+  margin-top: 24px;
+  border-top: 1px solid rgba(148, 163, 184, 0.3);
+  background: linear-gradient(170deg, #0d203d 0%, #0b2f5b 100%);
+  color: #dbe6f3;
+}
+
+.legacy-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.legacy-footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.legacy-footer-logo {
+  height: 36px;
+  width: auto;
+  margin-bottom: 8px;
+}
+
+.legacy-footer-copy {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.legacy-footer-title {
+  margin: 0 0 10px;
+  color: #f4c518;
+  font-size: 16px;
+}
+
+.legacy-footer-links {
+  display: grid;
+  gap: 6px;
+}
+
+.legacy-footer-links a {
+  color: #dbe6f3;
+  text-decoration: none;
+}
+
+.legacy-footer-links a:hover {
+  color: #f8fafc;
+  text-decoration: underline;
+}
+
+.legacy-footer-bottom {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(148, 163, 184, 0.3);
+  font-size: 13px;
+}
+
+@media (max-width: 860px) {
+  .legacy-auth-actions {
+    margin-left: 0;
+  }
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;

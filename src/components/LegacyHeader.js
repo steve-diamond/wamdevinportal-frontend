@@ -16,29 +16,20 @@ function LegacyHeader() {
   const location = useLocation();
 
   return (
-    <header style={{ position: 'sticky', top: 0, zIndex: 1000, background: 'rgba(14,32,61,0.96)', borderBottom: '1px solid rgba(148,163,184,0.25)' }}>
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '10px 14px', display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap' }}>
-        <Link to="/" style={{ display: 'inline-flex', alignItems: 'center', textDecoration: 'none' }}>
-          <img src="/wamdevin-full/assets/images/logo-white.png" alt="WAMDEVIN" style={{ height: 38, width: 'auto' }} />
+    <header className="legacy-header">
+      <div className="legacy-header-inner">
+        <Link to="/" className="legacy-brand" aria-label="WAMDEVIN Home">
+          <img src="/wamdevin-full/assets/images/logo-white.png" alt="WAMDEVIN" className="legacy-brand-logo" />
         </Link>
 
-        <nav style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+        <nav className="legacy-nav" aria-label="Primary">
           {navLinks.map((link) => {
             const active = location.pathname === link.to;
             return (
               <Link
                 key={link.to}
                 to={link.to}
-                style={{
-                  textDecoration: 'none',
-                  color: active ? '#0f172a' : '#e2e8f0',
-                  background: active ? '#f4c518' : 'transparent',
-                  border: active ? '1px solid #f4c518' : '1px solid rgba(148,163,184,0.45)',
-                  borderRadius: 8,
-                  padding: '7px 11px',
-                  fontWeight: 600,
-                  fontSize: 14
-                }}
+                className={`legacy-nav-link ${active ? 'is-active' : ''}`}
               >
                 {link.label}
               </Link>
@@ -46,11 +37,11 @@ function LegacyHeader() {
           })}
         </nav>
 
-        <div style={{ marginLeft: 'auto', display: 'flex', gap: 8 }}>
-          <Link to="/portal" style={{ textDecoration: 'none', color: '#fff', background: '#1766a2', borderRadius: 8, padding: '7px 11px', fontWeight: 600 }}>
+        <div className="legacy-auth-actions">
+          <Link to="/portal" className="legacy-btn legacy-btn-login">
             Login
           </Link>
-          <Link to="/signup" style={{ textDecoration: 'none', color: '#0f172a', background: '#f4c518', borderRadius: 8, padding: '7px 11px', fontWeight: 700 }}>
+          <Link to="/signup" className="legacy-btn legacy-btn-register">
             Register
           </Link>
         </div>
