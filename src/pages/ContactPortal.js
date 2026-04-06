@@ -3,26 +3,56 @@ import { Link } from 'react-router-dom';
 
 function ContactPortal() {
   return (
-    <div style={{ maxWidth: 980, margin: '0 auto', padding: '28px 16px' }}>
-      <h1>Contact</h1>
-      <p style={{ color: '#334155', lineHeight: 1.7 }}>
-        Reach out for alumni support, partnerships, events, and training inquiries from this unified branded contact experience.
+    <div style={{ maxWidth: 1100, margin: '0 auto', padding: '28px 16px 36px' }}>
+      <p style={{ margin: 0, color: '#0f4d92', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.07em', fontSize: 12 }}>
+        Secretariat and Partnership Desk
+      </p>
+      <h1 style={{ margin: '10px 0 12px' }}>Contact WAMDEVIN</h1>
+      <p style={{ color: '#334155', lineHeight: 1.75, marginTop: 0, maxWidth: 860 }}>
+        Contact us for institutional membership, leadership programs, project collaboration, consultancy requests, and regional partnership opportunities.
       </p>
 
-      <div style={{ display: 'grid', gap: 14, gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))' }}>
-        <div style={{ border: '1px solid #e2e8f0', borderRadius: 10, padding: 16 }}>
+      <div style={{ display: 'grid', gap: 14, gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', marginBottom: 14 }}>
+        <div style={{ border: '1px solid #dbe4f0', borderRadius: 12, padding: 16, background: '#fff' }}>
           <h3 style={{ marginTop: 0 }}>General Inquiries</h3>
-          <p style={{ margin: 0 }}>Email: info@wamdin.org</p>
-          <p style={{ margin: '6px 0 0' }}>Phone: +234-000-000-0000</p>
+          <p style={{ margin: '0 0 6px' }}><strong>Email:</strong> info@wamdevin.org</p>
+          <p style={{ margin: '0 0 6px' }}><strong>Phone:</strong> +233 (0) 123 456 789</p>
+          <p style={{ margin: 0 }}><strong>Hours:</strong> Mon-Fri, 9:00 AM - 5:00 PM (GMT)</p>
         </div>
 
-        <div style={{ border: '1px solid #e2e8f0', borderRadius: 10, padding: 16 }}>
-          <h3 style={{ marginTop: 0 }}>Other Pages</h3>
-          <p style={{ margin: '0 0 8px' }}>Continue browsing without leaving the shared header and footer shell.</p>
-          <Link to="/projects" style={{ color: '#1d4ed8', fontWeight: 600, textDecoration: 'none' }}>
-            Go to Projects
-          </Link>
+        <div style={{ border: '1px solid #dbe4f0', borderRadius: 12, padding: 16, background: '#fff' }}>
+          <h3 style={{ marginTop: 0 }}>Partnership and Programs</h3>
+          <p style={{ margin: '0 0 6px' }}><strong>Email:</strong> partnerships@wamdevin.org</p>
+          <p style={{ margin: '0 0 6px' }}><strong>Programs:</strong> training@wamdevin.org</p>
+          <p style={{ margin: 0 }}><strong>Consultancy:</strong> advisory@wamdevin.org</p>
         </div>
+
+        <div style={{ border: '1px solid #dbe4f0', borderRadius: 12, padding: 16, background: '#fff' }}>
+          <h3 style={{ marginTop: 0 }}>Secretariat Location</h3>
+          <p style={{ margin: '0 0 6px' }}><strong>Address:</strong> WAMDEVIN Secretariat, Accra, Ghana</p>
+          <p style={{ margin: '0 0 6px' }}><strong>Region:</strong> West Africa</p>
+          <p style={{ margin: 0 }}><strong>Engagement:</strong> In-person and virtual collaboration sessions</p>
+        </div>
+      </div>
+
+      <section style={{ background: 'linear-gradient(90deg, rgba(15,77,146,0.08), rgba(244,197,24,0.14))', borderRadius: 12, padding: 16, marginBottom: 14 }}>
+        <h3 style={{ margin: '0 0 8px' }}>Before You Contact Us</h3>
+        <ul style={{ margin: 0, paddingLeft: 20, color: '#334155', lineHeight: 1.7 }}>
+          <li>Include your institution name and country for faster routing.</li>
+          <li>Specify your request category: training, research, consultancy, or partnership.</li>
+          <li>For event support, include expected date, audience, and thematic focus.</li>
+          <li>For collaboration requests, share intended outcomes and timeline.</li>
+        </ul>
+      </section>
+
+      <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+        <Link to="/projects" style={{ color: '#1d4ed8', fontWeight: 700, textDecoration: 'none' }}>
+          View Strategic Projects
+        </Link>
+        <span style={{ color: '#94a3b8' }}>|</span>
+        <Link to="/services" style={{ color: '#1d4ed8', fontWeight: 700, textDecoration: 'none' }}>
+          Explore Service Areas
+        </Link>
       </div>
     </div>
   );
