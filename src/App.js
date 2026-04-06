@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation, useParams, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useParams, Navigate } from 'react-router-dom';
 
 
 
@@ -62,6 +62,14 @@ function LegacyPageFrame({ src, title }) {
       wrappers.forEach((el) => {
         el.style.opacity = '1';
         el.style.visibility = 'visible';
+      });
+
+      // Ensure legacy pages do not render a second header/footer inside the shared app shell.
+      const legacyChrome = doc.querySelectorAll(
+        'header.header, .top-bar, .sticky-header, footer, .footer-top, .footer-bottom'
+      );
+      legacyChrome.forEach((el) => {
+        el.style.display = 'none';
       });
 
       // Keep legacy navigation browseable in static hosting by mapping PHP links to HTML mirrors.
@@ -149,13 +157,11 @@ function LegacyNestedPhpRoute() {
 
 function AppLayout() {
   const { user } = useStore();
-  const location = useLocation();
-  const isRootLegacyHome = location.pathname === '/';
 
   return (
     <div className="app-shell">
       <Notification />
-      {!isRootLegacyHome && <LegacyHeader />}
+      <LegacyHeader />
       <main className="app-content">
         <Routes>
           <Route path="/" element={<LegacyHomePage />} />
@@ -192,9 +198,7 @@ function AppLayout() {
         </Routes>
       </main>
 
-      {!isRootLegacyHome && (
-        <LegacyFooter />
-      )}
+      <LegacyFooter />
     </div>
   );
 }
