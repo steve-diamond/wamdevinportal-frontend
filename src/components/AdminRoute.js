@@ -4,7 +4,7 @@ import useStore from '../store/useStore';
 
 const AdminRoute = ({ children }) => {
   const { user } = useStore();
-  if (!user || user.role !== 'admin') return <Navigate to="/login" replace />;
+  if (!user || user.role !== 'admin') return <Navigate to="/portal/admin" replace />;
   return children;
 };
 

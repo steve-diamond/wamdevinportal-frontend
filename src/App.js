@@ -26,6 +26,7 @@ import LegacyFooter from './components/LegacyFooter';
 import ContactPortal from './pages/ContactPortal';
 import ProjectsPortal from './pages/ProjectsPortal';
 import GalleryPortal from './pages/GalleryPortal';
+import PortalAccess from './pages/PortalAccess';
 
 function toHtmlMirror(pathname) {
   return pathname.replace(/\.php(\?.*)?$/i, '.html$1');
@@ -178,9 +179,11 @@ function AppLayout() {
           <Route path="/gallery-modern" element={<GalleryPortal />} />
           <Route path="/contact" element={<ContactPortal />} />
           <Route path="/contact-modern" element={<ContactPortal />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Navigate to="/portal/alumni" replace />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/portal" element={<Login />} />
+          <Route path="/portal" element={<PortalAccess />} />
+          <Route path="/portal/alumni" element={<Login portalRole="alumni" />} />
+          <Route path="/portal/admin" element={<Login portalRole="admin" />} />
           <Route path="/dashboard" element={<ProtectedRoute><Dashboard user={user} /></ProtectedRoute>} />
           <Route path="/profile" element={<ProtectedRoute><Profile user={user} /></ProtectedRoute>} />
           <Route path="/alumni" element={<ProtectedRoute><AlumniDirectory /></ProtectedRoute>} />

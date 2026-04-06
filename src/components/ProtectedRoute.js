@@ -4,7 +4,7 @@ import useStore from '../store/useStore';
 
 const ProtectedRoute = ({ children }) => {
   const { user } = useStore();
-  if (!user) return <Navigate to="/login" replace />;
+  if (!user) return <Navigate to="/portal/alumni" replace />;
   return children;
 };
 
