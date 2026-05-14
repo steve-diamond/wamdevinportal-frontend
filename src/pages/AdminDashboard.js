@@ -1,5 +1,7 @@
+
+
 import React, { useEffect, useState, useCallback, Suspense, lazy, useRef } from 'react';
-import axios from 'axios';
+import api from '../api';
 import useStore from '../store/useStore';
 import DashboardLayout from '../components/DashboardLayout';
 import UserTable from '../components/UserTable';
@@ -84,22 +86,19 @@ export default function AdminDashboard() {
   const { addToast } = useStore();
 
   const fetchAll = useCallback(() => {
-    const token = localStorage.getItem('token');
-    const headers = token ? { Authorization: `Bearer ${token}` } : {};
-
-    axios.get('/api/admin/users', { headers })
+    api.get('/api/admin/users')
       .then(r => setUsers(r.data))
       .catch(() => {});
 
-    axios.get('/api/admin/events', { headers })
+    api.get('/api/admin/events')
       .then(r => setEvents(r.data))
       .catch(() => {});
 
-    axios.get('/api/admin/resources', { headers })
+    api.get('/api/admin/resources')
       .then(r => setResources(r.data))
       .catch(() => {});
 
-    axios.get('/api/admin/analytics', { headers })
+    api.get('/api/admin/analytics')
       .then(r => {
         setStats([
           { name: 'Total Users',   count: r.data.users },

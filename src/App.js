@@ -3,11 +3,8 @@ import { BrowserRouter as Router, Routes, Route, useParams, Navigate } from 'rea
 
 // ── Lazy-loaded portal pages (heavy data pages load on demand) ──
 const AlumniDirectory    = lazy(() => import('./pages/AlumniDirectory'));
-const DirectoryPage      = lazy(() => import('./pages/DirectoryPage'));
 const Messaging          = lazy(() => import('./pages/Messaging'));
 const Events             = lazy(() => import('./pages/Events'));
-const EventPage          = lazy(() => import('./pages/EventPage'));
-const MessagesPage       = lazy(() => import('./pages/MessagesPage'));
 const Resources          = lazy(() => import('./pages/Resources'));
 const AdminDashboard     = lazy(() => import('./pages/AdminDashboard'));
 const Dashboard          = lazy(() => import('./pages/Dashboard'));
@@ -214,11 +211,11 @@ function AppLayout() {
             <Route path="/dashboard" element={<ProtectedRoute><Dashboard user={user} /></ProtectedRoute>} />
             <Route path="/profile" element={<ProtectedRoute><Profile user={user} /></ProtectedRoute>} />
             <Route path="/alumni" element={<ProtectedRoute><AlumniDirectory /></ProtectedRoute>} />
-            <Route path="/directory" element={<ProtectedRoute><DirectoryPage /></ProtectedRoute>} />
+            <Route path="/directory" element={<Navigate to="/alumni" replace />} />
             <Route path="/messaging" element={<ProtectedRoute><Messaging user={user} /></ProtectedRoute>} />
             <Route path="/events" element={<ProtectedRoute><Events user={user} /></ProtectedRoute>} />
-            <Route path="/events-live" element={<ProtectedRoute><EventPage /></ProtectedRoute>} />
-            <Route path="/messages-live" element={<ProtectedRoute><MessagesPage /></ProtectedRoute>} />
+            <Route path="/events-live" element={<Navigate to="/events" replace />} />
+            <Route path="/messages-live" element={<Navigate to="/messaging" replace />} />
             <Route path="/resources" element={<ProtectedRoute><Resources user={user} /></ProtectedRoute>} />
             <Route path="/admin" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
             <Route path="/:legacyPhp" element={<LegacyPhpRoute />} />

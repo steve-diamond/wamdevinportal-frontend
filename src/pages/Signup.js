@@ -16,8 +16,8 @@ const Signup = () => {
     setError(null);
     try {
       await api.post('/api/auth/signup', form);
-      setNotification('Signup successful! Please verify your email.');
-      navigate('/login');
+      setNotification('Account created! Please sign in.');
+      navigate('/portal/alumni');
     } catch (err) {
       setError('Signup failed');
       setNotification('Signup failed');

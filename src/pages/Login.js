@@ -85,7 +85,12 @@ export default function Login({ portalRole = 'alumni' }) {
       addToast('Welcome back, ' + (loggedInUser?.fullName || 'User') + '!', 'success', 'Signed in');
       navigate(loggedInUser?.role === 'admin' ? '/admin' : '/dashboard');
     } catch (err) {
-      const msg = err.response?.data?.message || 'Invalid email or password.';
+      let msg;
+      if (!err.response) {
+        msg = 'Cannot reach the server. Make sure the backend is running on port 5000.';
+      } else {
+        msg = err.response.data?.message || 'Invalid email or password.';
+      }
       setLocalError(msg);
       addToast(msg, 'error', 'Login Failed');
     }
