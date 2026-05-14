@@ -1,32 +1,57 @@
-import React, { useRef } from 'react';
+import React, { useRef, lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, useParams, Navigate } from 'react-router-dom';
 
+// ── Lazy-loaded portal pages (heavy data pages load on demand) ──
+const AlumniDirectory    = lazy(() => import('./pages/AlumniDirectory'));
+const DirectoryPage      = lazy(() => import('./pages/DirectoryPage'));
+const Messaging          = lazy(() => import('./pages/Messaging'));
+const Events             = lazy(() => import('./pages/Events'));
+const EventPage          = lazy(() => import('./pages/EventPage'));
+const MessagesPage       = lazy(() => import('./pages/MessagesPage'));
+const Resources          = lazy(() => import('./pages/Resources'));
+const AdminDashboard     = lazy(() => import('./pages/AdminDashboard'));
+const Dashboard          = lazy(() => import('./pages/Dashboard'));
+const Profile            = lazy(() => import('./pages/Profile'));
+const Signup             = lazy(() => import('./pages/Signup'));
+const ContactPortal      = lazy(() => import('./pages/ContactPortal'));
+const ProjectsPortal     = lazy(() => import('./pages/ProjectsPortal'));
+const GalleryPortal      = lazy(() => import('./pages/GalleryPortal'));
+const PortalAccess       = lazy(() => import('./pages/PortalAccess'));
 
-
-
-
-import AlumniDirectory from './pages/AlumniDirectory';
-import DirectoryPage from './pages/DirectoryPage';
-import Messaging from './pages/Messaging';
-import Events from './pages/Events';
-import EventPage from './pages/EventPage';
-import MessagesPage from './pages/MessagesPage';
-import Resources from './pages/Resources';
-import AdminDashboard from './pages/AdminDashboard';
+// ── Eagerly-loaded (lightweight, needed immediately) ──
 import Login from './pages/Login';
-import Signup from './pages/Signup';
-import Dashboard from './pages/Dashboard';
-import Profile from './pages/Profile';
 import ProtectedRoute from './components/ProtectedRoute';
 import AdminRoute from './components/AdminRoute';
 import Notification from './components/Notification';
 import useStore from './store/useStore';
 import LegacyHeader from './components/LegacyHeader';
 import LegacyFooter from './components/LegacyFooter';
-import ContactPortal from './pages/ContactPortal';
-import ProjectsPortal from './pages/ProjectsPortal';
-import GalleryPortal from './pages/GalleryPortal';
-import PortalAccess from './pages/PortalAccess';
+
+/** Accessible full-page loading fallback */
+function PageLoader() {
+  return (
+    <div
+      role="status"
+      aria-label="Loading page"
+      style={{
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        minHeight: '60vh', flexDirection: 'column', gap: 12,
+        color: 'var(--text-muted, #94a3b8)',
+      }}
+    >
+      <div
+        aria-hidden="true"
+        style={{
+          width: 36, height: 36, border: '3px solid #e2e8f0',
+          borderTopColor: '#0f4d92', borderRadius: '50%',
+          animation: 'spin 0.75s linear infinite',
+        }}
+      />
+      <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
+      <span>Loading…</span>
+    </div>
+  );
+}
 
 function toHtmlMirror(pathname) {
   return pathname.replace(/\.php(\?.*)?$/i, '.html$1');
@@ -163,41 +188,43 @@ function AppLayout() {
       <Notification />
       <LegacyHeader />
       <main className="app-content">
-        <Routes>
-          <Route path="/" element={<LegacyHomePage />} />
-          <Route path="/about" element={<LegacyPageFrame src="/wamdevin-full/about.html" title="About" />} />
-          <Route path="/leadership" element={<LegacyPageFrame src="/wamdevin-full/leadership.html" title="Leadership" />} />
-          <Route path="/services" element={<LegacyPageFrame src="/wamdevin-full/service.html" title="Services" />} />
-          <Route path="/membership" element={<LegacyPageFrame src="/wamdevin-full/membership.html" title="Membership" />} />
-          <Route path="/partners" element={<LegacyPageFrame src="/wamdevin-full/partners.html" title="Partners" />} />
-          <Route path="/projects" element={<ProjectsPortal />} />
-          <Route path="/training" element={<LegacyPageFrame src="/wamdevin-full/trainners.html" title="Training" />} />
-          <Route path="/research" element={<LegacyPageFrame src="/wamdevin-full/research.html" title="Research" />} />
-          <Route path="/publication" element={<LegacyPageFrame src="/wamdevin-full/publication.html" title="Publication" />} />
-          <Route path="/consultancy" element={<LegacyPageFrame src="/wamdevin-full/consultancy.html" title="Consultancy" />} />
-          <Route path="/gallery" element={<GalleryPortal />} />
-          <Route path="/gallery-modern" element={<GalleryPortal />} />
-          <Route path="/contact" element={<ContactPortal />} />
-          <Route path="/contact-modern" element={<ContactPortal />} />
-          <Route path="/login" element={<Navigate to="/portal/alumni" replace />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/portal" element={<PortalAccess />} />
-          <Route path="/portal/alumni" element={<Login portalRole="alumni" />} />
-          <Route path="/portal/membership" element={<Login portalRole="membership" />} />
-          <Route path="/portal/admin" element={<Login portalRole="admin" />} />
-          <Route path="/dashboard" element={<ProtectedRoute><Dashboard user={user} /></ProtectedRoute>} />
-          <Route path="/profile" element={<ProtectedRoute><Profile user={user} /></ProtectedRoute>} />
-          <Route path="/alumni" element={<ProtectedRoute><AlumniDirectory /></ProtectedRoute>} />
-          <Route path="/directory" element={<ProtectedRoute><DirectoryPage /></ProtectedRoute>} />
-          <Route path="/messaging" element={<ProtectedRoute><Messaging user={user} /></ProtectedRoute>} />
-          <Route path="/events" element={<ProtectedRoute><Events user={user} /></ProtectedRoute>} />
-          <Route path="/events-live" element={<ProtectedRoute><EventPage /></ProtectedRoute>} />
-          <Route path="/messages-live" element={<ProtectedRoute><MessagesPage /></ProtectedRoute>} />
-          <Route path="/resources" element={<ProtectedRoute><Resources user={user} /></ProtectedRoute>} />
-          <Route path="/admin" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
-          <Route path="/:legacyPhp" element={<LegacyPhpRoute />} />
-          <Route path="/:folder/:legacyPhp" element={<LegacyNestedPhpRoute />} />
-        </Routes>
+        <Suspense fallback={<PageLoader />}>
+          <Routes>
+            <Route path="/" element={<LegacyHomePage />} />
+            <Route path="/about" element={<LegacyPageFrame src="/wamdevin-full/about.html" title="About" />} />
+            <Route path="/leadership" element={<LegacyPageFrame src="/wamdevin-full/leadership.html" title="Leadership" />} />
+            <Route path="/services" element={<LegacyPageFrame src="/wamdevin-full/service.html" title="Services" />} />
+            <Route path="/membership" element={<LegacyPageFrame src="/wamdevin-full/membership.html" title="Membership" />} />
+            <Route path="/partners" element={<LegacyPageFrame src="/wamdevin-full/partners.html" title="Partners" />} />
+            <Route path="/projects" element={<ProjectsPortal />} />
+            <Route path="/training" element={<LegacyPageFrame src="/wamdevin-full/trainners.html" title="Training" />} />
+            <Route path="/research" element={<LegacyPageFrame src="/wamdevin-full/research.html" title="Research" />} />
+            <Route path="/publication" element={<LegacyPageFrame src="/wamdevin-full/publication.html" title="Publication" />} />
+            <Route path="/consultancy" element={<LegacyPageFrame src="/wamdevin-full/consultancy.html" title="Consultancy" />} />
+            <Route path="/gallery" element={<GalleryPortal />} />
+            <Route path="/gallery-modern" element={<GalleryPortal />} />
+            <Route path="/contact" element={<ContactPortal />} />
+            <Route path="/contact-modern" element={<ContactPortal />} />
+            <Route path="/login" element={<Navigate to="/portal/alumni" replace />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/portal" element={<PortalAccess />} />
+            <Route path="/portal/alumni" element={<Login portalRole="alumni" />} />
+            <Route path="/portal/membership" element={<Login portalRole="membership" />} />
+            <Route path="/portal/admin" element={<Login portalRole="admin" />} />
+            <Route path="/dashboard" element={<ProtectedRoute><Dashboard user={user} /></ProtectedRoute>} />
+            <Route path="/profile" element={<ProtectedRoute><Profile user={user} /></ProtectedRoute>} />
+            <Route path="/alumni" element={<ProtectedRoute><AlumniDirectory /></ProtectedRoute>} />
+            <Route path="/directory" element={<ProtectedRoute><DirectoryPage /></ProtectedRoute>} />
+            <Route path="/messaging" element={<ProtectedRoute><Messaging user={user} /></ProtectedRoute>} />
+            <Route path="/events" element={<ProtectedRoute><Events user={user} /></ProtectedRoute>} />
+            <Route path="/events-live" element={<ProtectedRoute><EventPage /></ProtectedRoute>} />
+            <Route path="/messages-live" element={<ProtectedRoute><MessagesPage /></ProtectedRoute>} />
+            <Route path="/resources" element={<ProtectedRoute><Resources user={user} /></ProtectedRoute>} />
+            <Route path="/admin" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
+            <Route path="/:legacyPhp" element={<LegacyPhpRoute />} />
+            <Route path="/:folder/:legacyPhp" element={<LegacyNestedPhpRoute />} />
+          </Routes>
+        </Suspense>
       </main>
 
       <LegacyFooter />
