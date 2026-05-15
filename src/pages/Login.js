@@ -89,7 +89,11 @@ export default function Login({ portalRole = 'alumni' }) {
       if (!err.response) {
         msg = 'Unable to connect to the server. Please try again in a moment.';
       } else {
-        msg = err.response.data?.message || 'Invalid email or password.';
+        if (err.response.status === 503) {
+          msg = 'The server is temporarily unavailable. Please try again in a moment.';
+        } else {
+          msg = err.response.data?.message || 'Invalid email or password.';
+        }
       }
       setLocalError(msg);
       addToast(msg, 'error', 'Login Failed');
