@@ -87,7 +87,7 @@ export default function Login({ portalRole = 'alumni' }) {
     } catch (err) {
       let msg;
       if (!err.response) {
-        msg = 'Cannot reach the server. Make sure the backend is running on port 5000.';
+        msg = 'Unable to connect to the server. Please try again in a moment.';
       } else {
         msg = err.response.data?.message || 'Invalid email or password.';
       }
